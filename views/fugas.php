@@ -3,7 +3,7 @@
 ?>
 
 <!-- Hero Específico de Fugas -->
-<section class="hero-section" style="padding-top: 40px; padding-bottom: 50px;">
+<section class="hero-section">
     <div class="hero-glow hero-glow-1"></div>
     <div class="hero-container">
         <div class="hero-content-pane">

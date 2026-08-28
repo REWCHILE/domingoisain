@@ -2,11 +2,11 @@
 // views/ultrasonido.php - Detección con Ultrasonido, Geófono y Gas Trazador
 ?>
 
-<section class="hero-section" style="padding-top: 40px; padding-bottom: 50px;">
+<section class="hero-section">
     <div class="hero-glow hero-glow-1"></div>
     <div class="hero-container">
         <div class="hero-content-pane">
-            <span class="service-badge badge-cyan" style="margin-bottom: 16px;">Diagnóstico No Invasivo de Vanguardia</span>
+            <span class="service-badge badge-cyan">Diagnóstico No Invasivo de Vanguardia</span>
             <h1 class="hero-title">
                 Detección de Fugas con <span class="gradient-text">Geófono y Gas Trazador</span>
             </h1>

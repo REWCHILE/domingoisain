@@ -2,11 +2,11 @@
 // views/instalador-sec.php - Regularización de Sello Rojo y Normativa DS66
 ?>
 
-<section class="hero-section" style="padding-top: 40px; padding-bottom: 50px;">
+<section class="hero-section">
     <div class="hero-glow hero-glow-2"></div>
     <div class="hero-container">
         <div class="hero-content-pane">
-            <span class="emergency-pill" style="margin-bottom: 16px;">
+            <span class="emergency-pill">
                 <span class="pulse-dot"></span>
                 Especialista en Levantamiento de Sello Rojo
             </span>

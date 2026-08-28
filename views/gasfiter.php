@@ -2,7 +2,7 @@
 // views/gasfiter.php - Servicios Generales de Gasfitería Autorizada
 ?>
 
-<section class="hero-section" style="padding-top: 40px; padding-bottom: 50px;">
+<section class="hero-section">
     <div class="hero-glow hero-glow-2"></div>
     <div class="hero-container">
         <div class="hero-content-pane">

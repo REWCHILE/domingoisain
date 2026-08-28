@@ -511,24 +511,24 @@
 <?php include __DIR__ . '/../includes/faq-section.php'; ?>
 
 <!-- 9. BANNER FINAL DE ATENCIÓN DE EMERGENCIAS -->
-<section style="background: linear-gradient(135deg, rgba(2, 132, 199, 0.2), rgba(16, 185, 129, 0.2)); border-top: 1px solid var(--border-glow); padding: 70px 20px; text-align: center;">
-    <div style="max-width: 900px; margin: 0 auto;">
+<section class="section-padding" style="background: linear-gradient(135deg, rgba(0, 136, 204, 0.15), rgba(16, 185, 129, 0.15)); border-top: 1px solid var(--border-glow); text-align: center;">
+    <div class="section-container" style="max-width: 900px;">
         <span class="emergency-pill" style="margin-bottom: 20px;">
             <span class="pulse-dot"></span>
             Disponibilidad Inmediata 24 Horas
         </span>
-        <h2 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; margin-bottom: 16px; color: #ffffff;">
+        <h2 class="section-title" style="margin-bottom: 16px;">
             ¿Problemas con el Gas o Sello Rojo en tu Hogar?
         </h2>
-        <p style="color: var(--text-secondary); font-size: 1.15rem; line-height: 1.6; margin-bottom: 35px;">
+        <p class="section-desc" style="margin-bottom: 30px;">
             No arriesgues la seguridad de tu familia ni destruyas tu casa picando cerámicas. Domingo Isaín te atiende con rapidez, seriedad y certificación SEC legal.
         </p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia con mi red de gas / sello rojo y necesito atención rápida.') ?>" class="btn-primary" target="_blank" style="padding: 16px 32px; font-size: 1.1rem;">
-                Enviar WhatsApp de Urgencia
+        <div class="hero-cta-group" style="justify-content: center;">
+            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia con mi red de gas / sello rojo y necesito atención rápida.') ?>" class="btn-primary" target="_blank">
+                <span>Enviar WhatsApp de Urgencia</span>
             </a>
-            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="padding: 16px 32px; font-size: 1.1rem;">
-                Llamar Directo al <?= PHONE_DISPLAY ?>
+            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary">
+                <span>Llamar Directo al <?= PHONE_DISPLAY ?></span>
             </a>
         </div>
     </div>
