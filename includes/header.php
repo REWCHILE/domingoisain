@@ -48,7 +48,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.0">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.1">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
@@ -110,11 +110,11 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
             <!-- Navegación Principal Desktop -->
             <nav class="nav-desktop" aria-label="Navegación principal">
                 <a href="<?= BASE_URL ?>/" class="nav-link <?= ($pageKey === '/') ? 'active' : '' ?>">Inicio</a>
-                <a href="<?= BASE_URL ?>/fugas/" class="nav-link <?= (strpos($pageKey, 'fuga') !== false) ? 'active' : '' ?>">Fugas Sin Romper</a>
-                <a href="<?= BASE_URL ?>/gasfiter-certificado/" class="nav-link <?= (strpos($pageKey, 'gasfiter-certificado') !== false || strpos($pageKey, 'autorizado') !== false) ? 'active' : '' ?>">Certificaciones & Títulos</a>
+                <a href="<?= BASE_URL ?>/fugas/" class="nav-link <?= (strpos($pageKey, 'fuga') !== false) ? 'active' : '' ?>">Fugas de Gas</a>
+                <a href="<?= BASE_URL ?>/gasfiter-certificado/" class="nav-link <?= (strpos($pageKey, 'gasfiter-certificado') !== false || strpos($pageKey, 'autorizado') !== false) ? 'active' : '' ?>">Certificaciones</a>
                 <a href="<?= BASE_URL ?>/instalador-sec/" class="nav-link <?= (strpos($pageKey, 'sec') !== false && strpos($pageKey, 'gasfiter-certificado') === false) ? 'active' : '' ?>">Sello Rojo SEC</a>
                 <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" class="nav-link <?= (strpos($pageKey, 'ultrasonido') !== false) ? 'active' : '' ?>">Ultrasonido</a>
-                <a href="<?= BASE_URL ?>/#faqs" class="nav-link">Preguntas (FAQ)</a>
+                <a href="<?= BASE_URL ?>/#faqs" class="nav-link">Preguntas FAQ</a>
                 <a href="<?= BASE_URL ?>/#cotizador" class="nav-link">Cotizar</a>
             </nav>
 
