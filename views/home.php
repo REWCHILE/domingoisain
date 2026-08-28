@@ -339,70 +339,100 @@
     </div>
 </section>
 
-<!-- 6. SECCIÓN DE CERTIFICADOS OFICIALES (CON MODAL LIGHTBOX) -->
+<!-- 6. SECCIÓN DE CERTIFICADOS Y DIPLOMAS OFICIALES (CON MODAL LIGHTBOX) -->
 <section class="section-padding certificates-section" id="certificados">
     <div class="section-container">
         <div class="section-header">
-            <span class="section-pill">Acreditación y Títulos Oficiales</span>
-            <h2 class="section-title">Diplomas, Certificaciones y <span class="gradient-text">Respaldo de Ingeniería</span></h2>
+            <span class="section-pill">Acreditación Académica y Legal</span>
+            <h2 class="section-title">Títulos Universitarios, Certificaciones y <span class="gradient-text">Respaldo Técnico</span></h2>
             <p class="section-desc">
-                Haz clic en cualquier documento para visualizarlo en alta resolución con zoom y validar las acreditaciones oficiales de Domingo Isaín.
+                La máxima solvencia técnica del mercado: Formación en la Pontificia Universidad Católica de Chile, especialización internacional en ingeniería y certificación legal SEC y ChileValora.
             </p>
         </div>
 
-        <div class="certs-grid">
-            <!-- Certificado 1: ChileValora ECERLAB Gasfiter en Fugas -->
+        <div class="certs-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+            <!-- 1. PUC: Solución de Patologías en la Vivienda -->
+            <div class="cert-card" 
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg"
+                 data-cert-title="Pontificia Universidad Católica de Chile - Escuela de Construcción Civil"
+                 data-cert-desc="Diploma oficial otorgado a Domingo Isaian Plaza Caamaño por la Pontificia Universidad Católica de Chile (DECON UC) tras cursar y aprobar 'Solución de Patologías en la Vivienda'.">
+                <div class="cert-img-box">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg" alt="Diploma PUC Solución de Patologías en la Vivienda" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <div class="cert-overlay-icon">
+                        <div class="cert-zoom-btn">🔍</div>
+                    </div>
+                </div>
+                <h3 class="cert-info-title">Pontificia Universidad Católica</h3>
+                <p class="cert-info-desc">Curso: Solución de Patologías en la Vivienda (Escuela de Construcción Civil).</p>
+            </div>
+
+            <!-- 2. PUC: Supervisión de Obras -->
+            <div class="cert-card" 
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg"
+                 data-cert-title="Pontificia Universidad Católica de Chile - Supervisión de Obras"
+                 data-cert-desc="Diploma otorgado a Domingo Isain Plaza Caamaño por la Escuela de Construcción Civil de la Pontificia Universidad Católica de Chile en 'Técnicas de Supervisión de Obras para Edificación'.">
+                <div class="cert-img-box">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg" alt="Diploma PUC Supervisión de Obras" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <div class="cert-overlay-icon">
+                        <div class="cert-zoom-btn">🔍</div>
+                    </div>
+                </div>
+                <h3 class="cert-info-title">Pontificia Universidad Católica</h3>
+                <p class="cert-info-desc">Curso: Técnicas de Supervisión de Obras para Edificación.</p>
+            </div>
+
+            <!-- 3. ChileValora ECERLAB Gasfíter en Fugas -->
             <div class="cert-card" 
                  data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg"
-                 data-cert-title="Certificado de Competencias Laborales: Gasfíter Certificado en Fugas (ChileValora / ECERLAB)"
-                 data-cert-desc="Acreditación oficial otorgada a Domingo Isaín Plaza Caamaño (RUN 12.738.961-6) por el Organismo Certificador ECERLAB SpA y ChileValora como instalador competente en detección, instalación de cañerías y reparación de fugas.">
+                 data-cert-title="ChileValora / ECERLAB SpA - Gasfíter Certificado en Fugas"
+                 data-cert-desc="Certificado oficial de competencias laborales otorgado a Domingo Isain Plaza Caamaño (RUN 12.738.961-6) acreditado en instalación de cañerías, interpretación de planos y reparación de fugas/filtraciones.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
                 </div>
                 <h3 class="cert-info-title">ChileValora · Gasfíter en Fugas</h3>
-                <p class="cert-info-desc">Competencia laboral en detección y reparación de fugas (RUN 12.738.961-6).</p>
+                <p class="cert-info-desc">Acreditación laboral oficial en detección y reparación de fugas (RUN 12.738.961-6).</p>
             </div>
 
-            <!-- Certificado 2: Prueba de Hermeticidad SOCATEC DS66 -->
+            <!-- 4. Escuela Electromecánica: Especialista en Gasfitería y Sanitarios -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp"
-                 data-cert-title="Certificado de Aprobación: Prueba de Hermeticidad en Instalaciones Interiores de Gas (SOCATEC)"
-                 data-cert-desc="Certificado técnico emitido por SOCATEC a Domingo Isaín Plaza Caamaño (RUT 12.738.961-6) por aprobación de curso técnico de pruebas manométricas de hermeticidad bajo normativa DS66.">
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg"
+                 data-cert-title="Escuela Electromecánica (NCH 2728 / ISO 9001)"
+                 data-cert-desc="Diploma de Educación Técnica otorgado a Don Domingo Isain Plaza Caamaño como Especialista Técnico con mención en Gasfitería y Sanitarios.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp" alt="Prueba de Hermeticidad SOCATEC" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg" alt="Diploma Especialista Técnico Gasfitería y Sanitarios" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
                 </div>
-                <h3 class="cert-info-title">SOCATEC · Hermeticidad DS66</h3>
-                <p class="cert-info-desc">Pruebas manométricas oficiales exigidas por distribuidoras de gas.</p>
+                <h3 class="cert-info-title">Gasfitería y Sanitarios</h3>
+                <p class="cert-info-desc">Especialista Técnico con Certificación Nacional NCH 2728 e Internacional ISO 9001.</p>
             </div>
 
-            <!-- Certificado 3: Euroinnova Ingeniería Química -->
+            <!-- 5. Euroinnova: Experto en Ingeniería Química -->
             <div class="cert-card" 
                  data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg"
-                 data-cert-title="Diploma: Experto en Ingeniería Química (Euroinnova Formación)"
-                 data-cert-desc="Título propio acreditado a nivel nacional e internacional otorgado a Domingo Isaín Plaza Caamaño con calificación SOBRESALIENTE en formación de ingeniería química aplicada.">
+                 data-cert-title="Euroinnova Formación - Experto en Ingeniería Química"
+                 data-cert-desc="Título propio acreditado otorgado a Domingo Isain Plaza Caamaño con calificación SOBRESALIENTE en el programa de formación de Ingeniería Química.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Euroinnova Ingeniería Química" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Euroinnova Ingeniería Química" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
                 </div>
                 <h3 class="cert-info-title">Euroinnova · Ing. Química</h3>
-                <p class="cert-info-desc">Especialización con calificación Sobresaliente en ingeniería química aplicada.</p>
+                <p class="cert-info-desc">Experto en Ingeniería Química con calificación Sobresaliente.</p>
             </div>
 
-            <!-- Certificado 4: Claustro Gómez Ingeniería Industrial -->
+            <!-- 6. Claustro Gómez: Técnico Superior en Ingeniería Industrial -->
             <div class="cert-card" 
                  data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg"
-                 data-cert-title="Título Propio: Técnico Superior en Ingeniería Industrial (Claustro Gómez Universitas)"
-                 data-cert-desc="Diploma oficial con registro CG1009 otorgado a Domingo Isaín Plaza Camaño (12.738.961-6) por haber completado satisfactoriamente los módulos de ingeniería industrial.">
+                 data-cert-title="Claustro Gómez Universitas - Ingeniería Industrial"
+                 data-cert-desc="Diploma con registro oficial CG1009 otorgado a Domingo Isain Plaza Camaño (12.738.961-6) como Técnico Superior Propio en Ingeniería Industrial.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -411,28 +441,58 @@
                 <p class="cert-info-desc">Técnico Superior Propio en Ingeniería Industrial (Registro CG1009).</p>
             </div>
 
-            <!-- Certificado 5: Prodoral R6-1 Alemania -->
+            <!-- 7. Claustro Gómez: Máster Propio en Ecología y Estudios Ambientales -->
+            <div class="cert-card" 
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg"
+                 data-cert-title="Claustro Gómez Universitas - Máster en Ecología y Estudios Ambientales"
+                 data-cert-desc="Diploma con registro oficial CG1010 otorgado a Domingo Isain Plaza Camaño (12.738.961-6) correspondiente al Máster Propio en Ecología y Estudios Ambientales.">
+                <div class="cert-img-box">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg" alt="Diploma Máster en Ecología y Estudios Ambientales" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <div class="cert-overlay-icon">
+                        <div class="cert-zoom-btn">🔍</div>
+                    </div>
+                </div>
+                <h3 class="cert-info-title">Máster Estudios Ambientales</h3>
+                <p class="cert-info-desc">Máster Propio en Ecología y Estudios Ambientales (Registro CG1010).</p>
+            </div>
+
+            <!-- 8. SOCATEC: Prueba de Hermeticidad DS66 -->
+            <div class="cert-card" 
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp"
+                 data-cert-title="SOCATEC - Prueba de Hermeticidad en Instalaciones Interiores de Gas"
+                 data-cert-desc="Certificado técnico emitido por SOCATEC a Domingo Isain Plaza Caamaño (RUT 12.738.961-6) por aprobación de curso técnico de pruebas manométricas bajo DS66.">
+                <div class="cert-img-box">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp" alt="Prueba de Hermeticidad SOCATEC" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <div class="cert-overlay-icon">
+                        <div class="cert-zoom-btn">🔍</div>
+                    </div>
+                </div>
+                <h3 class="cert-info-title">SOCATEC · Hermeticidad DS66</h3>
+                <p class="cert-info-desc">Pruebas manométricas oficiales exigidas por distribuidoras de gas.</p>
+            </div>
+
+            <!-- 9. Prodoral R6-1 Alemania -->
             <div class="cert-card" 
                  data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-prodoral.webp"
-                 data-cert-title="Certificado de Aplicador Oficial Prodoral R6-1 (Alemania)"
-                 data-cert-desc="Homologación técnica internacional bajo norma DIN EN 13090 / DVGW para el sellado no destructivo de cañerías interiores de gas con garantía de 3 años.">
+                 data-cert-title="Prodoral R6-1 (Alemania) - Homologación DIN EN 13090"
+                 data-cert-desc="Homologación técnica internacional para el sellado no destructivo de cañerías de gas desde el interior con 3 años de garantía.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-prodoral.webp" alt="Certificado Prodoral R6-1" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-prodoral.webp" alt="Certificado Prodoral R6-1" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
                 </div>
                 <h3 class="cert-info-title">Prodoral R6-1 Alemania</h3>
-                <p class="cert-info-desc">Aplicador oficial autorizado para sellado sin romper con 3 años de garantía.</p>
+                <p class="cert-info-desc">Aplicador oficial autorizado para sellado sin picar muros.</p>
             </div>
 
-            <!-- Certificado 6: Licencia SEC Clase 3 y Código QR -->
+            <!-- 10. Licencia SEC Clase 3 y Código QR -->
             <div class="cert-card" 
                  data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp"
-                 data-cert-title="Licencia de Instalador de Gas SEC Clase 3 (Superintendencia de Electricidad y Combustibles)"
-                 data-cert-desc="Acreditación legal de la SEC para Domingo Isaín Plaza Caamaño (RUT 12.738.961-6), facultado para regularizar sellos rojos, tramitar sellos verdes y ejecutar obras de gas normadas.">
+                 data-cert-title="Superintendencia de Electricidad y Combustibles (SEC) - Licencia Clase 3"
+                 data-cert-desc="Acreditación legal de la SEC para Domingo Isaín Plaza Caamaño (RUT 12.738.961-6), facultado para regularizar sellos rojos, tramitar sellos verdes y certificar instalaciones de gas.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp" alt="Licencia SEC Gasfíter Autorizado" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp" alt="Licencia SEC Gasfíter Autorizado" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>

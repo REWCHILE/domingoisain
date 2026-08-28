@@ -111,8 +111,8 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
             <nav class="nav-desktop" aria-label="Navegación principal">
                 <a href="<?= BASE_URL ?>/" class="nav-link <?= ($pageKey === '/') ? 'active' : '' ?>">Inicio</a>
                 <a href="<?= BASE_URL ?>/fugas/" class="nav-link <?= (strpos($pageKey, 'fuga') !== false) ? 'active' : '' ?>">Fugas Sin Romper</a>
-                <a href="<?= BASE_URL ?>/gasfiter/" class="nav-link <?= (strpos($pageKey, 'gasfiter') !== false && strpos($pageKey, 'sec') === false) ? 'active' : '' ?>">Servicios</a>
-                <a href="<?= BASE_URL ?>/instalador-sec/" class="nav-link <?= (strpos($pageKey, 'sec') !== false) ? 'active' : '' ?>">Certificación SEC</a>
+                <a href="<?= BASE_URL ?>/gasfiter-certificado/" class="nav-link <?= (strpos($pageKey, 'gasfiter-certificado') !== false || strpos($pageKey, 'autorizado') !== false) ? 'active' : '' ?>">Certificaciones & Títulos</a>
+                <a href="<?= BASE_URL ?>/instalador-sec/" class="nav-link <?= (strpos($pageKey, 'sec') !== false && strpos($pageKey, 'gasfiter-certificado') === false) ? 'active' : '' ?>">Sello Rojo SEC</a>
                 <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" class="nav-link <?= (strpos($pageKey, 'ultrasonido') !== false) ? 'active' : '' ?>">Ultrasonido</a>
                 <a href="<?= BASE_URL ?>/#faqs" class="nav-link">Preguntas (FAQ)</a>
                 <a href="<?= BASE_URL ?>/#cotizador" class="nav-link">Cotizar</a>
@@ -143,12 +143,12 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
                 <button type="button" id="mobile-drawer-close" style="background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;">✕</button>
             </div>
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <a href="<?= BASE_URL ?>/" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Inicio</a>
-                <a href="<?= BASE_URL ?>/fugas/" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Fugas de Gas Sin Romper</a>
-                <a href="<?= BASE_URL ?>/gasfiter/" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Servicios de Gasfitería</a>
-                <a href="<?= BASE_URL ?>/instalador-sec/" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Certificaciones SEC & DS66</a>
-                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Detección con Ultrasonido</a>
-                <a href="<?= BASE_URL ?>/#faqs" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Preguntas Frecuentes</a>
+                <a href="<?= BASE_URL ?>/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Inicio</a>
+                <a href="<?= BASE_URL ?>/fugas/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Fugas de Gas Sin Romper</a>
+                <a href="<?= BASE_URL ?>/gasfiter-certificado/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Certificaciones & Títulos</a>
+                <a href="<?= BASE_URL ?>/instalador-sec/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Levantamiento Sello Rojo SEC</a>
+                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Geófono & Ultrasonido</a>
+                <a href="<?= BASE_URL ?>/#faqs" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Preguntas Frecuentes</a>
                 <a href="<?= BASE_URL ?>/#cotizador" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Cotizador en Vivo</a>
             </div>
         </div>

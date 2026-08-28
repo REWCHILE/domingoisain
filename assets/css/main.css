@@ -1628,6 +1628,196 @@ select option, .calc-select option {
 }
 
 /* --------------------------------------------------------------------------
+   SECCIONES EXCLUSIVAS DE CERTIFICADOS & MASTER EN DETALLE
+   -------------------------------------------------------------------------- */
+.cert-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(16px);
+  transition: all var(--transition-normal);
+}
+
+.cert-detail-card:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 15px 40px rgba(0, 136, 204, 0.2);
+  transform: translateY(-3px);
+}
+
+.cert-detail-card.reverse-layout {
+  grid-template-columns: 1.35fr 1fr;
+}
+
+.cert-detail-card.reverse-layout .cert-detail-visual {
+  order: 2;
+}
+
+.cert-detail-card.reverse-layout .cert-detail-content {
+  order: 1;
+}
+
+.cert-detail-visual {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform var(--transition-normal);
+}
+
+.cert-detail-visual:hover {
+  transform: scale(1.02);
+}
+
+.cert-detail-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-zoom-hint {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(6, 10, 18, 0.9);
+  color: var(--brand-cyan);
+  border: 1px solid var(--border-glow);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(8px);
+}
+
+.cert-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cert-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 136, 204, 0.12);
+  border: 1px solid var(--border-brand);
+  color: var(--brand-cyan);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  width: fit-content;
+}
+
+.cert-header-badge.badge-uc {
+  background: rgba(234, 179, 8, 0.12);
+  border-color: rgba(234, 179, 8, 0.35);
+  color: #facc15;
+}
+
+.cert-header-badge.badge-sec {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.cert-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.cert-institution-meta {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cert-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cert-section-block {
+  background: rgba(6, 10, 18, 0.5);
+  border-left: 3px solid var(--brand-blue);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.cert-section-block.block-sec {
+  border-left-color: var(--sec-green);
+}
+
+.cert-block-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cert-block-text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.cert-faq-highlight {
+  background: rgba(56, 217, 250, 0.05);
+  border: 1px dashed var(--border-glow);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.cert-faq-question {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--brand-cyan);
+  margin-bottom: 4px;
+}
+
+.cert-faq-answer {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
    RESPONSIVE DESIGN (MEDIA QUERIES)
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {

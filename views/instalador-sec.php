@@ -143,6 +143,19 @@
             </div>
         </div>
     </div>
+<!-- Respaldo de Ingeniería y Títulos Universitarios -->
+<section class="section-padding" style="border-top: 1px solid var(--border-subtle); background: linear-gradient(135deg, rgba(0, 136, 204, 0.08), rgba(16, 185, 129, 0.08)); text-align: center;">
+    <div class="section-container" style="max-width: 900px;">
+        <span class="section-pill">Solvencia Técnica de Nivel Superior</span>
+        <h2 class="section-title">Formación en la <span class="gradient-text">Pontificia Universidad Católica</span> y Postgrados en Ingeniería</h2>
+        <p class="section-desc" style="margin-bottom: 28px;">
+            Domingo Isaín cuenta con 10 títulos y acreditaciones oficiales (PUC, SEC, ChileValora, Euroinnova y Claustro Gómez) para garantizar que tu instalación de gas quede regularizada bajo norma legal y con 0% de riesgo.
+        </p>
+        <a href="<?= BASE_URL ?>/gasfiter-certificado/" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+            <span>Ver los 10 Diplomas y Certificaciones en Detalle</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+    </div>
 </section>
 
 <?php include __DIR__ . '/../includes/quote-calculator.php'; ?>
