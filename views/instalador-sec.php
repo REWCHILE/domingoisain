@@ -1,0 +1,149 @@
+<?php
+// views/instalador-sec.php - Regularización de Sello Rojo y Normativa DS66
+?>
+
+<section class="hero-section" style="padding-top: 40px; padding-bottom: 50px;">
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-container">
+        <div class="hero-content-pane">
+            <span class="emergency-pill" style="margin-bottom: 16px;">
+                <span class="pulse-dot"></span>
+                Especialista en Levantamiento de Sello Rojo
+            </span>
+            <h1 class="hero-title">
+                Regularización de <span class="gradient-text">Sellos Rojos y Amarillos SEC</span>
+            </h1>
+            <p class="hero-lead">
+                ¿Tu edificio o vivienda fue calificada con Sello Rojo en la inspección periódica de gas? Realizamos el diagnóstico técnico, corrección de anomalías y tramitamos la obtención de tu <strong>Sello Verde</strong> conforme al Decreto Supremo Nº 66.
+            </p>
+            <div class="hero-guarantees">
+                <div class="guarantee-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Solución de fugas y ventilaciones</span>
+                </div>
+                <div class="guarantee-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Informe técnico para certificadoras</span>
+                </div>
+                <div class="guarantee-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Pruebas de hermeticidad manométricas</span>
+                </div>
+            </div>
+            <div class="hero-cta-group">
+                <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo Sello Rojo de gas y necesito regularizar mi instalación.') ?>" class="btn-primary" target="_blank">
+                    <span>Regularizar Sello Rojo Ahora</span>
+                </a>
+                <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary">
+                    <span>Llamar al <?= PHONE_DISPLAY ?></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Columna Visual: Slider de Certificados y Diplomas Oficiales -->
+        <div class="hero-visual-pane">
+            <div class="hero-visual-card" id="cert-slider-card">
+                <div class="hero-slider-wrapper">
+                    <div class="hero-slider-track" id="cert-slider-track">
+                        <!-- Slide 1: Hermeticidad SOCATEC -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">📜 SOCATEC · Hermeticidad DS66</span>
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp" alt="Certificado Prueba Hermeticidad SOCATEC" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                        </div>
+
+                        <!-- Slide 2: ChileValora ECERLAB -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">🏆 ChileValora · Gasfíter en Fugas</span>
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB Gasfíter en Fugas" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                        </div>
+
+                        <!-- Slide 3: Euroinnova Ingeniería Química -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">🎓 Euroinnova · Ingeniería Química</span>
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Experto en Ingeniería Química Euroinnova" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                        </div>
+
+                        <!-- Slide 4: Claustro Gómez Ingeniería Industrial -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">🏛️ Claustro Gómez · Ing. Industrial</span>
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Técnico Superior en Ingeniería Industrial" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                        </div>
+
+                        <!-- Slide 5: Licencia SEC Clase 3 -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">🛡️ Licencia Oficial SEC Clase 3</span>
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp" alt="Licencia SEC Gasfíter Autorizado" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                        </div>
+
+                        <!-- Slide 6: QR Validación SEC -->
+                        <div class="hero-slide">
+                            <span class="hero-slide-tag">📱 Código QR de Validación SEC</span>
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.png" alt="Código QR Validación SEC Domingo Isaín" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 14px;">
+                        </div>
+                    </div>
+
+                    <!-- Botones de Navegación -->
+                    <button type="button" class="hero-slider-btn hero-slider-prev" id="cert-slider-prev" aria-label="Certificado anterior">❮</button>
+                    <button type="button" class="hero-slider-btn hero-slider-next" id="cert-slider-next" aria-label="Certificado siguiente">❯</button>
+
+                    <!-- Paginación Dots -->
+                    <div class="hero-slider-dots" id="cert-slider-dots">
+                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1"></button>
+                        <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Certificado 2"></button>
+                        <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Certificado 3"></button>
+                        <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Certificado 4"></button>
+                        <button type="button" class="hero-slider-dot" data-slide="4" aria-label="Certificado 5"></button>
+                        <button type="button" class="hero-slider-dot" data-slide="5" aria-label="Certificado 6"></button>
+                    </div>
+                </div>
+
+                <!-- Insignia Inferior -->
+                <div class="hero-floating-badge">
+                    <div>
+                        <div class="badge-info-title">Acreditación Técnica y Académica</div>
+                        <div class="badge-info-sub">RUT: 12.738.961-6 · ChileValora · SEC · Euroinnova</div>
+                    </div>
+                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar en portal oficial SEC">
+                        <span>Verificar SEC</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Causas Comunes de Sello Rojo y Soluciones -->
+<section class="section-padding" style="background: var(--bg-surface);">
+    <div class="section-container">
+        <div class="section-header">
+            <span class="section-pill">Diagnóstico y Corrección</span>
+            <h2 class="section-title">¿Cuáles Son las <span class="gradient-text">Fallas Más Frecuentes</span> del Sello Rojo?</h2>
+            <p class="section-desc">
+                Resolvemos cada observación técnica señalada por la empresa inspectora:
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-badge badge-amber">Falla Crítica #1</span>
+                <h3 class="service-title">Microfugas en Redes Interiores</h3>
+                <p class="service-text">Caída de presión en manómetro. La solucionamos sin picar mediante sellado polimérico alemán Prodoral R6-1 garantizado.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge badge-cyan">Falla Crítica #2</span>
+                <h3 class="service-title">Ventilaciones Insuficientes o Tapadas</h3>
+                <p class="service-text">Adecuamos e instalamos celosías superiores e inferiores reglamentarias para evitar acumulación de monóxido de carbono.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge badge-green">Falla Crítica #3</span>
+                <h3 class="service-title">Ductos de Evacuación Defectuosos</h3>
+                <p class="service-text">Reemplazo de tubos corrugados no autorizados por ductos lisos metálicos con tiro adecuado y sombrerete según norma SEC.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php include __DIR__ . '/../includes/quote-calculator.php'; ?>
+<?php include __DIR__ . '/../includes/faq-section.php'; ?>
