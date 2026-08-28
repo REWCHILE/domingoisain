@@ -48,7 +48,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.2">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.3">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">

@@ -1853,11 +1853,26 @@ select option, .calc-select option {
   .header-actions .btn-header-call {
     display: none !important;
   }
-  .logo-texts {
-    display: none !important;
+  .logo-brand {
+    gap: 10px !important;
   }
   .logo-brand img {
-    height: 42px !important;
+    height: 38px !important;
+  }
+  .logo-texts {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .logo-title {
+    font-size: 1rem !important;
+    line-height: 1.1;
+    font-weight: 900;
+  }
+  .logo-subtitle {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    white-space: nowrap;
   }
   .mobile-menu-btn {
     display: flex !important;
