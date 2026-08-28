@@ -229,13 +229,37 @@ body {
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
-.sec-badge-header {
+.top-emergency-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-emergency-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-emergency-phone {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--sec-green);
-  font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.top-emergency-phone:hover {
+  color: var(--brand-cyan);
+}
+
+.top-emergency-text {
+  font-size: 0.85rem;
+  color: #cbd5e1;
 }
 
 .header-main {
@@ -1987,10 +2011,42 @@ select option, .calc-select option {
     transform: scale(0.92) !important;
     background: var(--brand-blue) !important;
   }
+
+  /* Barra Superior de Emergencias Móvil - 1 Sola Línea Impecable */
+  .top-emergency-bar {
+    padding: 6px 14px !important;
+  }
   .top-emergency-container {
-    justify-content: center;
-    text-align: center;
-    padding: 6px 12px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .top-emergency-text {
+    display: none !important;
+  }
+  .top-emergency-left {
+    gap: 6px !important;
+  }
+  .emergency-pill {
+    padding: 3px 8px !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.3px !important;
+    white-space: nowrap !important;
+  }
+  .top-emergency-right {
+    gap: 10px !important;
+  }
+  .sec-badge-header {
+    display: none !important;
+  }
+  .top-emergency-phone {
+    font-size: 0.84rem !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
   }
 
   /* Hero Section Full Responsive */
