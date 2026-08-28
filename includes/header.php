@@ -48,7 +48,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.3">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.4">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
@@ -132,40 +132,69 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
         </div>
     </header>
 
-    <!-- Menú Móvil Desplegable -->
-    <div id="mobile-drawer" style="position: fixed; inset: 0; background: rgba(3, 6, 12, 0.96); backdrop-filter: blur(20px); z-index: 10000; display: none; flex-direction: column; padding: 24px; justify-content: space-between;">
+    <!-- Overlay Oscuro de Fondo para Menú Móvil -->
+    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+
+    <!-- Menú Móvil Desplegable (Deslizamiento de Izquierda a Derecha) -->
+    <aside id="mobile-drawer" class="mobile-drawer-panel" aria-label="Menú Móvil" aria-hidden="true">
         <div>
+            <!-- Encabezado del Menú -->
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--border-subtle);">
                 <div style="display: flex; align-items: center; gap: 12px;">
-                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín" style="height: 48px; width: auto; object-fit: contain;">
+                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín" style="height: 44px; width: auto; object-fit: contain;">
                     <div>
-                        <span style="font-weight: 800; font-size: 1.05rem; color: #fff; display: block; line-height: 1.1;">DOMINGO ISAÍN</span>
-                        <span style="color: var(--brand-cyan); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">Técnico en Ingeniería · SEC</span>
+                        <span style="font-weight: 800; font-size: 1rem; color: #fff; display: block; line-height: 1.1;">DOMINGO ISAÍN</span>
+                        <span style="color: var(--brand-cyan); font-size: 0.68rem; font-weight: 700; text-transform: uppercase;">Técnico en Ingeniería · SEC</span>
                     </div>
                 </div>
-                <button type="button" id="mobile-drawer-close" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); color: #fff; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer;">✕</button>
+                <button type="button" id="mobile-drawer-close" aria-label="Cerrar Menú" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; cursor: pointer;">✕</button>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 14px;">
-                <a href="<?= BASE_URL ?>/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Inicio</a>
-                <a href="<?= BASE_URL ?>/fugas/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Fugas de Gas Sin Romper</a>
-                <a href="<?= BASE_URL ?>/gasfiter-certificado/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Certificaciones & Títulos</a>
-                <a href="<?= BASE_URL ?>/instalador-sec/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Levantamiento Sello Rojo SEC</a>
-                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Geófono & Ultrasonido</a>
-                <a href="<?= BASE_URL ?>/#faqs" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Preguntas Frecuentes</a>
-                <a href="<?= BASE_URL ?>/#cotizador" style="color: var(--brand-cyan); text-decoration: none; font-size: 1.1rem; font-weight: 700;">Cotizador en Vivo</a>
-            </div>
+
+            <!-- Lista de Enlaces -->
+            <nav style="display: flex; flex-direction: column; gap: 6px;">
+                <a href="<?= BASE_URL ?>/" class="mobile-drawer-link <?= ($pageKey === '/') ? 'active' : '' ?>">
+                    <span>Inicio</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/fugas/" class="mobile-drawer-link <?= (strpos($pageKey, 'fuga') !== false) ? 'active' : '' ?>">
+                    <span>Fugas de Gas Sin Romper</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/gasfiter-certificado/" class="mobile-drawer-link <?= (strpos($pageKey, 'gasfiter-certificado') !== false || strpos($pageKey, 'autorizado') !== false) ? 'active' : '' ?>">
+                    <span>Certificaciones & Títulos</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/instalador-sec/" class="mobile-drawer-link <?= (strpos($pageKey, 'sec') !== false && strpos($pageKey, 'gasfiter-certificado') === false) ? 'active' : '' ?>">
+                    <span>Levantamiento Sello Rojo SEC</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" class="mobile-drawer-link <?= (strpos($pageKey, 'ultrasonido') !== false) ? 'active' : '' ?>">
+                    <span>Geófono & Ultrasonido</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/#faqs" class="mobile-drawer-link">
+                    <span>Preguntas Frecuentes</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="<?= BASE_URL ?>/#cotizador" class="mobile-drawer-link" style="color: var(--brand-cyan);">
+                    <span>Cotizador en Vivo</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+            </nav>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
-            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia de gas / sanitarios y necesito atención técnica.') ?>" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #10b981, #059669); gap: 8px;" target="_blank" rel="noopener noreferrer">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.758 0-3.415-.456-4.864-1.258l-5.136 1.346 1.371-5.012c-.879-1.493-1.371-3.23-1.371-5.076 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+
+        <!-- Botones de Acción al Fondo del Drawer -->
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--border-subtle);">
+            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia de gas / sanitarios y necesito atención técnica.') ?>" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #10b981, #059669); gap: 8px; font-size: 0.95rem; padding: 13px;" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.758 0-3.415-.456-4.864-1.258l-5.136 1.346 1.371-5.012c-.879-1.493-1.371-3.23-1.371-5.076 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
                 <span>WhatsApp Urgencias</span>
             </a>
-            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="width: 100%; justify-content: center; gap: 8px;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="width: 100%; justify-content: center; gap: 8px; font-size: 0.95rem; padding: 13px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <span>Llamar: <?= PHONE_DISPLAY ?></span>
             </a>
         </div>
-    </div>
+    </aside>
     <script>
         const mdToggle = document.getElementById('mobile-menu-toggle');
         const mdDrawer = document.getElementById('mobile-drawer');

@@ -87,8 +87,8 @@
 <?php include __DIR__ . '/modal-certificates.php'; ?>
 
 <!-- Scripts JavaScript -->
-<script src="<?= BASE_URL ?>/assets/js/cursor.js?v=3.0"></script>
-<script src="<?= BASE_URL ?>/assets/js/main.js?v=3.0"></script>
+<script src="<?= BASE_URL ?>/assets/js/cursor.js?v=3.4"></script>
+<script src="<?= BASE_URL ?>/assets/js/main.js?v=3.4"></script>
 
 </body>
 </html>

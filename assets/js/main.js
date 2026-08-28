@@ -203,22 +203,68 @@ document.addEventListener('DOMContentLoaded', function() {
   updateQuoteSummary();
 
   /* --------------------------------------------------------------------------
-     5. MENÚ MÓVIL (MOBILE DRAWER)
+     5. MENÚ MÓVIL DESLIZABLE (OFF-CANVAS DRAWER: IZQUIERDA A DERECHA)
      -------------------------------------------------------------------------- */
   const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const mobileCloseBtn = document.getElementById('mobile-drawer-close');
+  const mobileOverlay = document.getElementById('mobile-drawer-overlay');
+  const mobileDrawerLinks = document.querySelectorAll('.mobile-drawer-link');
 
-  if (mobileMenuBtn && mobileDrawer) {
-    mobileMenuBtn.addEventListener('click', function() {
-      mobileDrawer.classList.toggle('drawer-open');
+  function openDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.add('drawer-open');
+    if (mobileOverlay) mobileOverlay.classList.add('drawer-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    if (mobileDrawer) mobileDrawer.classList.remove('drawer-open');
+    if (mobileOverlay) mobileOverlay.classList.remove('drawer-open');
+    document.body.style.overflow = '';
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDrawer();
     });
   }
 
-  if (mobileCloseBtn && mobileDrawer) {
-    mobileCloseBtn.addEventListener('click', function() {
-      mobileDrawer.classList.remove('drawer-open');
+  if (mobileCloseBtn) {
+    mobileCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeDrawer();
     });
+  }
+
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', closeDrawer);
+  }
+
+  mobileDrawerLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  // Cerrar con tecla Escape
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDrawer();
+  });
+
+  // Gesto Swipe para cerrar deslizando hacia la izquierda
+  if (mobileDrawer) {
+    let drawerTouchStartX = 0;
+    let drawerTouchEndX = 0;
+
+    mobileDrawer.addEventListener('touchstart', (e) => {
+      drawerTouchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    mobileDrawer.addEventListener('touchend', (e) => {
+      drawerTouchEndX = e.changedTouches[0].screenX;
+      if (drawerTouchStartX - drawerTouchEndX > 50) {
+        closeDrawer();
+      }
+    }, { passive: true });
   }
 
   /* --------------------------------------------------------------------------
