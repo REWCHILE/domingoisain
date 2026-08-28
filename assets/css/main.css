@@ -1848,10 +1848,21 @@ select option, .calc-select option {
 
 @media (max-width: 768px) {
   .nav-desktop {
-    display: none;
+    display: none !important;
+  }
+  .header-actions .btn-header-call {
+    display: none !important;
+  }
+  .logo-texts {
+    display: none !important;
+  }
+  .logo-brand img {
+    height: 42px !important;
   }
   .mobile-menu-btn {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
   .top-emergency-container {
     justify-content: center;
@@ -1859,5 +1870,16 @@ select option, .calc-select option {
   }
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+  .cert-detail-card, .cert-detail-card.reverse-layout {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    gap: 22px;
+  }
+  .cert-detail-card.reverse-layout .cert-detail-visual {
+    order: 1;
+  }
+  .cert-detail-card.reverse-layout .cert-detail-content {
+    order: 2;
   }
 }

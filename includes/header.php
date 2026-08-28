@@ -48,7 +48,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.1">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.2">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
@@ -133,31 +133,36 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     </header>
 
     <!-- Menú Móvil Desplegable -->
-    <div id="mobile-drawer" style="position: fixed; inset: 0; background: rgba(3, 6, 12, 0.95); backdrop-filter: blur(20px); z-index: 10000; display: none; flex-direction: column; padding: 24px; justify-content: space-between;">
+    <div id="mobile-drawer" style="position: fixed; inset: 0; background: rgba(3, 6, 12, 0.96); backdrop-filter: blur(20px); z-index: 10000; display: none; flex-direction: column; padding: 24px; justify-content: space-between;">
         <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid var(--border-subtle);">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín" style="height: 44px; width: auto; object-fit: contain;">
-                    <span style="font-weight: 800; font-size: 1.05rem; color: #fff;">DOMINGO ISAÍN</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--border-subtle);">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín" style="height: 48px; width: auto; object-fit: contain;">
+                    <div>
+                        <span style="font-weight: 800; font-size: 1.05rem; color: #fff; display: block; line-height: 1.1;">DOMINGO ISAÍN</span>
+                        <span style="color: var(--brand-cyan); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">Técnico en Ingeniería · SEC</span>
+                    </div>
                 </div>
-                <button type="button" id="mobile-drawer-close" style="background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;">✕</button>
+                <button type="button" id="mobile-drawer-close" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-subtle); color: #fff; width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer;">✕</button>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-                <a href="<?= BASE_URL ?>/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Inicio</a>
-                <a href="<?= BASE_URL ?>/fugas/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Fugas de Gas Sin Romper</a>
-                <a href="<?= BASE_URL ?>/gasfiter-certificado/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Certificaciones & Títulos</a>
-                <a href="<?= BASE_URL ?>/instalador-sec/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Levantamiento Sello Rojo SEC</a>
-                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Geófono & Ultrasonido</a>
-                <a href="<?= BASE_URL ?>/#faqs" style="color: #ffffff; text-decoration: none; font-size: 1.15rem; font-weight: 700;">Preguntas Frecuentes</a>
-                <a href="<?= BASE_URL ?>/#cotizador" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700; padding: 8px 0;">Cotizador en Vivo</a>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+                <a href="<?= BASE_URL ?>/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Inicio</a>
+                <a href="<?= BASE_URL ?>/fugas/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Fugas de Gas Sin Romper</a>
+                <a href="<?= BASE_URL ?>/gasfiter-certificado/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Certificaciones & Títulos</a>
+                <a href="<?= BASE_URL ?>/instalador-sec/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Levantamiento Sello Rojo SEC</a>
+                <a href="<?= BASE_URL ?>/deteccion-con-ultrasonido/" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Geófono & Ultrasonido</a>
+                <a href="<?= BASE_URL ?>/#faqs" style="color: #ffffff; text-decoration: none; font-size: 1.1rem; font-weight: 700;">Preguntas Frecuentes</a>
+                <a href="<?= BASE_URL ?>/#cotizador" style="color: var(--brand-cyan); text-decoration: none; font-size: 1.1rem; font-weight: 700;">Cotizador en Vivo</a>
             </div>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-            <a href="tel:<?= PHONE_RAW ?>" class="btn-primary" style="width: 100%;">
-                Llamar Urgencias: <?= PHONE_DISPLAY ?>
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
+            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia de gas / sanitarios y necesito atención técnica.') ?>" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #10b981, #059669); gap: 8px;" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.758 0-3.415-.456-4.864-1.258l-5.136 1.346 1.371-5.012c-.879-1.493-1.371-3.23-1.371-5.076 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                <span>WhatsApp Urgencias</span>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, necesito atención de gasfitería.') ?>" class="btn-header-call" style="justify-content: center; width: 100%;" target="_blank">
-                WhatsApp Directo
+            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="width: 100%; justify-content: center; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Llamar: <?= PHONE_DISPLAY ?></span>
             </a>
         </div>
     </div>
