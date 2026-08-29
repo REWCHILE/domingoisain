@@ -473,14 +473,14 @@
                     <div class="cert-section-block">
                         <div class="cert-block-title">💡 ¿Qué significa este título para ti como cliente?</div>
                         <p class="cert-block-text">
-                            Es la solución milagrosa para quienes no quieren que albañiles rompan sus cerámicas, porcelanatos o pisos flotantes. Se inyecta una resina líquida alemana por dentro de la cañería que polimeriza y sella todas las microfugas en 4 horas, sin picar un solo centímetro de pared.
+                            Es la solución definitiva para quienes no quieren que albañiles rompan sus cerámicas, porcelanatos o pisos. Se inyecta el polímero alemán Prodoral R6-1 a presión dentro de la cañería, sellando todas las microfugas en <strong>solo 30 minutos a 2 horas</strong> (en departamentos chicos toma apenas 30 a 45 min), sin picar un solo centímetro de muro.
                         </p>
                     </div>
 
                     <div class="cert-section-block">
                         <div class="cert-block-title">🛠️ Grado técnico y capacidad para resolver tu problema:</div>
                         <p class="cert-block-text">
-                            Domingo Isaín es de los pocos instaladores en Chile capacitados y equipados con la maquinaria de inyección presurizada alemana Prodoral R6-1, entregando <strong>Garantía por Escrito de 3 Años</strong> y certificado para la compañía de gas.
+                            A diferencia de resinas rígidas que se quiebran con temblores, <strong>Prodoral R6-1 no se cristaliza</strong>: conserva una elasticidad permanente tipo silicona industrial (comprobado en terreno por más de 5 años), lo que le permite absorber sismos y vibraciones sin fisuras. Domingo Isaín y su equipo se dedican mayoritariamente a este procedimiento con equipamiento especializado, entregando <strong>Garantía por Escrito de 3 Años</strong> y certificado oficial DS66.
                         </p>
                     </div>
 

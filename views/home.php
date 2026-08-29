@@ -164,12 +164,12 @@
                 <span class="service-badge badge-amber">Tecnología Alemana Exclusiva</span>
                 <h3 class="service-title">Sellado de Fugas sin Romper</h3>
                 <p class="service-text">
-                    Inyección de polímero alemán Prodoral R6-1 a presión en redes de cobre o fierro. Sella porosidades y microfugas desde el interior en pocas horas sin picar cerámicas ni pisos.
+                    Inyección de polímero alemán Prodoral R6-1 a presión en redes de cobre o fierro. Sella porosidades desde el interior en solo 30 min a 2 horas sin picar cerámicas ni pisos. Polímero elástico permanente resistente a vibraciones y sismos (DIN EN 13090).
                 </p>
                 <ul class="service-features-list">
-                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> 100% no invasivo (sin polvo ni escombros)</li>
-                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Homologación DIN EN 13090 / DVGW</li>
-                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Garantía por escrito de 3 años</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Listo en 30 min a 2 horas máx. (sin polvo ni escombros)</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> No se cristaliza: Elástico permanente y antisísmico</li>
+                    <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Homologación DIN EN 13090 / Garantía 3 Años</li>
                 </ul>
                 <a href="<?= BASE_URL ?>/fugas/" class="service-card-btn">
                     <span>Ver Detalles de Sellado</span>
@@ -302,8 +302,9 @@
                 </div>
                 <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; color: #ffffff; font-size: 0.95rem; font-weight: 600;">
                     <li>✨ <strong>0% Daño:</strong> Muros, pisos y cerámicas quedan intactos.</li>
-                    <li>✨ <strong>En 4 a 6 horas:</strong> Trabajo limpio terminado en el mismo día.</li>
-                    <li>✨ <strong>Ahorro de hasta un 70%</strong> en gastos de reconstrucción.</li>
+                    <li>✨ <strong>Listo en 30 min a 2 horas:</strong> Trabajo limpio y sellado en tiempo récord el mismo día.</li>
+                    <li>✨ <strong>Polímero Elástico Antivibraciones:</strong> No se cristaliza ni se quiebra; absorbe sismos sin fisuras (probado 5+ años).</li>
+                    <li>✨ <strong>Ahorro de hasta un 70%</strong> en gastos de albañilería y reconstrucción.</li>
                     <li>✨ <strong>Garantía por escrito de 3 años</strong> + Certificado DS66.</li>
                 </ul>
             </div>

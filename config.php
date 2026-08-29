@@ -54,7 +54,7 @@ $FAQS = [
     [
         'category' => 'Tecnología No Invasiva',
         'question' => '¿Qué es exactamente Prodoral R6-1 y qué certificación tiene?',
-        'answer' => 'Prodoral R6-1 es un producto sellante de origen alemán con homologación técnica internacional (norma DIN EN 13090 y aprobación DVGW). Ha sido rigurosamente testeado para soportar gas licuado (GLP) y gas natural (GN). Tras su aplicación y polimerización, la cañería queda herméticamente sellada y se somete a una prueba de presión con manómetro digital de alta precisión conforme a la normativa DS66 de la SEC.'
+        'answer' => 'Prodoral R6-1 es un polímero sellante de origen alemán con homologación técnica internacional (norma DIN EN 13090 y aprobación DVGW). A diferencia de resinas convencionales que se cristalizan o quiebran con sismos, Prodoral R6-1 mantiene una consistencia elástica permanente tipo silicona industrial (verificado en terreno por más de 5 años). Esto le otorga una altísima resistencia contra vibraciones y movimientos estructurales sin fisurarse, garantizando 0 fugas bajo la estricta normativa DS66 de la SEC.'
     ],
     [
         'category' => 'Garantía y Legalidad',
@@ -74,7 +74,7 @@ $FAQS = [
     [
         'category' => 'Tiempos de Trabajo',
         'question' => '¿Cuánto demora el proceso de sellado y cuándo podré volver a usar el gas?',
-        'answer' => 'Un procedimiento de sellado con Prodoral R6-1 en una casa o departamento estándar suele completarse en una sola jornada (aproximadamente 4 a 6 horas). Tras el secado y la prueba de hermeticidad final que certifique 0 fuga, el servicio de gas queda rehabilitado de inmediato el mismo día.'
+        'answer' => 'El procedimiento es sumamente rápido: en instalaciones normales toma como máximo 2 horas, y en tramos pequeños de departamentos tardamos desde solo 30 a 45 minutos. Al dedicarnos mayoritariamente a esta especialidad con equipamiento alemán exclusivo, ejecutamos el sellado en tiempo récord y el suministro de gas queda rehabilitado y certificado el mismo día.'
     ],
     [
         'category' => 'Atención y Cobertura',
