@@ -101,174 +101,260 @@ $FAQS = [
 // Mapeo Maestro de Páginas y URLs Indexadas
 $PAGES_CONFIG = [
     '/' => [
-        'title' => 'Domingo Isaín | Gasfíter Instalador Autorizado SEC Clase 3 · Fugas de Gas Sin Romper',
-        'description' => 'Servicio oficial de Domingo Isaín Plaza Caamaño (RUT 12.738.961-6). Detección y sellado de fugas de gas sin picar muros ni pisos con Prodoral R6-1 alemán. Garantía 3 años. Emergencias 24/7 al +56 9 4987 7316.',
+        'title' => '9 4987 7316 | Gásfiter Certificado SEC en Santiago 24/7 | Domingo Isaín',
+        'description' => 'Domingo Isaín Plaza Caamaño, Instalador Autorizado SEC Clase 3 (RUT 12.738.961-6) con 30+ años de experiencia. Detección y sellado de fugas de gas sin picar pisos ni muros con tecnología alemana Prodoral R6-1. +1.800 clientes. Garantía 3 años. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/',
         'h1' => 'Gasfíter Instalador Autorizado SEC Clase 3 en Santiago',
         'subtitle' => 'Especialista en Detección y Sellado de Fugas de Gas Sin Romper con Tecnología Alemana Prodoral R6-1',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
         'view' => 'home'
     ],
     '/fugas/' => [
-        'title' => 'Detección y Reparación de Fugas de Gas Sin Romper | Domingo Isaín Gasfíter SEC',
-        'description' => 'Especialistas en detección milimétrica y sellado de fugas de gas interiores sin picar muros ni pisos. Prueba de hermeticidad y certificado DS66. Garantía 3 años.',
+        'title' => '9 4987 7316 | Fugas de Gas Sin Romper en Santiago | Domingo Isaín SEC',
+        'description' => '¿Fuga de gas o medidor cortado? Domingo Isaín (SEC Clase 3, RUT 12.738.961-6) detecta con geófono digital y sella cañerías por dentro con Prodoral R6-1 alemán sin romper cerámicas ni pisos. Garantía 3 años. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/fugas/',
         'h1' => 'Detección y Sellado de Fugas de Gas Sin Romper Muros ni Pisos',
         'subtitle' => 'Solución definitiva para fugas subterráneas y empotradas con polímero alemán Prodoral R6-1 y Geófono Digital',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
         'view' => 'fugas'
     ],
     '/fuga-de-gas/' => [
-        'title' => '¿Fuga de Gas en Casa o Edificio? Atención de Urgencia 24/7 | Domingo Isaín',
-        'description' => '¿Tienes olor a gas o te cortaron el suministro? Atención inmediata 24/7 en toda la Región Metropolitana por Instalador Autorizado SEC Clase 3.',
+        'title' => '9 4987 7316 | Urgencias por Fuga de Gas 24 Horas | Domingo Isaín SEC',
+        'description' => '¿Olor a gas o suministro suspendido? Atención de urgencia 24/7 en toda la Región Metropolitana por Domingo Isaín, Instalador Autorizado SEC Clase 3. Restablecimiento rápido y certificado DS66. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/fuga-de-gas/',
         'h1' => 'Urgencias por Fuga de Gas: Diagnóstico y Sellado Rápido',
         'subtitle' => 'Restablecemos tu suministro de gas con máxima seguridad y certificación legal ante distribuidoras',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
         'view' => 'fugas'
     ],
+    '/fugas-de-gas-santiago/' => [
+        'title' => '9 4987 7316 | Fugas de Gas en Santiago · Detección y Sellado SEC 24/7',
+        'description' => 'Servicio #1 en Santiago para reparación de fugas de gas interiores sin picar pisos ni muros. Domingo Isaín, Instalador SEC Clase 3 (RUT 12.738.961-6). Polímero alemán Prodoral R6-1 y garantía de 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/fugas-de-gas-santiago/',
+        'h1' => 'Fugas de Gas en Santiago · Detección y Sellado Sin Romper',
+        'subtitle' => 'Solución garantizada en el día para casas, departamentos y condominios en toda la RM',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'fugas-de-gas-santiago'
+    ],
     '/gasfiter/' => [
-        'title' => 'Servicios Profesionales de Gasfitería en Santiago | Domingo Isaín Gasfitería SEC',
-        'description' => 'Gasfitería integral autorizada SEC: instalación de redes de gas y agua, mantención de calefonts, cambio de cañerías y solución de emergencias sanitarias.',
+        'title' => '9 4987 7316 | Gasfitería Integral Autorizada SEC en Santiago | Domingo Isaín',
+        'description' => 'Gasfitería profesional en Santiago: redes de gas y agua, reparación de calefonts, cambio de cañerías y emergencias. Domingo Isaín Plaza C., Instalador SEC Clase 3 (RUT 12.738.961-6) con 30+ años de experiencia. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/gasfiter/',
         'h1' => 'Servicios Integrales de Gasfitería Autorizada en Santiago',
         'subtitle' => 'Más de 30 años de experiencia al servicio de hogares, empresas y condominios en toda la Región Metropolitana',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
         'view' => 'gasfiter'
     ],
     '/gasfiter-certificado/' => [
-        'title' => 'Gasfíter Certificado SEC Clase 3 | Domingo Isaín Plaza Caamaño',
-        'description' => 'Contrata a un profesional certificado por la Superintendencia de Electricidad y Combustibles (SEC). RUT 12.738.961-6. Seguridad, garantía y cumplimiento DS66.',
+        'title' => '9 4987 7316 | Gásfiter Certificado SEC Clase 3 | Domingo Isaín Plaza C.',
+        'description' => 'Contrata a un instalador certificado por la SEC (RUT 12.738.961-6). Domingo Isaín cuenta con 30+ años de experiencia en gas y agua potable, pruebas de hermeticidad y regularización DS66. Garantía de 3 años. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/gasfiter-certificado/',
         'h1' => 'Gasfíter Certificado por la SEC: Tu Seguridad en Manos Expertas',
         'subtitle' => 'Credencial y autorización vigente para obras de gas, agua potable y regularización de instalaciones',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
         'view' => 'gasfiter-certificado'
-    ],
-    '/gasfiter-autorizado/' => [
-        'title' => 'Gasfíter Autorizado SEC en Región Metropolitana | Domingo Isaín',
-        'description' => 'Instalador autorizado con cobertura en Las Condes, Providencia, Vitacura, Santiago Centro, Ñuñoa y todas las comunas de la RM. Llame al +56 9 4987 7316.',
-        'canonical' => BASE_URL . '/gasfiter-autorizado/',
-        'h1' => 'Instalador y Gasfíter Autorizado en Toda la Región Metropolitana',
-        'subtitle' => 'Atención rápida en tu comuna con equipamiento móvil de detección y prueba de hermeticidad',
-        'view' => 'gasfiter-certificado'
-    ],
-    '/instalador-sec/' => [
-        'title' => 'Instalador SEC Clase 3 Oficial | Regularización de Sellos y Trámites DS66',
-        'description' => 'Tramitación y solución para Sellos Rojos y Amarillos de gas. Pruebas de hermeticidad con certificado para Metrogas, Lipigas, Abastible y Gasco.',
-        'canonical' => BASE_URL . '/instalador-sec/',
-        'h1' => 'Instalador SEC Clase 3: Regularización y Sellos Verdes',
-        'subtitle' => 'Levantamiento técnico de sellos rojos, normalización de tuberías y emisión de certificados reglamentarios',
-        'view' => 'instalador-sec'
     ],
     '/gasfiter-certificado-sec/' => [
-        'title' => 'Gasfíter Certificado SEC Santiago | Domingo Isaín RUT 12.738.961-6',
-        'description' => 'Comprueba la vigencia de nuestra licencia SEC oficial. Reparación garantizada de fugas de gas, mantención de calefonts y pruebas manométricas.',
+        'title' => '9 4987 7316 | Gásfiter Certificado SEC en Santiago | Domingo Isaín',
+        'description' => '¿Buscas un gasfíter certificado SEC confiable? Domingo Isaín Plaza Caamaño (RUT 12.738.961-6) ofrece atención directa 24/7 en toda la RM. Detección de fugas, calefonts y certificación DS66. Garantía de 3 años. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/gasfiter-certificado-sec/',
         'h1' => 'Gasfíter Certificado SEC: Respaldo Oficial y Garantía por Escrito',
         'subtitle' => 'No arriesgues la seguridad de tu hogar con personal no autorizado. Calidad avalada por la normativa chilena',
-        'view' => 'instalador-sec'
-    ],
-    '/deteccion-con-ultrasonido/' => [
-        'title' => 'Detección de Fugas con Ultrasonido y Gas Trazador | Domingo Isaín',
-        'description' => 'Geófonos sónicos digitales y tecnología de gas trazador (N2/H2) para ubicar fugas de agua y gas ocultas sin picar pisos ni destruir cerámicas.',
-        'canonical' => BASE_URL . '/deteccion-con-ultrasonido/',
-        'h1' => 'Detección Electrónica con Ultrasonido, Geófono y Gas Trazador',
-        'subtitle' => 'Localización acústica y molecular de fugas subterráneas con precisión milimétrica sin daños estructurales',
-        'view' => 'ultrasonido'
-    ],
-    '/ultrasonido/' => [
-        'title' => 'Detección de Fugas de Agua y Gas con Geófono y Ultrasonido Digital | Domingo Isaín',
-        'description' => 'Localización acústica y electrónica de fugas ocultas bajo radier y muros sin romper ni picar. Equipamiento digital de alta precisión en Santiago.',
-        'canonical' => BASE_URL . '/ultrasonido/',
-        'h1' => 'Detección de Fugas con Geófono y Ultrasonido Digital',
-        'subtitle' => 'Tecnología no destructiva para ubicar el punto exacto de la filtración en minutos',
-        'view' => 'ultrasonido'
-    ],
-    '/prodoral/' => [
-        'title' => 'Sellado de Fugas de Gas con Prodoral R6-1 Alemán Sin Romper | Domingo Isaín',
-        'description' => 'Tecnología alemana de inyección de polímero Prodoral R6-1. Sella fugas interiores de gas sin picar pisos ni paredes con 3 años de garantía.',
-        'canonical' => BASE_URL . '/prodoral/',
-        'h1' => 'Sellado de Fugas de Gas con Tecnología Alemana Prodoral R6-1',
-        'subtitle' => 'La solución más limpia, rápida y económica para reparar tuberías de gas sin obras de albañilería',
-        'view' => 'fugas'
-    ],
-    '/sello-rojo-sec/' => [
-        'title' => 'Solución y Regularización de Sello Rojo SEC de Gas | Domingo Isaín',
-        'description' => '¿Te cortaron el gas por Sello Rojo o Amarillo? Regularizamos tus instalaciones según norma DS66 y tramitamos tu Sello Verde con Metrogas y distribuidoras.',
-        'canonical' => BASE_URL . '/sello-rojo-sec/',
-        'h1' => 'Solución y Levantamiento de Sellos Rojos SEC de Gas',
-        'subtitle' => 'Inspección técnica, corrección de anomalías y certificación oficial para rehabilitar tu suministro',
-        'view' => 'instalador-sec'
-    ],
-    '/sello-rojo/' => [
-        'title' => 'Levantamiento de Sello Rojo de Gas en Edificios y Casas | Domingo Isaín',
-        'description' => 'Normalización técnica de instalaciones de gas con Sello Rojo ante la SEC y distribuidoras. Certificados oficiales de hermeticidad.',
-        'canonical' => BASE_URL . '/sello-rojo/',
-        'h1' => 'Normalización y Regularización de Sello Rojo de Gas',
-        'subtitle' => 'Diagnóstico con instrumental certificado y trámite rápido ante entidades certificadoras',
-        'view' => 'instalador-sec'
-    ],
-    '/certificados/' => [
-        'title' => 'Licencia SEC Oficial y Certificados Técnicos | Domingo Isaín Plaza Caamaño',
-        'description' => 'Credenciales oficiales verificables ante la Superintendencia de Electricidad y Combustibles (SEC) RUT 12.738.961-6 y certificación alemana Prodoral.',
-        'canonical' => BASE_URL . '/certificados/',
-        'h1' => 'Certificaciones Oficiales y Licencia SEC de Gas',
-        'subtitle' => 'Máximo respaldo técnico y legal en todos nuestros trabajos de gasfitería e ingeniería',
-        'view' => 'home'
-    ],
-    '/especialista-en-fugas-de-gas/' => [
-        'title' => 'Especialista en Fugas de Gas en Santiago | Domingo Isaín SEC Clase 3',
-        'description' => 'Especialista en detección y reparación de fugas de gas subterráneas y empotradas sin romper muros ni pisos. Polímero alemán Prodoral R6-1. Garantía 3 años.',
-        'canonical' => BASE_URL . '/especialista-en-fugas-de-gas/',
-        'h1' => 'Especialista en Fugas de Gas en Santiago · Sellado Sin Romper',
-        'subtitle' => 'Más de 30 años de experiencia, diagnóstico milimétrico con geófono digital y certificación oficial SEC',
-        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
-        'view' => 'especialista-en-fugas-de-gas'
-    ],
-    '/fuga-de-agua/' => [
-        'title' => 'Detección de Fugas de Agua Ocultas con Geófono en Santiago | Domingo Isaín',
-        'description' => '¿Cuenta de agua alta o humedad en muros? Localizamos filtraciones subterráneas y bajo radier con geófono digital y gas trazador sin romper a ciegas.',
-        'canonical' => BASE_URL . '/fuga-de-agua/',
-        'h1' => 'Detección de Fugas de Agua Ocultas con Geófono Digital',
-        'subtitle' => 'Localización acústica y molecular de filtraciones de agua potable en casas y departamentos de Santiago',
-        'og_image' => BASE_URL . '/assets/images/hero-fuga-agua.jpg',
-        'view' => 'fuga-de-agua'
-    ],
-    '/tecnico-en-fugas-de-gas/' => [
-        'title' => 'Técnico en Fugas de Gas Autorizado SEC 24/7 | Domingo Isaín',
-        'description' => 'Visita técnica urgente para detección de fugas de gas, prueba manométrica, mantención de calefonts y sellado de tuberías. Teléfono directo +56 9 4987 7316.',
-        'canonical' => BASE_URL . '/tecnico-en-fugas-de-gas/',
-        'h1' => 'Técnico en Fugas de Gas en Santiago · Atención Rápida 24/7',
-        'subtitle' => 'Técnico calificado SEC Clase 3 (RUT 12.738.961-6) con equipamiento móvil de detección y prueba',
         'og_image' => BASE_URL . '/assets/images/og-image.jpg',
-        'view' => 'tecnico-en-fugas-de-gas'
+        'view' => 'instalador-sec'
     ],
-    '/deteccion-fuga-de-gas/' => [
-        'title' => 'Detección Profesional de Fuga de Gas Sin Romper | Domingo Isaín',
-        'description' => 'Localizamos fugas de gas invisibles con gas trazador (N2/H2), geófono ultrasónico y manómetros digitales de precisión. Certificado oficial DS66.',
-        'canonical' => BASE_URL . '/deteccion-fuga-de-gas/',
-        'h1' => 'Detección de Fugas de Gas en Santiago · Sin Romper Muros',
-        'subtitle' => 'Diagnóstico no invasivo de fugas subterráneas y empotradas con instrumental calibrado de alta gama',
+    '/gasfiter-autorizado/' => [
+        'title' => '9 4987 7316 | Gasfíter Autorizado SEC en Región Metropolitana | Domingo Isaín',
+        'description' => 'Instalador autorizado SEC con cobertura express en Las Condes, Providencia, Vitacura, Santiago Centro, Ñuñoa y toda la RM. Domingo Isaín (RUT 12.738.961-6). Garantía 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-autorizado/',
+        'h1' => 'Instalador y Gasfíter Autorizado en Toda la Región Metropolitana',
+        'subtitle' => 'Atención rápida en tu comuna con equipamiento móvil de detección y prueba de hermeticidad',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'gasfiter-certificado'
+    ],
+    '/gasfiter-autorizado-sec/' => [
+        'title' => '9 4987 7316 | Gasfíter Autorizado SEC 24 Horas en Santiago | Domingo Isaín',
+        'description' => 'Servicio de urgencias 24/7 para fugas de gas, corte de suministro y normalización de artefactos en Santiago. Domingo Isaín, Instalador SEC Clase 3 (RUT 12.738.961-6). Llame directo al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-autorizado-sec/',
+        'h1' => 'Servicio de Gasfitería Autorizada SEC Disponible 24/7',
+        'subtitle' => 'Respuesta inmediata ante emergencias de gas en departamentos, casas y comunidades de edificios',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'gasfiter-certificado'
+    ],
+    '/gasfiter-sec/' => [
+        'title' => '9 4987 7316 | Gasfíter SEC en Santiago · Licencia Oficial Clase 3 | Domingo Isaín',
+        'description' => 'Profesional acreditado por la SEC (RUT 12.738.961-6). Domingo Isaín Plaza Caamaño ofrece más de 30 años de experiencia técnica en normalización de gas, sellado sin romper y certificación DS66. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-sec/',
+        'h1' => 'Gasfíter SEC en Santiago · Domingo Isaín Plaza Caamaño',
+        'subtitle' => 'Autorización oficial vigente para instalaciones de gas, pruebas de hermeticidad y agua potable',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'gasfiter-sec'
+    ],
+    '/gasfiter-a-domicilio/' => [
+        'title' => '9 4987 7316 | Gasfíter a Domicilio en Santiago 24/7 | Domingo Isaín SEC',
+        'description' => 'Gasfíter a domicilio con llegada rápida en todas las comunas de Santiago. Domingo Isaín Plaza C., Instalador SEC Clase 3 (RUT 12.738.961-6). Diagnóstico calibrado, sellado de gas sin romper y garantía de 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-a-domicilio/',
+        'h1' => 'Gasfíter a Domicilio en Santiago · Autorizado SEC 24/7',
+        'subtitle' => 'Atención directa en tu hogar con taller móvil y equipamiento de diagnóstico de última generación',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'gasfiter-a-domicilio'
+    ],
+    '/gasfiter-santiago/' => [
+        'title' => '9 4987 7316 | Gasfíter en Santiago · Certificado SEC Clase 3 (24/7)',
+        'description' => 'Gasfitería autorizada SEC en todo el Gran Santiago: Las Condes, Providencia, Vitacura, Ñuñoa, Santiago Centro, Maipú, La Florida. Domingo Isaín (RUT 12.738.961-6). Garantía 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-santiago/',
+        'h1' => 'Gasfíter en Santiago · Certificado SEC Clase 3 (24/7)',
+        'subtitle' => 'Cobertura en todas las comunas de la Región Metropolitana con equipamiento de vanguardia',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'gasfiter-santiago'
+    ],
+    '/gasfiter-urgencias/' => [
+        'title' => '9 4987 7316 | Gasfíter de Urgencias 24 Horas en Santiago | Domingo Isaín',
+        'description' => '🚨 Urgencias de gas y agua 24 horas en Santiago. Domingo Isaín Plaza C., Instalador Autorizado SEC Clase 3 (RUT 12.738.961-6). Detección de fugas, corte de agua y contención inmediata. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-urgencias/',
+        'h1' => 'Gasfíter de Urgencias en Santiago · Respuesta Inmediata 24/7',
+        'subtitle' => 'Línea de emergencia disponible las 24 horas para hogares, comercios y comunidades de edificios',
         'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
-        'view' => 'deteccion-fuga-de-gas'
+        'view' => 'gasfiter-urgencias'
+    ],
+    '/gasfiter-calefont/' => [
+        'title' => '9 4987 7316 | Gasfíter de Calefont en Santiago · Reparación e Instalación SEC',
+        'description' => 'Reparación y mantención de calefonts y calderas Junkers, Splendid, Mademsa, Rheem, Trotter, Neckar. Domingo Isaín, Instalador SEC Clase 3 (RUT 12.738.961-6). Atención el mismo día. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/gasfiter-calefont/',
+        'h1' => 'Gasfíter de Calefont en Santiago · Instalación y Reparación SEC',
+        'subtitle' => 'Diagnóstico multimarca en terreno, repuestos normados y ajuste seguro de combustión',
+        'og_image' => BASE_URL . '/assets/images/hero-calefont.jpg',
+        'view' => 'gasfiter-calefont'
+    ],
+    '/reparacion-de-calefont/' => [
+        'title' => '9 4987 7316 | Reparación de Calefont en Santiago · Servicio Técnico SEC',
+        'description' => '¿Calefont no enciende o se apaga? Domingo Isaín (Instalador SEC Clase 3, RUT 12.738.961-6) repara calefonts ionizados y tiro forzado en el día con repuestos originales. Garantía por escrito. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/reparacion-de-calefont/',
+        'h1' => 'Reparación de Calefont en Santiago · Atención el Mismo Día',
+        'subtitle' => 'Servicio técnico especializado multimarca con certificación oficial de seguridad SEC',
+        'og_image' => BASE_URL . '/assets/images/hero-calefont.jpg',
+        'view' => 'reparacion-de-calefont'
+    ],
+    '/instalador-sec/' => [
+        'title' => '9 4987 7316 | Instalador SEC Clase 3 Oficial | Regularización Sello Rojo DS66',
+        'description' => 'Solución técnica y regularización de Sellos Rojos y Amarillos de gas. Pruebas de hermeticidad certificadas para Metrogas, Lipigas, Abastible y Gasco. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/instalador-sec/',
+        'h1' => 'Instalador SEC Clase 3: Regularización y Sellos Verdes',
+        'subtitle' => 'Levantamiento técnico de sellos rojos, normalización de tuberías y emisión de certificados reglamentarios',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'instalador-sec'
     ],
     '/instalador-de-gas-sec/' => [
-        'title' => 'Instalador de Gas SEC Oficial | Regularización Sello Rojo y DS66',
-        'description' => 'Servicio técnico de Domingo Isaín Plaza Caamaño, Instalador de Gas Autorizado SEC Clase 3 (RUT 12.738.961-6). Regularización, pruebas y Sello Verde.',
+        'title' => '9 4987 7316 | Instalador de Gas SEC en Santiago · Domingo Isaín Clase 3',
+        'description' => 'Instalador de Gas Autorizado por la SEC (RUT 12.738.961-6). Proyectos de gas, recepción de obras, normalización DS66 y pruebas de hermeticidad en Santiago. Garantía de 3 años. Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/instalador-de-gas-sec/',
         'h1' => 'Instalador de Gas SEC en Santiago · Respaldo y Garantía Legal',
         'subtitle' => 'Proyectos de gas, recepción de obras, normalización de sellos rojos y pruebas de hermeticidad certificadas',
         'og_image' => BASE_URL . '/assets/images/og-image.jpg',
         'view' => 'instalador-de-gas-sec'
     ],
+    '/instalador-autorizado-sec/' => [
+        'title' => '9 4987 7316 | Instalador Autorizado SEC en Santiago · Domingo Isaín Plaza C.',
+        'description' => 'Certifica tu instalación de gas con Domingo Isaín, Instalador Autorizado SEC Clase 3 (RUT 12.738.961-6) con más de 30 años de experiencia. Firma autorizada para distribuidoras. Garantía 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/instalador-autorizado-sec/',
+        'h1' => 'Instalador Autorizado SEC en Santiago · Domingo Isaín Plaza C.',
+        'subtitle' => 'Acreditación oficial vigente para obras de gas, sellado no invasivo y regularización DS66',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'instalador-autorizado-sec'
+    ],
+    '/especialista-en-fugas-de-gas/' => [
+        'title' => '9 4987 7316 | Especialista en Fugas de Gas en Santiago | Domingo Isaín SEC',
+        'description' => 'Especialista en detección y sellado de fugas de gas subterráneas y empotradas sin romper muros ni pisos. Polímero alemán Prodoral R6-1. Domingo Isaín (SEC Clase 3, RUT 12.738.961-6). Garantía 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/especialista-en-fugas-de-gas/',
+        'h1' => 'Especialista en Fugas de Gas en Santiago · Sellado Sin Romper',
+        'subtitle' => 'Más de 30 años de experiencia, diagnóstico milimétrico con geófono digital y certificación oficial SEC',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'especialista-en-fugas-de-gas'
+    ],
+    '/experto-en-fugas-de-gas/' => [
+        'title' => '9 4987 7316 | Experto en Fugas de Gas en Santiago | Domingo Isaín Perito SEC',
+        'description' => 'Peritaje técnico y solución definitiva para fugas de gas complejas en comunidades de edificios, condominios y casas. Domingo Isaín Plaza C. (SEC Clase 3, RUT 12.738.961-6). Garantía 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/experto-en-fugas-de-gas/',
+        'h1' => 'Experto en Fugas de Gas en Santiago · Peritaje y Sellado SEC',
+        'subtitle' => 'Solución garantizada para casos difíciles, fugas intermitentes y levantamiento urgente de sello rojo',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'experto-en-fugas-de-gas'
+    ],
+    '/tecnico-en-fugas-de-gas/' => [
+        'title' => '9 4987 7316 | Técnico en Fugas de Gas en Santiago 24/7 | Domingo Isaín SEC',
+        'description' => 'Visita técnica urgente para detección de fugas de gas, prueba manométrica, mantención de calefonts y sellado sin romper. Domingo Isaín (SEC Clase 3, RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/tecnico-en-fugas-de-gas/',
+        'h1' => 'Técnico en Fugas de Gas en Santiago · Atención Rápida 24/7',
+        'subtitle' => 'Técnico calificado SEC Clase 3 con equipamiento móvil de detección y prueba',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'tecnico-en-fugas-de-gas'
+    ],
+    '/deteccion-fuga-de-gas/' => [
+        'title' => '9 4987 7316 | Detección de Fugas de Gas Sin Romper | Domingo Isaín SEC',
+        'description' => 'Localizamos fugas de gas invisibles con gas trazador (N2/H2), geófono ultrasónico y manómetros digitales de precisión. Certificado oficial DS66. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/deteccion-fuga-de-gas/',
+        'h1' => 'Detección de Fugas de Gas en Santiago · Sin Romper Muros',
+        'subtitle' => 'Diagnóstico no invasivo de fugas subterráneas y empotradas con instrumental calibrado de alta gama',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'deteccion-fuga-de-gas'
+    ],
+    '/fuga-de-agua/' => [
+        'title' => '9 4987 7316 | Detección de Fugas de Agua Ocultas con Geófono | Domingo Isaín',
+        'description' => '¿Cuenta de agua alta o humedad en muros? Localizamos filtraciones subterráneas y bajo radier con geófono digital y gas trazador sin romper a ciegas. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/fuga-de-agua/',
+        'h1' => 'Detección de Fugas de Agua Ocultas con Geófono Digital',
+        'subtitle' => 'Localización acústica y molecular de filtraciones de agua potable en casas y departamentos de Santiago',
+        'og_image' => BASE_URL . '/assets/images/hero-fuga-agua.jpg',
+        'view' => 'fuga-de-agua'
+    ],
     '/deteccion-con-gas-trazador/' => [
-        'title' => 'Detección con Gas Trazador (N2/H2) en Santiago | Domingo Isaín',
-        'description' => 'Tecnología molecular con gas trazador inerte (Nitrógeno 95% + Hidrógeno 5%) para encontrar microfugas de gas y agua bajo losas y radieres sin romper.',
+        'title' => '9 4987 7316 | Detección con Gas Trazador (N2/H2) en Santiago | Domingo Isaín',
+        'description' => 'Tecnología molecular con gas trazador inerte (Nitrógeno 95% + Hidrógeno 5%) para encontrar microfugas de gas y agua bajo losas y radieres sin romper. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/deteccion-con-gas-trazador/',
         'h1' => 'Detección con Gas Trazador (N2/H2) · Precisión Milimétrica',
         'subtitle' => 'El método no destructivo más avanzado para localizar fugas subterráneas ocultas en minutos',
         'og_image' => BASE_URL . '/assets/images/hero-gas-trazador.jpg',
         'view' => 'deteccion-con-gas-trazador'
     ],
+    '/deteccion-con-camara-termica-termografia/' => [
+        'title' => '9 4987 7316 | Detección con Cámara Térmica y Termografía | Domingo Isaín',
+        'description' => 'Inspección termográfica infrarroja para ubicar fugas de agua caliente, losas radiantes y humedad en muros sin perforar. Diagnóstico visual digital. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/deteccion-con-camara-termica-termografia/',
+        'h1' => 'Detección con Cámara Térmica y Termografía en Santiago',
+        'subtitle' => 'Mapeo térmico de alta resolución para filtraciones en calderas, losa radiante y cañerías empotradas',
+        'og_image' => BASE_URL . '/assets/images/hero-camara-termica.jpg',
+        'view' => 'deteccion-con-camara-termica-termografia'
+    ],
+    '/deteccion-con-ultrasonido/' => [
+        'title' => '9 4987 7316 | Detección de Fugas con Ultrasonido y Geófono | Domingo Isaín',
+        'description' => 'Geófonos sónicos digitales y tecnología ultrasónica para ubicar fugas de agua y gas ocultas sin picar pisos ni destruir cerámicas. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/deteccion-con-ultrasonido/',
+        'h1' => 'Detección Electrónica con Ultrasonido, Geófono y Gas Trazador',
+        'subtitle' => 'Localización acústica y molecular de fugas subterráneas con precisión milimétrica sin daños estructurales',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'ultrasonido'
+    ],
+    '/ultrasonido/' => [
+        'title' => '9 4987 7316 | Detección con Geófono y Ultrasonido Digital | Domingo Isaín',
+        'description' => 'Localización acústica y electrónica de fugas ocultas bajo radier y muros sin romper ni picar. Instrumental digital calibrado en Santiago. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/ultrasonido/',
+        'h1' => 'Detección de Fugas con Geófono y Ultrasonido Digital',
+        'subtitle' => 'Tecnología no destructiva para ubicar el punto exacto de la filtración en minutos',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'ultrasonido'
+    ],
+    '/prodoral/' => [
+        'title' => '9 4987 7316 | Sellado de Fugas de Gas con Prodoral R6-1 Alemán | Domingo Isaín',
+        'description' => 'Tecnología alemana de inyección de polímero Prodoral R6-1 (norma DIN EN 13090 / DVGW). Sella fugas interiores de gas sin picar pisos ni paredes. Garantía de 3 años. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/prodoral/',
+        'h1' => 'Sellado de Fugas de Gas con Tecnología Alemana Prodoral R6-1',
+        'subtitle' => 'La solución más limpia, rápida y económica para reparar tuberías de gas sin obras de albañilería',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'prodoral-para-fugas-de-gas'
+    ],
     '/prodoral-para-fugas-de-gas/' => [
-        'title' => 'Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
-        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía.',
+        'title' => '9 4987 7316 | Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
+        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/prodoral-para-fugas-de-gas/',
         'h1' => 'Polímero Prodoral R6-1 para Sellado de Fugas de Gas Sin Romper',
         'subtitle' => 'Rehabilitación interior de tuberías de cobre, fierro y acero en tiempo récord con elasticidad antisísmica',
@@ -276,39 +362,58 @@ $PAGES_CONFIG = [
         'view' => 'prodoral-para-fugas-de-gas'
     ],
     '/prodoral-para-fugas-de-gas' => [
-        'title' => 'Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
-        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía.',
+        'title' => '9 4987 7316 | Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
+        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
         'canonical' => BASE_URL . '/prodoral-para-fugas-de-gas/',
         'h1' => 'Polímero Prodoral R6-1 para Sellado de Fugas de Gas Sin Romper',
         'subtitle' => 'Rehabilitación interior de tuberías de cobre, fierro y acero en tiempo récord con elasticidad antisísmica',
         'og_image' => BASE_URL . '/assets/images/og-image.jpg',
         'view' => 'prodoral-para-fugas-de-gas'
     ],
-    '/deteccion-con-camara-termica-termografia/' => [
-        'title' => 'Detección con Cámara Térmica y Termografía en Santiago | Domingo Isaín',
-        'description' => 'Inspección termográfica infrarroja para ubicar fugas de agua caliente, losas radiantes y humedad en muros sin perforar. Diagnóstico visual digital.',
-        'canonical' => BASE_URL . '/deteccion-con-camara-termica-termografia/',
-        'h1' => 'Detección con Cámara Térmica y Termografía en Santiago',
-        'subtitle' => 'Mapeo térmico de alta resolución para filtraciones en calderas, losa radiante y cañerías empotradas',
-        'og_image' => BASE_URL . '/assets/images/hero-camara-termica.jpg',
-        'view' => 'deteccion-con-camara-termica-termografia'
+    '/sello-rojo-sec/' => [
+        'title' => '9 4987 7316 | Solución de Sello Rojo SEC de Gas en Santiago | Domingo Isaín',
+        'description' => '¿Te cortaron el gas por Sello Rojo o Amarillo? Regularizamos tus instalaciones según norma DS66 y tramitamos tu Sello Verde con Metrogas y distribuidoras. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/sello-rojo-sec/',
+        'h1' => 'Solución y Levantamiento de Sellos Rojos SEC de Gas',
+        'subtitle' => 'Inspección técnica, corrección de anomalías y certificación oficial para rehabilitar tu suministro',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'instalador-sec'
     ],
-    '/experto-en-fugas-de-gas/' => [
-        'title' => 'Experto en Fugas de Gas Santiago | Domingo Isaín Perito SEC 30+ Años',
-        'description' => 'Peritaje técnico y solución definitiva para fugas de gas complejas en comunidades de edificios, condominios y casas. Licencia SEC Clase 3.',
-        'canonical' => BASE_URL . '/experto-en-fugas-de-gas/',
-        'h1' => 'Experto en Fugas de Gas en Santiago · Peritaje y Sellado SEC',
-        'subtitle' => 'Solución garantizada para casos difíciles, fugas intermitentes y levantamiento urgente de sello rojo',
-        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
-        'view' => 'experto-en-fugas-de-gas'
+    '/sello-rojo/' => [
+        'title' => '9 4987 7316 | Levantamiento de Sello Rojo de Gas en Santiago | Domingo Isaín',
+        'description' => 'Normalización técnica de instalaciones de gas con Sello Rojo ante la SEC y distribuidoras. Certificados oficiales de hermeticidad. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/sello-rojo/',
+        'h1' => 'Normalización y Regularización de Sello Rojo de Gas',
+        'subtitle' => 'Diagnóstico con instrumental certificado y trámite rápido ante entidades certificadoras',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'instalador-sec'
     ],
-    '/gasfiter-autorizado-sec/' => [
-        'title' => 'Gasfíter Autorizado SEC 24 Horas | Domingo Isaín Plaza Caamaño',
-        'description' => 'Servicio de urgencias 24/7 para fugas de gas, corte de suministro y normalización de artefactos en Santiago. Teléfono directo +56 9 4987 7316.',
-        'canonical' => BASE_URL . '/gasfiter-autorizado-sec/',
-        'h1' => 'Servicio de Gasfitería Autorizada SEC Disponible 24/7',
-        'subtitle' => 'Respuesta inmediata ante emergencias de gas en departamentos, casas y comunidades de edificios',
-        'view' => 'gasfiter-certificado'
+    '/sello-verde-gas/' => [
+        'title' => '9 4987 7316 | Sello Verde de Gas en Santiago · Regularización SEC DS66',
+        'description' => 'Tramitación y regularización de Sello Verde de Gas para casas, departamentos y edificios. Domingo Isaín Plaza C., Instalador SEC Clase 3 (RUT 12.738.961-6). Prueba de hermeticidad y adecuación de ventilaciones. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/sello-verde-gas/',
+        'h1' => 'Sello Verde de Gas en Santiago · Regularización de Sellos Rojos',
+        'subtitle' => 'Normalización integral de instalaciones de gas y tramitación de Sello Verde ante distribuidoras',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'sello-verde-gas'
+    ],
+    '/prueba-de-hermeticidad/' => [
+        'title' => '9 4987 7316 | Prueba de Hermeticidad de Gas en Santiago · Certificado SEC DS66',
+        'description' => 'Pruebas de hermeticidad manométricas con manómetros digitales calibrados. Emisión de certificado oficial de hermeticidad para Metrogas, Lipigas, Abastible y Gasco. Domingo Isaín (RUT 12.738.961-6). Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/prueba-de-hermeticidad/',
+        'h1' => 'Prueba de Hermeticidad de Gas · Certificado Oficial SEC',
+        'subtitle' => 'Ensayo manométrico normado bajo protocolo DS66 con entrega de certificado firmado en el acto',
+        'og_image' => BASE_URL . '/assets/images/hero-home-main.webp',
+        'view' => 'prueba-de-hermeticidad'
+    ],
+    '/certificados/' => [
+        'title' => '9 4987 7316 | Licencia SEC Oficial y Certificados Técnicos | Domingo Isaín',
+        'description' => 'Credenciales oficiales verificables ante la Superintendencia de Electricidad y Combustibles (SEC) RUT 12.738.961-6 y certificación alemana Prodoral. Domingo Isaín Plaza Caamaño. Llame al 9 4987 7316.',
+        'canonical' => BASE_URL . '/certificados/',
+        'h1' => 'Certificaciones Oficiales y Licencia SEC de Gas',
+        'subtitle' => 'Máximo respaldo técnico y legal en todos nuestros trabajos de gasfitería e ingeniería',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'home'
     ]
 ];
 

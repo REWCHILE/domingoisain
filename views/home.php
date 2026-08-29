@@ -88,7 +88,7 @@
                     <button type="button" class="hero-slider-btn hero-slider-next" id="hero-slider-next" aria-label="Foto siguiente">❯</button>
 
                     <!-- Paginación Dots -->
-                    <div class="hero-slider-dots" id="hero-slider-dots" role="tablist" aria-label="Selector de fotos de portada">
+                    <div class="hero-slider-dots" id="hero-slider-dots" role="group" aria-label="Controles de fotos de portada">
                         <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Ir a foto 1" aria-current="true"><span class="dot-inner"></span></button>
                         <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Ir a foto 2"><span class="dot-inner"></span></button>
                         <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Ir a foto 3"><span class="dot-inner"></span></button>

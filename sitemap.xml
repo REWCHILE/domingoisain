@@ -9,19 +9,29 @@
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Domingo Isaín Gasfíter Instalador Autorizado SEC Clase 3</image:title>
+            <image:title>9 4987 7316 | Gásfiter Certificado SEC en Santiago 24/7 | Domingo Isaín</image:title>
         </image:image>
     </url>
 
-    <!-- Especialidades Principales de Gas -->
+    <!-- Fugas de Gas y Especialidades -->
     <url>
         <loc>https://domingoisain.cl/fugas/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Detección y Reparación de Fugas de Gas Sin Romper</image:title>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Fugas de Gas Sin Romper en Santiago | Domingo Isaín SEC</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/fugas-de-gas-santiago/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Fugas de Gas en Santiago · Detección y Sellado SEC</image:title>
         </image:image>
     </url>
     <url>
@@ -50,8 +60,8 @@
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
         <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Técnico en Fugas de Gas Autorizado SEC Santiago</image:title>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Técnico en Fugas de Gas en Santiago 24/7</image:title>
         </image:image>
     </url>
     <url>
@@ -70,8 +80,122 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Urgencias por Fuga de Gas 24 Horas Santiago</image:title>
+        </image:image>
+    </url>
+
+    <!-- Gasfitería Autorizada y a Domicilio -->
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-certificado/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Urgencias por Fuga de Gas 24/7 Santiago</image:title>
+            <image:title>Gasfíter Certificado SEC Clase 3 Domingo Isaín</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-certificado-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Gasfíter Certificado SEC en Santiago 24/7</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Gasfíter SEC en Santiago Licencia Oficial Clase 3</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-a-domicilio/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Gasfíter a Domicilio en Santiago 24/7</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-santiago/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Gasfíter en Santiago Certificado SEC Clase 3</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-urgencias/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Gasfíter de Urgencias 24 Horas en Santiago</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-autorizado/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Gasfíter Autorizado SEC en Región Metropolitana</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-autorizado-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Gasfíter Autorizado SEC 24 Horas en Santiago</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Servicios Profesionales de Gasfitería en Santiago</image:title>
+        </image:image>
+    </url>
+
+    <!-- Calefonts y Calderas -->
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-calefont/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-calefont.jpg</image:loc>
+            <image:title>Gasfíter de Calefont en Santiago Reparación SEC</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/reparacion-de-calefont/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-calefont.jpg</image:loc>
+            <image:title>Reparación de Calefont en Santiago Servicio Técnico SEC</image:title>
         </image:image>
     </url>
 
@@ -149,7 +273,7 @@
         </image:image>
     </url>
 
-    <!-- Instalador SEC y Regularizaciones -->
+    <!-- Instalador SEC, Sellos y Certificaciones -->
     <url>
         <loc>https://domingoisain.cl/instalador-de-gas-sec/</loc>
         <lastmod>2026-08-29</lastmod>
@@ -161,23 +285,43 @@
         </image:image>
     </url>
     <url>
+        <loc>https://domingoisain.cl/instalador-autorizado-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Instalador Autorizado SEC en Santiago Domingo Isaín</image:title>
+        </image:image>
+    </url>
+    <url>
         <loc>https://domingoisain.cl/instalador-sec/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Instalador SEC Clase 3 Oficial Regularización y Sellos Verdes</image:title>
+            <image:title>Instalador SEC Clase 3 Oficial Regularización Sello Rojo</image:title>
         </image:image>
     </url>
     <url>
-        <loc>https://domingoisain.cl/gasfiter-certificado/</loc>
+        <loc>https://domingoisain.cl/sello-verde-gas/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.95</priority>
         <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Gasfíter Certificado SEC Clase 3 Domingo Isaín</image:title>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Sello Verde de Gas en Santiago Regularización SEC DS66</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/prueba-de-hermeticidad/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-home-main.webp</image:loc>
+            <image:title>Prueba de Hermeticidad de Gas en Santiago Certificado SEC</image:title>
         </image:image>
     </url>
     <url>
@@ -187,7 +331,7 @@
         <priority>0.85</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Solución y Regularización de Sello Rojo SEC</image:title>
+            <image:title>Solución de Sello Rojo SEC de Gas en Santiago</image:title>
         </image:image>
     </url>
     <url>
@@ -197,47 +341,7 @@
         <priority>0.85</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Levantamiento de Sello Rojo de Gas</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://domingoisain.cl/gasfiter/</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-        <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Servicios Profesionales de Gasfitería en Santiago</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://domingoisain.cl/gasfiter-autorizado/</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-        <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Gasfíter Autorizado SEC en Región Metropolitana</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://domingoisain.cl/gasfiter-autorizado-sec/</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-        <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Gasfíter Autorizado SEC 24 Horas</image:title>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://domingoisain.cl/gasfiter-certificado-sec/</loc>
-        <lastmod>2026-08-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.85</priority>
-        <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Gasfíter Certificado SEC Santiago</image:title>
+            <image:title>Levantamiento de Sello Rojo de Gas en Santiago</image:title>
         </image:image>
     </url>
     <url>

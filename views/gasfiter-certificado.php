@@ -72,7 +72,7 @@
                     <button type="button" class="hero-slider-btn hero-slider-prev" id="cert-slider-prev" aria-label="Certificado anterior">❮</button>
                     <button type="button" class="hero-slider-btn hero-slider-next" id="cert-slider-next" aria-label="Certificado siguiente">❯</button>
 
-                    <div class="hero-slider-dots" id="cert-slider-dots" role="tablist" aria-label="Selector de certificados">
+                    <div class="hero-slider-dots" id="cert-slider-dots" role="group" aria-label="Controles de certificados">
                         <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1" aria-current="true"></button>
                         <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Certificado 2"></button>
                         <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Certificado 3"></button>
