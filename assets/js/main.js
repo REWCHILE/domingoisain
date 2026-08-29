@@ -493,8 +493,16 @@
             secPortalVerificationUrl: 'https://www.sec.cl',
             experienceYears: '30+',
             certifications: [
-              'Superintendencia de Electricidad y Combustibles (SEC Clase 3)',
-              'Prodoral R6-1 DVGW / DIN EN 13090 Certificado Alemán'
+              'Superintendencia de Electricidad y Combustibles (Licencia Oficial SEC Clase 3)',
+              'ChileValora - ECERLAB (Certificación Estatal de Competencias Laborales)',
+              'Prodoral R6-1 DVGW / DIN EN 13090 (Certificación Alemana de Sellado de Gas)',
+              'Pontificia Universidad Católica de Chile (PUC - Solución de Patologías en la Vivienda)',
+              'Pontificia Universidad Católica de Chile (PUC - Supervisión de Obras para Edificación)',
+              'Ingeniería Industrial (Gestión y Mantenimiento de Infraestructura Crítica)',
+              'Ingeniería Química (Termodinámica de Gases, Fluidos y Corrosión)',
+              'Euroinnova / Universidad Antonio de Nebrija (Máster en Ecología y Gestión Ambiental)',
+              'Centro de Estudios Claustro Gómez (Instalaciones Sanitarias y Electromecánica)',
+              'Ensayos Manométricos y Certificación Sello Verde DS66'
             ]
           };
         }

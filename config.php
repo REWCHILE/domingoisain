@@ -522,11 +522,74 @@ function getLocalBusinessJsonLd() {
             ],
             [
                 '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Certificación de Competencias Laborales ChileValora - ECERLAB',
+                'credentialCategory' => 'Certificación Estatal de Competencias Laborales',
+                'recognizedBy' => [
+                    '@type' => 'GovernmentOrganization',
+                    'name' => 'Comisión del Sistema Nacional de Certificación de Competencias Laborales (ChileValora)'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
                 'name' => 'Certificación Técnica Prodoral R6-1 (DIN EN 13090 / DVGW)',
                 'credentialCategory' => 'Especialista Homologado en Sellado No Invasivo de Redes de Gas',
                 'recognizedBy' => [
                     '@type' => 'Organization',
                     'name' => 'Prodoral Germany / DVGW'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Diploma en Solución de Patologías en la Vivienda',
+                'credentialCategory' => 'Diploma Universitario de Especialización Técnica',
+                'recognizedBy' => [
+                    '@type' => 'CollegeOrUniversity',
+                    'name' => 'Pontificia Universidad Católica de Chile (PUC / DECON UC)'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Diploma en Técnicas de Supervisión de Obras para Edificación',
+                'credentialCategory' => 'Diploma Universitario de Supervisión y Calidad',
+                'recognizedBy' => [
+                    '@type' => 'CollegeOrUniversity',
+                    'name' => 'Pontificia Universidad Católica de Chile (PUC)'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Formación y Diploma en Ingeniería Industrial',
+                'credentialCategory' => 'Ingeniería y Gestión de Infraestructura',
+                'recognizedBy' => [
+                    '@type' => 'Organization',
+                    'name' => 'Educación Superior en Ingeniería'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Formación y Diploma en Ingeniería Química',
+                'credentialCategory' => 'Ingeniería Química, Termodinámica y Fluidos',
+                'recognizedBy' => [
+                    '@type' => 'Organization',
+                    'name' => 'Educación Superior en Ciencias Químicas'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Diploma Máster en Ecología y Gestión Ambiental',
+                'credentialCategory' => 'Postgrado / Máster Ambiental',
+                'recognizedBy' => [
+                    '@type' => 'CollegeOrUniversity',
+                    'name' => 'Euroinnova / Universidad Antonio de Nebrija'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Diploma en Instalaciones Sanitarias, Gasfitería y Electromecánica',
+                'credentialCategory' => 'Especialización Técnica Sanitaria',
+                'recognizedBy' => [
+                    '@type' => 'Organization',
+                    'name' => 'Centro de Estudios Claustro Gómez'
                 ]
             ]
         ],
