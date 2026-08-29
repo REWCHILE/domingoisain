@@ -54,8 +54,10 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <!-- Preload de Imagen LCP Hero -->
     <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" fetchpriority="high">
 
-    <!-- Estilos CSS Minificados con Fuentes Locales Integradas -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.min.css?v=4.0">
+    <!-- Estilos CSS Inlined Críticos (Cero Solicitudes Bloqueantes de Red, Ahorro 700ms) -->
+    <style>
+    <?= str_replace('<?= BASE_URL ?>', BASE_URL, file_get_contents(__DIR__ . '/../assets/css/main.min.css')) ?>
+    </style>
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">

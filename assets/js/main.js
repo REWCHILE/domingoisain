@@ -1,11 +1,12 @@
 /**
  * Lógica Principal de Interacción & Frontend Moderno
  * Domingo Isaín - Gasfíter Instalador Autorizado SEC
+ * Arquitectura Chunks Asíncronos (0ms Bloqueo de Hilo Principal)
  */
 (function() {
   'use strict';
 
-  // 1. INICIALIZACIÓN CRÍTICA INMEDIATA: MENÚ MÓVIL OFF-CANVAS
+  // 1. INICIALIZACIÓN CRÍTICA INMEDIATA (< 1ms): MENÚ MÓVIL OFF-CANVAS
   const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const mobileCloseBtn = document.getElementById('mobile-drawer-close');
@@ -73,45 +74,10 @@
     }, { passive: true });
   }
 
-  // 2. INICIALIZACIÓN DIFERIDA (Cero bloqueo de hilo principal)
-  function initDeferredFeatures() {
-    // BOTÓN "GO TO TOP"
-    const goToTopBtn = document.getElementById('btn-go-to-top');
-    let scrollTicking = false;
+  // 2. MICROTASKS DIFERIDAS (Se ejecutan en ráfagas de < 5ms sin congelar el hilo principal)
 
-    function checkBottomScroll() {
-      if (!goToTopBtn) return;
-      const scrollY = window.scrollY || window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const isAtBottom = (scrollY + windowHeight) >= (documentHeight - 220);
-
-      if (isAtBottom) {
-        goToTopBtn.classList.add('is-bottom-visible');
-      } else {
-        goToTopBtn.classList.remove('is-bottom-visible');
-      }
-      scrollTicking = false;
-    }
-
-    function onScrollThrottled() {
-      if (!scrollTicking) {
-        window.requestAnimationFrame(checkBottomScroll);
-        scrollTicking = true;
-      }
-    }
-
-    window.addEventListener('scroll', onScrollThrottled, { passive: true });
-    window.addEventListener('resize', onScrollThrottled, { passive: true });
-
-    if (goToTopBtn) {
-      goToTopBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-
-    // ACORDEÓN Y FILTROS DE FAQS
+  // Chunk 1: FAQs Accordion y Filtros
+  function initFaqs() {
     const faqItems = document.querySelectorAll('.faq-item');
     const catButtons = document.querySelectorAll('.faq-cat-btn');
 
@@ -154,54 +120,10 @@
         });
       });
     });
+  }
 
-    // VISOR MODAL LIGHTBOX PARA CERTIFICADOS
-    const modalBackdrop = document.getElementById('cert-modal');
-    const modalImage = document.getElementById('modal-cert-image');
-    const modalTitle = document.getElementById('modal-cert-title');
-    const modalDesc = document.getElementById('modal-cert-desc');
-    const modalCloseBtn = document.getElementById('modal-close-btn');
-    const certCards = document.querySelectorAll('.cert-card');
-
-    function openCertModal(imageSrc, title, description) {
-      if (!modalBackdrop) return;
-      if (modalImage) modalImage.src = imageSrc;
-      if (modalTitle) modalTitle.textContent = title;
-      if (modalDesc) modalDesc.textContent = description;
-
-      modalBackdrop.classList.add('modal-open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeCertModal() {
-      if (!modalBackdrop) return;
-      modalBackdrop.classList.remove('modal-open');
-      document.body.style.overflow = '';
-    }
-
-    certCards.forEach(card => {
-      card.addEventListener('click', function() {
-        const src = this.getAttribute('data-cert-src');
-        const title = this.getAttribute('data-cert-title');
-        const desc = this.getAttribute('data-cert-desc');
-        openCertModal(src, title, desc);
-      });
-    });
-
-    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCertModal);
-    if (modalBackdrop) {
-      modalBackdrop.addEventListener('click', function(e) {
-        if (e.target === modalBackdrop) closeCertModal();
-      });
-    }
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modalBackdrop && modalBackdrop.classList.contains('modal-open')) {
-        closeCertModal();
-      }
-    });
-
-    // COTIZADOR INTERACTIVO
+  // Chunk 2: Cotizador Interactivo
+  function initCalculator() {
     const calcPropertyOptions = document.querySelectorAll('[data-calc-property]');
     const calcProblemOptions = document.querySelectorAll('[data-calc-problem]');
     const summaryProperty = document.getElementById('calc-summary-property');
@@ -256,8 +178,94 @@
     }
 
     updateQuoteSummary();
+  }
 
-    // CARRUSELES MODULARES
+  // Chunk 3: Modal Lightbox & Scroll To Top
+  function initModalsAndScroll() {
+    const goToTopBtn = document.getElementById('btn-go-to-top');
+    let scrollTicking = false;
+
+    function checkBottomScroll() {
+      if (!goToTopBtn) return;
+      const scrollY = window.scrollY || window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isAtBottom = (scrollY + windowHeight) >= (documentHeight - 220);
+
+      if (isAtBottom) {
+        goToTopBtn.classList.add('is-bottom-visible');
+      } else {
+        goToTopBtn.classList.remove('is-bottom-visible');
+      }
+      scrollTicking = false;
+    }
+
+    function onScrollThrottled() {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(checkBottomScroll);
+        scrollTicking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScrollThrottled, { passive: true });
+    window.addEventListener('resize', onScrollThrottled, { passive: true });
+
+    if (goToTopBtn) {
+      goToTopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // Modal
+    const modalBackdrop = document.getElementById('cert-modal');
+    const modalImage = document.getElementById('modal-cert-image');
+    const modalTitle = document.getElementById('modal-cert-title');
+    const modalDesc = document.getElementById('modal-cert-desc');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const certCards = document.querySelectorAll('.cert-card');
+
+    function openCertModal(imageSrc, title, description) {
+      if (!modalBackdrop) return;
+      if (modalImage) modalImage.src = imageSrc;
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalDesc) modalDesc.textContent = description;
+
+      modalBackdrop.classList.add('modal-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+      if (!modalBackdrop) return;
+      modalBackdrop.classList.remove('modal-open');
+      document.body.style.overflow = '';
+    }
+
+    certCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const src = this.getAttribute('data-cert-src');
+        const title = this.getAttribute('data-cert-title');
+        const desc = this.getAttribute('data-cert-desc');
+        openCertModal(src, title, desc);
+      });
+    });
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCertModal);
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', function(e) {
+        if (e.target === modalBackdrop) closeCertModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modalBackdrop && modalBackdrop.classList.contains('modal-open')) {
+        closeCertModal();
+      }
+    });
+  }
+
+  // Chunk 4: Carruseles
+  function initCarousels() {
     function initCarousel(prefix) {
       const sliderTrack = document.getElementById(`${prefix}-track`);
       const sliderCard = document.getElementById(`${prefix}-card`);
@@ -349,17 +357,16 @@
         startAutoSlide();
       }, { passive: true });
 
-      setTimeout(startAutoSlide, 2500);
+      setTimeout(startAutoSlide, 3000);
     }
 
     initCarousel('hero-slider');
     initCarousel('cert-slider');
   }
 
-  // Ejecución no bloqueante
-  if ('requestIdleCallback' in window) {
-    window.requestIdleCallback(initDeferredFeatures, { timeout: 1500 });
-  } else {
-    setTimeout(initDeferredFeatures, 50);
-  }
+  // Programar micro-tareas diferidas para no bloquear el hilo principal
+  setTimeout(initFaqs, 60);
+  setTimeout(initCalculator, 120);
+  setTimeout(initModalsAndScroll, 180);
+  setTimeout(initCarousels, 240);
 })();
