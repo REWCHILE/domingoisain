@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
      -------------------------------------------------------------------------- */
   const goToTopBtn = document.getElementById('btn-go-to-top');
 
+  let scrollTicking = false;
   function checkBottomScroll() {
     if (!goToTopBtn) return;
 
@@ -26,11 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       goToTopBtn.classList.remove('is-bottom-visible');
     }
+    scrollTicking = false;
   }
 
-  window.addEventListener('scroll', checkBottomScroll, { passive: true });
-  window.addEventListener('resize', checkBottomScroll, { passive: true });
-  checkBottomScroll();
+  function onScrollThrottled() {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(checkBottomScroll);
+      scrollTicking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScrollThrottled, { passive: true });
+  window.addEventListener('resize', onScrollThrottled, { passive: true });
 
   if (goToTopBtn) {
     goToTopBtn.addEventListener('click', function(e) {
@@ -212,13 +220,19 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileDrawerLinks = document.querySelectorAll('.mobile-drawer-link');
 
   function openDrawer() {
-    if (mobileDrawer) mobileDrawer.classList.add('drawer-open');
+    if (mobileDrawer) {
+      mobileDrawer.classList.add('drawer-open');
+      mobileDrawer.setAttribute('aria-hidden', 'false');
+    }
     if (mobileOverlay) mobileOverlay.classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
-    if (mobileDrawer) mobileDrawer.classList.remove('drawer-open');
+    if (mobileDrawer) {
+      mobileDrawer.classList.remove('drawer-open');
+      mobileDrawer.setAttribute('aria-hidden', 'true');
+    }
     if (mobileOverlay) mobileOverlay.classList.remove('drawer-open');
     document.body.style.overflow = '';
   }
@@ -250,11 +264,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.key === 'Escape') closeDrawer();
   });
 
-  // Gesto Swipe para cerrar deslizando hacia la izquierda
-  if (mobileDrawer) {
-    let drawerTouchStartX = 0;
-    let drawerTouchEndX = 0;
+  // Gesto táctil swipe hacia la izquierda para cerrar el drawer
+  let drawerTouchStartX = 0;
+  let drawerTouchEndX = 0;
 
+  if (mobileDrawer) {
     mobileDrawer.addEventListener('touchstart', (e) => {
       drawerTouchStartX = e.changedTouches[0].screenX;
     }, { passive: true });
@@ -304,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
       stopAutoSlide();
       autoSlideTimer = setInterval(() => {
         goToSlide(currentSlide + 1);
-      }, 4500);
+      }, 5000);
     }
 
     function stopAutoSlide() {
@@ -362,8 +376,8 @@ document.addEventListener('DOMContentLoaded', function() {
       startAutoSlide();
     }, { passive: true });
 
-    // Iniciar autoplay
-    startAutoSlide();
+    // Iniciar autoplay diferido
+    setTimeout(startAutoSlide, 2000);
   }
 
   // Inicializar ambos carruseles

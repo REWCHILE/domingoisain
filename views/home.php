@@ -59,27 +59,27 @@
                         <!-- Slide 1 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🚗 Atención Móvil 24/7 en Toda la RM</span>
-                            <img src="<?= BASE_URL ?>/assets/images/hero-home-main.webp" alt="Domingo Isaín con Furgón de Emergencias SEC" class="hero-slide-img">
+                            <img src="<?= BASE_URL ?>/assets/images/hero-home-main.webp" alt="Domingo Isaín con Furgón de Emergencias SEC" class="hero-slide-img" width="800" height="600" fetchpriority="high">
                         </div>
                         <!-- Slide 2 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">📡 Detección Acústica con Geófono</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-geofono.jpg" alt="Domingo Isaín detectando fugas subterráneas con geófono digital" class="hero-slide-img">
+                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-geofono.webp" alt="Domingo Isaín detectando fugas subterráneas con geófono digital" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 3 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🔥 Mantención Certificada de Calefonts</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-calefont.jpg" alt="Domingo Isaín reparando calefont y midiendo presión de gas" class="hero-slide-img">
+                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-calefont.webp" alt="Domingo Isaín reparando calefont y midiendo presión de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 4 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">📋 Pruebas de Hermeticidad DS66</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-trabajo.jpg" alt="Domingo Isaín en terreno realizando pruebas de gas" class="hero-slide-img">
+                            <img src="<?= BASE_URL ?>/assets/images/domingo-trabajo.webp" alt="Domingo Isaín en terreno realizando pruebas de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 5 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🧪 Sellado sin Romper Prodoral R6-1</span>
-                            <img src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1" class="hero-slide-img">
+                            <img src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                     </div>
 
@@ -103,8 +103,8 @@
                         <div class="badge-info-title">Domingo Isaín Plaza C.</div>
                         <div class="badge-info-sub">Instalador SEC Clase 3 · Licencia Oficial (RUT 12.738.961-6)</div>
                     </div>
-                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar RUT 12.738.961-6 en la SEC">
-                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" style="width: 18px; height: 18px; border-radius: 3px;">
+                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar RUT 12.738.961-6 en la SEC" aria-label="Verificar registro de Domingo Isaín en portal SEC">
+                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" width="18" height="18" style="width: 18px; height: 18px; border-radius: 3px;">
                         <span>Verificar SEC</span>
                     </a>
                 </div>
@@ -324,16 +324,16 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
             <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); aspect-ratio: 4/3;">
-                <img src="<?= BASE_URL ?>/assets/images/domingo-trabajo.jpg" alt="Domingo Isaín en terreno realizando pruebas de hermeticidad" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="<?= BASE_URL ?>/assets/images/domingo-trabajo.webp" alt="Domingo Isaín en terreno realizando pruebas de hermeticidad" width="400" height="300" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); aspect-ratio: 4/3;">
-                <img src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1 en tubería de gas" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1 en tubería de gas" width="400" height="300" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); aspect-ratio: 4/3;">
-                <img src="<?= BASE_URL ?>/assets/images/hero-calefont.webp" alt="Mantención y reparación de calefont ionizado SEC" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="<?= BASE_URL ?>/assets/images/hero-calefont.webp" alt="Mantención y reparación de calefont ionizado SEC" width="400" height="300" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); aspect-ratio: 4/3;">
-                <img src="<?= BASE_URL ?>/assets/images/hero-destapes.webp" alt="Equipos de diagnóstico y geófono ultrasónico digital" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="<?= BASE_URL ?>/assets/images/hero-destapes.webp" alt="Equipos de diagnóstico y geófono ultrasónico digital" width="400" height="300" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -353,11 +353,11 @@
         <div class="certs-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
             <!-- 1. PUC: Solución de Patologías en la Vivienda -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.webp"
                  data-cert-title="Pontificia Universidad Católica de Chile - Escuela de Construcción Civil"
                  data-cert-desc="Diploma oficial otorgado a Domingo Isaian Plaza Caamaño por la Pontificia Universidad Católica de Chile (DECON UC) tras cursar y aprobar 'Solución de Patologías en la Vivienda'.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg" alt="Diploma PUC Solución de Patologías en la Vivienda" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.webp" alt="Diploma PUC Solución de Patologías en la Vivienda" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -368,11 +368,11 @@
 
             <!-- 2. PUC: Supervisión de Obras -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.webp"
                  data-cert-title="Pontificia Universidad Católica de Chile - Supervisión de Obras"
                  data-cert-desc="Diploma otorgado a Domingo Isain Plaza Caamaño por la Escuela de Construcción Civil de la Pontificia Universidad Católica de Chile en 'Técnicas de Supervisión de Obras para Edificación'.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg" alt="Diploma PUC Supervisión de Obras" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.webp" alt="Diploma PUC Supervisión de Obras" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -383,11 +383,11 @@
 
             <!-- 3. ChileValora ECERLAB Gasfíter en Fugas -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp"
                  data-cert-title="ChileValora / ECERLAB SpA - Gasfíter Certificado en Fugas"
                  data-cert-desc="Certificado oficial de competencias laborales otorgado a Domingo Isain Plaza Caamaño (RUN 12.738.961-6) acreditado en instalación de cañerías, interpretación de planos y reparación de fugas/filtraciones.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp" alt="Certificado ChileValora ECERLAB" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -398,11 +398,11 @@
 
             <!-- 4. Escuela Electromecánica: Especialista en Gasfitería y Sanitarios -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.webp"
                  data-cert-title="Escuela Electromecánica (NCH 2728 / ISO 9001)"
                  data-cert-desc="Diploma de Educación Técnica otorgado a Don Domingo Isain Plaza Caamaño como Especialista Técnico con mención en Gasfitería y Sanitarios.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg" alt="Diploma Especialista Técnico Gasfitería y Sanitarios" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.webp" alt="Diploma Especialista Técnico Gasfitería y Sanitarios" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -413,11 +413,11 @@
 
             <!-- 5. Euroinnova: Experto en Ingeniería Química -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp"
                  data-cert-title="Euroinnova Formación - Experto en Ingeniería Química"
                  data-cert-desc="Título propio acreditado otorgado a Domingo Isain Plaza Caamaño con calificación SOBRESALIENTE en el programa de formación de Ingeniería Química.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Euroinnova Ingeniería Química" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp" alt="Diploma Euroinnova Ingeniería Química" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -428,11 +428,11 @@
 
             <!-- 6. Claustro Gómez: Técnico Superior en Ingeniería Industrial -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp"
                  data-cert-title="Claustro Gómez Universitas - Ingeniería Industrial"
                  data-cert-desc="Diploma con registro oficial CG1009 otorgado a Domingo Isain Plaza Camaño (12.738.961-6) como Técnico Superior Propio en Ingeniería Industrial.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -443,11 +443,11 @@
 
             <!-- 7. Claustro Gómez: Máster Propio en Ecología y Estudios Ambientales -->
             <div class="cert-card" 
-                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg"
+                 data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.webp"
                  data-cert-title="Claustro Gómez Universitas - Máster en Ecología y Estudios Ambientales"
                  data-cert-desc="Diploma con registro oficial CG1010 otorgado a Domingo Isain Plaza Camaño (12.738.961-6) correspondiente al Máster Propio en Ecología y Estudios Ambientales.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg" alt="Diploma Máster en Ecología y Estudios Ambientales" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.webp" alt="Diploma Máster en Ecología y Estudios Ambientales" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -462,7 +462,7 @@
                  data-cert-title="SOCATEC - Prueba de Hermeticidad en Instalaciones Interiores de Gas"
                  data-cert-desc="Certificado técnico emitido por SOCATEC a Domingo Isain Plaza Caamaño (RUT 12.738.961-6) por aprobación de curso técnico de pruebas manométricas bajo DS66.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp" alt="Prueba de Hermeticidad SOCATEC" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-hermeticidad.webp" alt="Prueba de Hermeticidad SOCATEC" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -477,7 +477,7 @@
                  data-cert-title="Prodoral R6-1 (Alemania) - Homologación DIN EN 13090"
                  data-cert-desc="Homologación técnica internacional para el sellado no destructivo de cañerías de gas desde el interior con 3 años de garantía.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-prodoral.webp" alt="Certificado Prodoral R6-1" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-prodoral.webp" alt="Certificado Prodoral R6-1" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>
@@ -492,7 +492,7 @@
                  data-cert-title="Superintendencia de Electricidad y Combustibles (SEC) - Licencia Clase 3"
                  data-cert-desc="Acreditación legal de la SEC para Domingo Isaín Plaza Caamaño (RUT 12.738.961-6), facultado para regularizar sellos rojos, tramitar sellos verdes y certificar instalaciones de gas.">
                 <div class="cert-img-box">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp" alt="Licencia SEC Gasfíter Autorizado" class="cert-thumbnail" style="object-fit: contain; background: #ffffff; padding: 8px;">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificados-sec-gas.webp" alt="Licencia SEC Gasfíter Autorizado" class="cert-thumbnail" width="300" height="220" loading="lazy" decoding="async" style="object-fit: contain; background: #ffffff; padding: 8px;">
                     <div class="cert-overlay-icon">
                         <div class="cert-zoom-btn">🔍</div>
                     </div>

@@ -54,19 +54,19 @@
                         <!-- Slide 2: ChileValora ECERLAB -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🏆 ChileValora · Gasfíter en Fugas</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB Gasfíter en Fugas" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp" alt="Certificado ChileValora ECERLAB Gasfíter en Fugas" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
 
                         <!-- Slide 3: Euroinnova Ingeniería Química -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🎓 Euroinnova · Ingeniería Química</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Experto en Ingeniería Química Euroinnova" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp" alt="Diploma Experto en Ingeniería Química Euroinnova" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
 
                         <!-- Slide 4: Claustro Gómez Ingeniería Industrial -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🏛️ Claustro Gómez · Ing. Industrial</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Técnico Superior en Ingeniería Industrial" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp" alt="Diploma Técnico Superior en Ingeniería Industrial" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
 
                         <!-- Slide 5: Licencia SEC Clase 3 -->
@@ -78,7 +78,7 @@
                         <!-- Slide 6: QR Validación SEC -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">📱 Código QR de Validación SEC</span>
-                            <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.png" alt="Código QR Validación SEC Domingo Isaín" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 14px;">
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 14px;">
                         </div>
                     </div>
 

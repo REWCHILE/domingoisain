@@ -45,11 +45,11 @@
                     <div class="hero-slider-track" id="cert-slider-track">
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🎓 PUC · Patologías en Vivienda</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg" alt="Diploma PUC Patologías en la Vivienda" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.webp" alt="Diploma PUC Patologías en la Vivienda" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🎓 PUC · Supervisión de Obras</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg" alt="Diploma PUC Supervisión de Obras" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.webp" alt="Diploma PUC Supervisión de Obras" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🛡️ Licencia Oficial SEC Clase 3</span>
@@ -57,15 +57,15 @@
                         </div>
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🏆 ChileValora · Gasfíter en Fugas</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp" alt="Certificado ChileValora ECERLAB" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🧪 Euroinnova · Ingeniería Química</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Experto en Ingeniería Química Euroinnova" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp" alt="Diploma Experto en Ingeniería Química Euroinnova" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🏛️ Claustro Gómez · Ing. Industrial</span>
-                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Técnico Superior en Ingeniería Industrial" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
+                            <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp" alt="Diploma Técnico Superior en Ingeniería Industrial" class="hero-slide-img" style="object-fit: contain; background: #ffffff; padding: 6px;">
                         </div>
                     </div>
 
@@ -112,10 +112,10 @@
             <!-- 1. PUC: Solución de Patologías en la Vivienda -->
             <article class="cert-detail-card">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.webp"
                      data-cert-title="Pontificia Universidad Católica de Chile - Solución de Patologías en la Vivienda"
                      data-cert-desc="Diploma otorgado por la Escuela de Construcción Civil de la PUC a Domingo Isaian Plaza Caamaño por aprobación del curso especializado en diagnóstico y reparación de patologías constructivas y estructurales.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.jpg" alt="Diploma PUC Solución de Patologías en la Vivienda" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-patologias.webp" alt="Diploma PUC Solución de Patologías en la Vivienda" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">
@@ -150,10 +150,10 @@
             <!-- 2. PUC: Técnicas de Supervisión de Obras para Edificación -->
             <article class="cert-detail-card reverse-layout">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.webp"
                      data-cert-title="Pontificia Universidad Católica de Chile - Supervisión de Obras para Edificación"
                      data-cert-desc="Diploma otorgado por la Escuela de Construcción Civil de la Pontificia Universidad Católica de Chile a Domingo Isain Plaza Caamaño en técnicas de supervisión, control de calidad y seguridad en edificación.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.jpg" alt="Diploma PUC Supervisión de Obras" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-uc-supervision-obras.webp" alt="Diploma PUC Supervisión de Obras" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">
@@ -226,10 +226,10 @@
             <!-- 4. ChileValora / ECERLAB: Gasfíter Certificado en Fugas -->
             <article class="cert-detail-card reverse-layout">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp"
                      data-cert-title="Certificado de Competencias Laborales ChileValora / ECERLAB SpA"
                      data-cert-desc="Certificado oficial de competencias laborales en el perfil de Gasfíter P-4100-7126-001-V01 otorgado a Domingo Isain Plaza Caamaño (RUN 12.738.961-6) demostrando competencia en las 5 unidades laborales evaluadas.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.jpg" alt="Certificado ChileValora ECERLAB" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/certificado-chilevalora-ecerlab.webp" alt="Certificado ChileValora ECERLAB" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Certificado</span>
                 </div>
                 <div class="cert-detail-content">
@@ -264,10 +264,10 @@
             <!-- 5. Euroinnova: Experto en Ingeniería Química -->
             <article class="cert-detail-card">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp"
                      data-cert-title="Diploma Euroinnova - Experto en Ingeniería Química"
                      data-cert-desc="Diploma oficial con calificación SOBRESALIENTE expedido a Domingo Isain Plaza Caamaño tras completar 260 horas de formación en ingeniería química aplicada.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.jpg" alt="Diploma Experto en Ingeniería Química Euroinnova" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-quimica.webp" alt="Diploma Experto en Ingeniería Química Euroinnova" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">
@@ -303,10 +303,10 @@
             <!-- 6. Claustro Gómez: Técnico Superior en Ingeniería Industrial -->
             <article class="cert-detail-card reverse-layout">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp"
                      data-cert-title="Título Propio Técnico Superior en Ingeniería Industrial"
                      data-cert-desc="Diploma oficial con registro CG1009 otorgado a Domingo Isain Plaza Camaño por Claustro Gómez Universitas por haber completado satisfactoriamente los módulos de Ingeniería Industrial.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.jpg" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-ingenieria-industrial.webp" alt="Diploma Claustro Gómez Ingeniería Industrial" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">
@@ -341,10 +341,10 @@
             <!-- 7. Claustro Gómez: Máster en Ecología y Estudios Ambientales -->
             <article class="cert-detail-card">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.webp"
                      data-cert-title="Máster Propio en Ecología y Estudios Ambientales"
                      data-cert-desc="Diploma oficial con registro CG1010 otorgado a Domingo Isain Plaza Camaño por Claustro Gómez Universitas correspondiente al programa de Máster Propio en Ecología y Estudios Ambientales.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.jpg" alt="Diploma Máster en Ecología y Estudios Ambientales" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-master-ecologia-ambiental.webp" alt="Diploma Máster en Ecología y Estudios Ambientales" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">
@@ -417,10 +417,10 @@
             <!-- 9. Escuela Electromecánica: Especialista en Gasfitería y Sanitarios -->
             <article class="cert-detail-card">
                 <div class="cert-detail-visual" 
-                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg"
+                     data-cert-src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.webp"
                      data-cert-title="Diploma Escuela Electromecánica - Gasfitería y Sanitarios"
                      data-cert-desc="Diploma de Educación Técnica otorgado a Don Domingo Isain Plaza Caamaño como Especialista Técnico con mención en Gasfitería y Sanitarios bajo normas NCH 2728 e ISO 9001.">
-                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.jpg" alt="Diploma Gasfitería y Sanitarios Escuela Electromecánica" class="cert-detail-img">
+                    <img src="<?= BASE_URL ?>/assets/images/certificates/diploma-gasfiteria-sanitarios-electromechanics.webp" alt="Diploma Gasfitería y Sanitarios Escuela Electromecánica" class="cert-detail-img">
                     <span class="cert-zoom-hint">🔍 Ampliar Diploma</span>
                 </div>
                 <div class="cert-detail-content">

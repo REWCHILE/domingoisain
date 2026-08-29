@@ -47,8 +47,22 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="icon" type="image/webp" href="<?= BASE_URL ?>/assets/images/logotipo-sec.webp">
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
+    <!-- Preconnect a Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload de Imagen LCP Hero -->
+    <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" fetchpriority="high">
+    
+    <!-- Carga Asíncrona de Fuentes (Elimina bloqueo de renderizado) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap">
+    </noscript>
+
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.7">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.8">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
@@ -85,7 +99,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     <span>Licencia SEC Clase 3</span>
                 </span>
-                <a href="tel:<?= PHONE_RAW ?>" class="top-emergency-phone" title="Llamar a Domingo Isaín">
+                <a href="tel:<?= PHONE_RAW ?>" class="top-emergency-phone" title="Llamar a Domingo Isaín" aria-label="Llamar a Domingo Isaín al +56 9 4987 7316">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--brand-cyan)" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     <span><?= PHONE_DISPLAY ?></span>
                 </a>
@@ -97,8 +111,8 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <header class="header-main">
         <div class="header-container">
             <!-- Logotipo y Marca Oficial -->
-            <a href="<?= BASE_URL ?>/" class="logo-brand" aria-label="Ir a la portada" style="display: flex; align-items: center; gap: 14px;">
-                <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín - Técnico en Ingeniería" style="height: 52px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0, 180, 232, 0.4));">
+            <a href="<?= BASE_URL ?>/" class="logo-brand" aria-label="Ir a la portada de Domingo Isaín" style="display: flex; align-items: center; gap: 14px;">
+                <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.webp" alt="Domingo Isaín - Técnico en Ingeniería" width="220" height="52" style="height: 48px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0, 180, 232, 0.4));">
                 <div class="logo-texts" style="display: flex; flex-direction: column;">
                     <span class="logo-title" style="font-size: 1.2rem; letter-spacing: -0.3px;">DOMINGO ISAÍN</span>
                     <span class="logo-subtitle" style="font-size: 0.72rem; color: var(--brand-cyan); letter-spacing: 0.5px; font-weight: 700;">
@@ -120,12 +134,12 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
 
             <!-- Acciones CTA -->
             <div class="header-actions">
-                <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, necesito atención técnica urgente de gasfitería.') ?>" class="btn-header-call" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, necesito atención técnica urgente de gasfitería.') ?>" class="btn-header-call" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Urgencias Domingo Isaín">
                     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
                     <span>WhatsApp Urgencias</span>
                 </a>
 
-                <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menú Móvil">
+                <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menú de Navegación">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
             </div>
@@ -133,15 +147,15 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     </header>
 
     <!-- Overlay Oscuro de Fondo para Menú Móvil -->
-    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
 
     <!-- Menú Móvil Desplegable (Deslizamiento de Izquierda a Derecha) -->
-    <aside id="mobile-drawer" class="mobile-drawer-panel" aria-label="Menú Móvil" aria-hidden="true">
+    <aside id="mobile-drawer" class="mobile-drawer-panel" aria-label="Menú Móvil de Navegación">
         <div>
             <!-- Encabezado del Menú -->
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid var(--border-subtle);">
                 <div style="display: flex; align-items: center; gap: 12px;">
-                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.png" alt="Domingo Isaín" style="height: 44px; width: auto; object-fit: contain;">
+                    <img src="<?= BASE_URL ?>/assets/images/logo-domingo-isain.webp" alt="Domingo Isaín" width="180" height="44" style="height: 44px; width: auto; object-fit: contain;">
                     <div>
                         <span style="font-weight: 800; font-size: 1rem; color: #fff; display: block; line-height: 1.1;">DOMINGO ISAÍN</span>
                         <span style="color: var(--brand-cyan); font-size: 0.68rem; font-weight: 700; text-transform: uppercase;">Técnico en Ingeniería · SEC</span>
@@ -151,7 +165,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
             </div>
 
             <!-- Lista de Enlaces -->
-            <nav style="display: flex; flex-direction: column; gap: 6px;">
+            <nav style="display: flex; flex-direction: column; gap: 6px;" aria-label="Navegación Móvil">
                 <a href="<?= BASE_URL ?>/" class="mobile-drawer-link <?= ($pageKey === '/') ? 'active' : '' ?>">
                     <span>Inicio</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
@@ -185,20 +199,16 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
 
         <!-- Botones de Acción al Fondo del Drawer -->
         <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--border-subtle);">
-            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia de gas / sanitarios y necesito atención técnica.') ?>" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #10b981, #059669); gap: 8px; font-size: 0.95rem; padding: 13px;" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una urgencia de gas / sanitarios y necesito atención técnica.') ?>" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #10b981, #059669); gap: 8px; font-size: 0.95rem; padding: 13px;" target="_blank" rel="noopener noreferrer" aria-label="Enviar WhatsApp de Urgencias">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.77.814 2.796.814 3.182 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.758 0-3.415-.456-4.864-1.258l-5.136 1.346 1.371-5.012c-.879-1.493-1.371-3.23-1.371-5.076 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
                 <span>WhatsApp Urgencias</span>
             </a>
-            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="width: 100%; justify-content: center; gap: 8px; font-size: 0.95rem; padding: 13px;">
+            <a href="tel:<?= PHONE_RAW ?>" class="btn-secondary" style="width: 100%; justify-content: center; gap: 8px; font-size: 0.95rem; padding: 13px;" aria-label="Llamar a Domingo Isaín al +56 9 4987 7316">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <span>Llamar: <?= PHONE_DISPLAY ?></span>
             </a>
         </div>
     </aside>
-    <script>
-        const mdToggle = document.getElementById('mobile-menu-toggle');
-        const mdDrawer = document.getElementById('mobile-drawer');
-        const mdClose = document.getElementById('mobile-drawer-close');
-        if(mdToggle && mdDrawer) mdToggle.onclick = () => mdDrawer.style.display = 'flex';
-        if(mdClose && mdDrawer) mdClose.onclick = () => mdDrawer.style.display = 'none';
-    </script>
+
+    <!-- Punto de Referencia Principal para Accesibilidad (Main Landmark) -->
+    <main id="main-content">

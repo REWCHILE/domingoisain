@@ -68,11 +68,11 @@
 
                 <!-- Paso 3: Longitud o Datos Adicionales -->
                 <div class="calc-step-group" style="margin-bottom: 0;">
-                    <h3 class="calc-step-title">
+                    <label for="calc-input-metros" class="calc-step-title" style="display: block; cursor: pointer;">
                         <span class="calc-step-num">3</span>
                         Tramo Estimado de Cañería (Aprox.)
-                    </h3>
-                    <select id="calc-input-metros" class="calc-select">
+                    </label>
+                    <select id="calc-input-metros" class="calc-select" aria-label="Selecciona los metros estimados de cañería">
                         <option value="Tramo estándar (hasta 15 metros)">Tramo estándar (hasta 15 metros) - Típico depto / cocina-calefont</option>
                         <option value="Tramo mediano (15 a 30 metros)">Tramo mediano (15 a 30 metros) - Casas medianas o 2 artefactos</option>
                         <option value="Tramo extendido (más de 30 metros)">Tramo extendido (más de 30 metros) - Casas grandes / comercio</option>
