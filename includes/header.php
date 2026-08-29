@@ -47,22 +47,15 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <link rel="icon" type="image/webp" href="<?= BASE_URL ?>/assets/images/logotipo-sec.webp">
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
-    <!-- Preconnect a Fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload de Fuentes Locales Críticas (Cero bloqueo, Cero Layout Shift CLS) -->
+    <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
     
     <!-- Preload de Imagen LCP Hero -->
     <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" fetchpriority="high">
-    
-    <!-- Carga Asíncrona de Fuentes (Elimina bloqueo de renderizado) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;900&display=swap">
-    </noscript>
 
-    <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.9">
+    <!-- Estilos CSS Minificados con Fuentes Locales Integradas -->
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.min.css?v=4.0">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">
