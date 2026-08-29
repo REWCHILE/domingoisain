@@ -37,7 +37,7 @@ global $FAQS;
                             <p><?= nl2br(htmlspecialchars($faq['answer'])) ?></p>
                             <div style="margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
                                 <span style="font-size: 0.78rem; color: var(--sec-green); font-weight: 600;">✓ Asesoría directa con Domingo Isaín (SEC Clase 3)</span>
-                                <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una duda sobre: ' . $faq['question']) ?>" target="_blank" style="font-size: 0.82rem; color: var(--tech-cyan); text-decoration: none; font-weight: 700;">
+                                <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, tengo una duda sobre: ' . $faq['question']) ?>" target="_blank" rel="noopener noreferrer" style="font-size: 0.82rem; color: var(--tech-cyan); text-decoration: none; font-weight: 700;" aria-label="Consultar a Domingo por WhatsApp sobre: <?= htmlspecialchars($faq['question']) ?>">
                                     Consultar por WhatsApp →
                                 </a>
                             </div>

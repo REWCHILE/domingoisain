@@ -89,11 +89,11 @@
 
                     <!-- Paginación Dots -->
                     <div class="hero-slider-dots" id="hero-slider-dots">
-                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Ir a foto 1"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Ir a foto 2"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Ir a foto 3"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Ir a foto 4"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="4" aria-label="Ir a foto 5"></button>
+                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Ir a foto 1"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Ir a foto 2"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Ir a foto 3"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Ir a foto 4"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="4" aria-label="Ir a foto 5"><span class="dot-inner"></span></button>
                     </div>
                 </div>
 

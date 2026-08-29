@@ -62,7 +62,7 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     </noscript>
 
     <!-- Estilos CSS Modernos -->
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.8">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/main.css?v=3.9">
     
     <!-- Datos Estructurados JSON-LD (Schema.org) -->
     <script type="application/ld+json">

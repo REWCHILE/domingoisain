@@ -6,8 +6,8 @@
 (function() {
   'use strict';
 
-  // Desactivar en dispositivos táctiles
-  if (window.matchMedia('(pointer: coarse)').matches || !('ontouchstart' in window === false)) {
+  // Desactivar completamente en dispositivos táctiles / móviles
+  if (window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window || navigator.maxTouchPoints > 0) {
     return;
   }
 
