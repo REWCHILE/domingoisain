@@ -1,12 +1,11 @@
 /**
  * Lógica Principal de Interacción & Frontend Moderno
  * Domingo Isaín - Gasfíter Instalador Autorizado SEC
- * Arquitectura Chunks Asíncronos (0ms Bloqueo de Hilo Principal)
  */
 (function() {
   'use strict';
 
-  // 1. INICIALIZACIÓN CRÍTICA INMEDIATA (< 1ms): MENÚ MÓVIL OFF-CANVAS
+  // 1. MENÚ MÓVIL OFF-CANVAS
   const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const mobileCloseBtn = document.getElementById('mobile-drawer-close');
@@ -74,9 +73,7 @@
     }, { passive: true });
   }
 
-  // 2. MICROTASKS DIFERIDAS (Se ejecutan en ráfagas de < 5ms sin congelar el hilo principal)
-
-  // Chunk 1: FAQs Accordion y Filtros
+  // 2. FAQS ACCORDION Y FILTROS
   function initFaqs() {
     const faqItems = document.querySelectorAll('.faq-item');
     const catButtons = document.querySelectorAll('.faq-cat-btn');
@@ -122,7 +119,7 @@
     });
   }
 
-  // Chunk 2: Cotizador Interactivo
+  // 3. COTIZADOR INTERACTIVO
   function initCalculator() {
     const calcPropertyOptions = document.querySelectorAll('[data-calc-property]');
     const calcProblemOptions = document.querySelectorAll('[data-calc-problem]');
@@ -142,13 +139,13 @@
       if (summaryMetros) summaryMetros.textContent = selectedMetros;
 
       if (whatsappQuoteBtn) {
-        const message = `Hola Domingo, coticé en tu sitio web:
-- Inmueble: ${selectedProperty}
-- Necesidad: ${selectedProblem}
-- Tramo estimado: ${selectedMetros}
-¿Me podrías indicar disponibilidad y presupuesto estimado? Muchas gracias.`;
+        const message = "Hola Domingo, cotice en tu sitio web:\n" +
+          "- Inmueble: " + selectedProperty + "\n" +
+          "- Necesidad: " + selectedProblem + "\n" +
+          "- Tramo estimado: " + selectedMetros + "\n" +
+          "Me podrias indicar disponibilidad y presupuesto estimado? Muchas gracias.";
 
-        whatsappQuoteBtn.href = `https://api.whatsapp.com/send?phone=56949877316&text=${encodeURIComponent(message)}`;
+        whatsappQuoteBtn.href = "https://api.whatsapp.com/send?phone=56949877316&text=" + encodeURIComponent(message);
       }
     }
 
@@ -180,7 +177,7 @@
     updateQuoteSummary();
   }
 
-  // Chunk 3: Modal Lightbox & Scroll To Top
+  // 4. MODAL LIGHTBOX & SCROLL TO TOP
   function initModalsAndScroll() {
     const goToTopBtn = document.getElementById('btn-go-to-top');
     let scrollTicking = false;
@@ -217,7 +214,7 @@
       });
     }
 
-    // Modal
+    // Modal de Certificados
     const modalBackdrop = document.getElementById('cert-modal');
     const modalImage = document.getElementById('modal-cert-image');
     const modalTitle = document.getElementById('modal-cert-title');
@@ -264,7 +261,7 @@
     });
   }
 
-  // Chunk 4: Carruseles
+  // 5. CARRUSELES / SLIDERS CON RESPUESTA TÁCTIL Y DE CLICK
   function initCarousels() {
     function initCarousel(prefix) {
       const sliderTrack = document.getElementById(`${prefix}-track`);
@@ -311,27 +308,42 @@
       }
 
       if (nextBtn) {
-        nextBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
+        const handleNext = (e) => {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           goToSlide(currentSlide + 1);
           startAutoSlide();
-        });
+        };
+        nextBtn.addEventListener('click', handleNext);
+        nextBtn.addEventListener('touchend', handleNext);
       }
 
       if (prevBtn) {
-        prevBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
+        const handlePrev = (e) => {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           goToSlide(currentSlide - 1);
           startAutoSlide();
-        });
+        };
+        prevBtn.addEventListener('click', handlePrev);
+        prevBtn.addEventListener('touchend', handlePrev);
       }
 
       dots.forEach((dot, idx) => {
-        dot.addEventListener('click', (e) => {
-          e.stopPropagation();
+        const handleDot = (e) => {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           goToSlide(idx);
           startAutoSlide();
-        });
+        };
+        dot.addEventListener('click', handleDot);
+        dot.addEventListener('touchend', handleDot);
       });
 
       if (sliderCard) {
@@ -357,16 +369,16 @@
         startAutoSlide();
       }, { passive: true });
 
-      setTimeout(startAutoSlide, 3000);
+      setTimeout(startAutoSlide, 2500);
     }
 
     initCarousel('hero-slider');
     initCarousel('cert-slider');
   }
 
-  // Programar micro-tareas diferidas para no bloquear el hilo principal
-  setTimeout(initFaqs, 60);
-  setTimeout(initCalculator, 120);
-  setTimeout(initModalsAndScroll, 180);
-  setTimeout(initCarousels, 240);
+  // Inicialización inmediata de todos los módulos
+  initFaqs();
+  initCalculator();
+  initModalsAndScroll();
+  initCarousels();
 })();
