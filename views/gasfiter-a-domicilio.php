@@ -8,7 +8,7 @@
     <div class="hero-glow hero-glow-2"></div>
     <div class="hero-container">
         <div class="hero-content-pane">
-            <span class="service-badge badge-green" style="margin-bottom: 16px;">Atención a Domicilio en Toda la RM</span>
+            <span class="service-badge badge-green" style="margin-bottom: 16px;">Atención a Domicilio en Todo Chile Continental</span>
             <h1 class="hero-title">
                 Gasfíter a <span class="gradient-text">Domicilio en Santiago</span> · Autorizado SEC 24/7
             </h1>

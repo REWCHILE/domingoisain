@@ -93,8 +93,13 @@ $FAQS = [
     ],
     [
         'category' => 'Cobertura Geográfica',
-        'question' => '¿Qué comunas de Santiago y la Región Metropolitana atienden?',
-        'answer' => 'Atendemos todas las comunas del Gran Santiago: Las Condes, Vitacura, Lo Barnechea, Providencia, Ñuñoa, La Reina, Santiago Centro, San Miguel, Peñalolén, Macul, La Florida, Maipú, Pudahuel, Quilicura, San Bernardo, Puente Alto, Colina, Chicureo, y también servicios especiales en la V Región (Litoral Central) previa coordinación.'
+        'question' => '¿Qué regiones y ciudades de Chile atienden?',
+        'answer' => 'Atendemos en **todo Chile continental** (desde Arica y Parinacota hasta Magallanes continental: Región Metropolitana de Santiago, Valparaíso, O\'Higgins, Maule, Biobío, Araucanía, Los Lagos, Antofagasta, Coquimbo, etc.). Nos trasladamos a cualquier región continental de Chile para proyectos de detección de fugas, sellado con polímero alemán Prodoral R6-1 sin romper y certificaciones SEC DS66. *Nota:* No se atiende en Isla de Pascua (Rapa Nui), Territorio Antártico ni islas oceánicas chilenas.'
+    ],
+    [
+        'category' => 'Traslado a Regiones',
+        'question' => '¿Realizan trabajos y peritajes en regiones fuera de Santiago?',
+        'answer' => 'Sí, Domingo Isaín y su equipo técnico se desplazan a lo largo de todo Chile continental para realizar detección no destructiva con geófono digital y gas trazador, sellado de cañerías de gas subterráneas y empotradas en edificios, condominios, casas y empresas, con entrega de certificado oficial firmado por Instalador SEC Clase 3.'
     ]
 ];
 
@@ -452,7 +457,7 @@ function getLocalBusinessJsonLd() {
         '@id' => BASE_URL . '/#localbusiness',
         'name' => 'Domingo Isaín - Gasfíter Instalador Autorizado SEC Clase 3',
         'alternateName' => ['SellafuGas® Domingo Isaín', 'Domingo Isaín Plaza Caamaño', 'Gasfíter SEC Domingo Isaín'],
-        'description' => 'Servicio técnico especializado de Domingo Isaín Plaza Caamaño (RUT 12.738.961-6). Detección milimétrica y sellado de fugas de gas sin picar muros ni pisos con tecnología alemana Prodoral R6-1, geófono ultrasonido digital, gas trazador, levantamiento de sellos rojos SEC bajo norma DS66 y gasfitería general en Santiago de Chile.',
+        'description' => 'Servicio técnico especializado de Domingo Isaín Plaza Caamaño (RUT 12.738.961-6). Detección milimétrica y sellado de fugas de gas sin picar muros ni pisos con tecnología alemana Prodoral R6-1, geófono ultrasonido digital, gas trazador, levantamiento de sellos rojos SEC bajo norma DS66 y gasfitería general en todo Chile continental (excluye Isla de Pascua, Territorio Antártico e islas chilenas).',
         'url' => BASE_URL,
         'telephone' => PHONE_RAW,
         'email' => EMAIL_CONTACT,
@@ -465,9 +470,9 @@ function getLocalBusinessJsonLd() {
         ],
         'address' => [
             '@type' => 'PostalAddress',
-            'streetAddress' => 'Santiago Centro / Cobertura Región Metropolitana',
+            'streetAddress' => 'Santiago Centro / Cobertura Todo Chile Continental',
             'addressLocality' => 'Santiago',
-            'addressRegion' => 'Región Metropolitana',
+            'addressRegion' => 'Chile Continental / Región Metropolitana',
             'postalCode' => '8320000',
             'addressCountry' => 'CL'
         ],
@@ -488,7 +493,7 @@ function getLocalBusinessJsonLd() {
             '@type' => 'ContactPoint',
             'telephone' => PHONE_RAW,
             'contactType' => 'emergency service',
-            'areaServed' => 'CL-RM',
+            'areaServed' => ['CL', 'Chile Continental'],
             'availableLanguage' => ['es', 'Spanish'],
             'hoursAvailable' => [
                 '@type' => 'OpeningHoursSpecification',
@@ -595,10 +600,27 @@ function getLocalBusinessJsonLd() {
             ]
         ],
         'areaServed' => [
-            'Santiago', 'Las Condes', 'Vitacura', 'Providencia', 'Ñuñoa', 'La Reina',
-            'Lo Barnechea', 'Santiago Centro', 'San Miguel', 'La Florida', 'Maipú',
-            'Peñalolén', 'Macul', 'Pudahuel', 'Quilicura', 'San Bernardo', 'Puente Alto',
-            'Colina', 'Chicureo', 'Lampa', 'Región Metropolitana'
+            [
+                '@type' => 'Country',
+                'name' => 'Chile',
+                'description' => 'Cobertura técnica en todo Chile continental (excluye Isla de Pascua, Territorio Antártico e islas chilenas)'
+            ],
+            'Región Metropolitana de Santiago',
+            'Región de Valparaíso',
+            'Región del Libertador General Bernardo O\'Higgins',
+            'Región del Maule',
+            'Región de Ñuble',
+            'Región del Biobío',
+            'Región de La Araucanía',
+            'Región de Los Ríos',
+            'Región de Los Lagos',
+            'Región de Coquimbo',
+            'Región de Atacama',
+            'Región de Antofagasta',
+            'Región de Tarapacá',
+            'Región de Arica y Parinacota',
+            'Región de Aysén (Continental)',
+            'Región de Magallanes (Continental)'
         ],
         'sameAs' => [
             'https://sellafugas.cl',

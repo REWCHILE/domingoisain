@@ -463,19 +463,19 @@
             },
             commune: {
               type: 'string',
-              description: 'Comuna de Santiago (ej. Las Condes, Providencia, Santiago Centro)'
+              description: 'Comuna o Región de Chile continental (ej. Santiago, Las Condes, Viña del Mar, Rancagua, Concepción)'
             }
           },
           required: ['issueDescription']
         },
         execute: async function(args) {
           const issue = args.issueDescription || 'Urgencia de gas';
-          const commune = args.commune || 'Santiago';
+          const commune = args.commune || 'Chile';
           return {
             status: 'emergency_ready',
             phonePrimary: '+56 9 4987 7316',
             phoneSecondary: '+56 9 3223 7072',
-            availability: '24 Horas / 7 Días a la semana en toda la Región Metropolitana',
+            availability: 'Todo Chile continental (excluye Isla de Pascua, Antártica e islas chilenas)',
             actionUrl: `https://api.whatsapp.com/send?phone=56949877316&text=${encodeURIComponent(`EMERGENCIA 24/7 en ${commune}: ${issue}`)}`
           };
         }

@@ -58,7 +58,7 @@
                     <div class="hero-slider-track" id="hero-slider-track">
                         <!-- Slide 1 -->
                         <div class="hero-slide">
-                            <span class="hero-slide-tag">🚗 Atención Móvil 24/7 en Toda la RM</span>
+                            <span class="hero-slide-tag">🚗 Cobertura en Todo Chile Continental</span>
                             <img src="<?= BASE_URL ?>/assets/images/hero-home-main.webp" alt="Domingo Isaín con Furgón de Emergencias SEC" class="hero-slide-img" width="800" height="600" fetchpriority="high">
                         </div>
                         <!-- Slide 2 -->
