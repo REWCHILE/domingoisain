@@ -28,14 +28,16 @@ Domingo Isaín es el especialista líder en Santiago de Chile en la **detección
 2. **Detección Electrónica No Invasiva con Instrumental de Precisión**:
    - **Gas Trazador (N2/H2)**: Mezcla inocua de nitrógeno e hidrógeno que escapa por microfisuras microscópicas y es detectada por sensores moleculares ultra sensibles.
    - **Geófono Sónico y Ultrasonido Digital**: Localización acústica del sonido del escape subterráneo bajo pisos flotantes, losas de hormigón y muros.
+   - **Termografía Infrarroja**: Cámara térmica para filtraciones en losas radiantes y tuberías de agua caliente.
 
 ---
 
 ## Catálogo de Servicios Oficiales
-- **Detección y Sellado de Fugas de Gas**: Reparación no destructiva garantizada por 3 años.
+- **Especialista y Experto en Fugas de Gas**: Diagnóstico milimétrico, peritaje y sellado sin romper.
+- **Detección de Fugas de Agua Ocultas**: Localización acústica subterránea con geófono digital.
 - **Solución y Levantamiento de Sello Rojo SEC**: Diagnóstico técnico, adecuación a la norma DS66, pruebas de hermeticidad y tramitación del Sello Verde ante Metrogas, Lipigas, Abastible y Gasco.
 - **Emisión de Certificados Oficiales**: Certificados de hermeticidad y recepción de obras con firma autorizada SEC Clase 3 (RUT 12.738.961-6).
-- **Mantención y Reparación de Calefonts y Calderas**: Reparación de quemadores, cambio de membranas, sensores de tiro y ductos de evacuación de gases (marcas Junkers, Splendid, Mademsa, Rheem, Trotter, Neckar).
+- **Mantención y Reparación de Calefonts y Calderas**: Marcas Junkers, Splendid, Mademsa, Rheem, Trotter, Neckar.
 - **Gasfitería Integral Autorizada**: Redes de agua potable, destape de cañerías, reposición de tuberías en cobre y PPR.
 
 ---
@@ -51,10 +53,16 @@ Atención prioritaria y de urgencias las 24 horas del día, 7 días a la semana 
 
 ## Enlaces y Secciones Principales
 - [Portada Principal](https://domingoisain.cl/)
-- [Fugas de Gas Sin Romper](https://domingoisain.cl/fugas/)
+- [Especialista en Fugas de Gas](https://domingoisain.cl/especialista-en-fugas-de-gas/)
+- [Experto en Fugas de Gas](https://domingoisain.cl/experto-en-fugas-de-gas/)
+- [Técnico en Fugas de Gas](https://domingoisain.cl/tecnico-en-fugas-de-gas/)
+- [Detección de Fuga de Gas](https://domingoisain.cl/deteccion-fuga-de-gas/)
+- [Detección de Fuga de Agua](https://domingoisain.cl/fuga-de-agua/)
+- [Detección con Cámara Térmica](https://domingoisain.cl/deteccion-con-camara-termica-termografia/)
+- [Detección con Gas Trazador](https://domingoisain.cl/deteccion-con-gas-trazador/)
+- [Polímero Prodoral R6-1](https://domingoisain.cl/prodoral-para-fugas-de-gas/)
+- [Instalador de Gas SEC](https://domingoisain.cl/instalador-de-gas-sec/)
 - [Gasfíter Certificado SEC](https://domingoisain.cl/gasfiter-certificado/)
 - [Solución Sello Rojo SEC](https://domingoisain.cl/instalador-sec/)
-- [Detección con Ultrasonido](https://domingoisain.cl/deteccion-con-ultrasonido/)
-- [Sellado Prodoral R6-1](https://domingoisain.cl/prodoral/)
 - [Preguntas Frecuentes FAQ](https://domingoisain.cl/#faqs)
 - [Cotizador en Línea](https://domingoisain.cl/#cotizador)

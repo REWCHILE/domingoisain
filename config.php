@@ -212,6 +212,96 @@ $PAGES_CONFIG = [
         'subtitle' => 'Máximo respaldo técnico y legal en todos nuestros trabajos de gasfitería e ingeniería',
         'view' => 'home'
     ],
+    '/especialista-en-fugas-de-gas/' => [
+        'title' => 'Especialista en Fugas de Gas en Santiago | Domingo Isaín SEC Clase 3',
+        'description' => 'Especialista en detección y reparación de fugas de gas subterráneas y empotradas sin romper muros ni pisos. Polímero alemán Prodoral R6-1. Garantía 3 años.',
+        'canonical' => BASE_URL . '/especialista-en-fugas-de-gas/',
+        'h1' => 'Especialista en Fugas de Gas en Santiago · Sellado Sin Romper',
+        'subtitle' => 'Más de 30 años de experiencia, diagnóstico milimétrico con geófono digital y certificación oficial SEC',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'especialista-en-fugas-de-gas'
+    ],
+    '/fuga-de-agua/' => [
+        'title' => 'Detección de Fugas de Agua Ocultas con Geófono en Santiago | Domingo Isaín',
+        'description' => '¿Cuenta de agua alta o humedad en muros? Localizamos filtraciones subterráneas y bajo radier con geófono digital y gas trazador sin romper a ciegas.',
+        'canonical' => BASE_URL . '/fuga-de-agua/',
+        'h1' => 'Detección de Fugas de Agua Ocultas con Geófono Digital',
+        'subtitle' => 'Localización acústica y molecular de filtraciones de agua potable en casas y departamentos de Santiago',
+        'og_image' => BASE_URL . '/assets/images/hero-fuga-agua.jpg',
+        'view' => 'fuga-de-agua'
+    ],
+    '/tecnico-en-fugas-de-gas/' => [
+        'title' => 'Técnico en Fugas de Gas Autorizado SEC 24/7 | Domingo Isaín',
+        'description' => 'Visita técnica urgente para detección de fugas de gas, prueba manométrica, mantención de calefonts y sellado de tuberías. Teléfono directo +56 9 4987 7316.',
+        'canonical' => BASE_URL . '/tecnico-en-fugas-de-gas/',
+        'h1' => 'Técnico en Fugas de Gas en Santiago · Atención Rápida 24/7',
+        'subtitle' => 'Técnico calificado SEC Clase 3 (RUT 12.738.961-6) con equipamiento móvil de detección y prueba',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'tecnico-en-fugas-de-gas'
+    ],
+    '/deteccion-fuga-de-gas/' => [
+        'title' => 'Detección Profesional de Fuga de Gas Sin Romper | Domingo Isaín',
+        'description' => 'Localizamos fugas de gas invisibles con gas trazador (N2/H2), geófono ultrasónico y manómetros digitales de precisión. Certificado oficial DS66.',
+        'canonical' => BASE_URL . '/deteccion-fuga-de-gas/',
+        'h1' => 'Detección de Fugas de Gas en Santiago · Sin Romper Muros',
+        'subtitle' => 'Diagnóstico no invasivo de fugas subterráneas y empotradas con instrumental calibrado de alta gama',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'deteccion-fuga-de-gas'
+    ],
+    '/instalador-de-gas-sec/' => [
+        'title' => 'Instalador de Gas SEC Oficial | Regularización Sello Rojo y DS66',
+        'description' => 'Servicio técnico de Domingo Isaín Plaza Caamaño, Instalador de Gas Autorizado SEC Clase 3 (RUT 12.738.961-6). Regularización, pruebas y Sello Verde.',
+        'canonical' => BASE_URL . '/instalador-de-gas-sec/',
+        'h1' => 'Instalador de Gas SEC en Santiago · Respaldo y Garantía Legal',
+        'subtitle' => 'Proyectos de gas, recepción de obras, normalización de sellos rojos y pruebas de hermeticidad certificadas',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'instalador-de-gas-sec'
+    ],
+    '/deteccion-con-gas-trazador/' => [
+        'title' => 'Detección con Gas Trazador (N2/H2) en Santiago | Domingo Isaín',
+        'description' => 'Tecnología molecular con gas trazador inerte (Nitrógeno 95% + Hidrógeno 5%) para encontrar microfugas de gas y agua bajo losas y radieres sin romper.',
+        'canonical' => BASE_URL . '/deteccion-con-gas-trazador/',
+        'h1' => 'Detección con Gas Trazador (N2/H2) · Precisión Milimétrica',
+        'subtitle' => 'El método no destructivo más avanzado para localizar fugas subterráneas ocultas en minutos',
+        'og_image' => BASE_URL . '/assets/images/hero-gas-trazador.jpg',
+        'view' => 'deteccion-con-gas-trazador'
+    ],
+    '/prodoral-para-fugas-de-gas/' => [
+        'title' => 'Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
+        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía.',
+        'canonical' => BASE_URL . '/prodoral-para-fugas-de-gas/',
+        'h1' => 'Polímero Prodoral R6-1 para Sellado de Fugas de Gas Sin Romper',
+        'subtitle' => 'Rehabilitación interior de tuberías de cobre, fierro y acero en tiempo récord con elasticidad antisísmica',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'prodoral-para-fugas-de-gas'
+    ],
+    '/prodoral-para-fugas-de-gas' => [
+        'title' => 'Prodoral R6-1 para Fugas de Gas Sin Romper | Domingo Isaín SEC',
+        'description' => 'Polímero sellante alemán Prodoral R6-1 con certificación DVGW y DIN EN 13090. Sella cañerías de gas desde adentro sin picar. 3 años de garantía.',
+        'canonical' => BASE_URL . '/prodoral-para-fugas-de-gas/',
+        'h1' => 'Polímero Prodoral R6-1 para Sellado de Fugas de Gas Sin Romper',
+        'subtitle' => 'Rehabilitación interior de tuberías de cobre, fierro y acero en tiempo récord con elasticidad antisísmica',
+        'og_image' => BASE_URL . '/assets/images/og-image.jpg',
+        'view' => 'prodoral-para-fugas-de-gas'
+    ],
+    '/deteccion-con-camara-termica-termografia/' => [
+        'title' => 'Detección con Cámara Térmica y Termografía en Santiago | Domingo Isaín',
+        'description' => 'Inspección termográfica infrarroja para ubicar fugas de agua caliente, losas radiantes y humedad en muros sin perforar. Diagnóstico visual digital.',
+        'canonical' => BASE_URL . '/deteccion-con-camara-termica-termografia/',
+        'h1' => 'Detección con Cámara Térmica y Termografía en Santiago',
+        'subtitle' => 'Mapeo térmico de alta resolución para filtraciones en calderas, losa radiante y cañerías empotradas',
+        'og_image' => BASE_URL . '/assets/images/hero-camara-termica.jpg',
+        'view' => 'deteccion-con-camara-termica-termografia'
+    ],
+    '/experto-en-fugas-de-gas/' => [
+        'title' => 'Experto en Fugas de Gas Santiago | Domingo Isaín Perito SEC 30+ Años',
+        'description' => 'Peritaje técnico y solución definitiva para fugas de gas complejas en comunidades de edificios, condominios y casas. Licencia SEC Clase 3.',
+        'canonical' => BASE_URL . '/experto-en-fugas-de-gas/',
+        'h1' => 'Experto en Fugas de Gas en Santiago · Peritaje y Sellado SEC',
+        'subtitle' => 'Solución garantizada para casos difíciles, fugas intermitentes y levantamiento urgente de sello rojo',
+        'og_image' => BASE_URL . '/assets/images/hero-especialista-fugas.jpg',
+        'view' => 'experto-en-fugas-de-gas'
+    ],
     '/gasfiter-autorizado-sec/' => [
         'title' => 'Gasfíter Autorizado SEC 24 Horas | Domingo Isaín Plaza Caamaño',
         'description' => 'Servicio de urgencias 24/7 para fugas de gas, corte de suministro y normalización de artefactos en Santiago. Teléfono directo +56 9 4987 7316.',

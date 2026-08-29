@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <!-- Portada Principal -->
     <url>
         <loc>https://domingoisain.cl/</loc>
         <lastmod>2026-08-29</lastmod>
@@ -11,14 +12,56 @@
             <image:title>Domingo Isaín Gasfíter Instalador Autorizado SEC Clase 3</image:title>
         </image:image>
     </url>
+
+    <!-- Especialidades Principales de Gas -->
     <url>
         <loc>https://domingoisain.cl/fugas/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>0.95</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
             <image:title>Detección y Reparación de Fugas de Gas Sin Romper</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/especialista-en-fugas-de-gas/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Especialista en Fugas de Gas en Santiago Domingo Isaín</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/experto-en-fugas-de-gas/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Experto en Fugas de Gas en Santiago Peritaje SEC</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/tecnico-en-fugas-de-gas/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Técnico en Fugas de Gas Autorizado SEC Santiago</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/deteccion-fuga-de-gas/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-especialista-fugas.jpg</image:loc>
+            <image:title>Detección Profesional de Fuga de Gas Sin Romper</image:title>
         </image:image>
     </url>
     <url>
@@ -28,27 +71,39 @@
         <priority>0.9</priority>
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Urgencias por Fuga de Gas 24/7</image:title>
+            <image:title>Urgencias por Fuga de Gas 24/7 Santiago</image:title>
+        </image:image>
+    </url>
+
+    <!-- Fugas de Agua y Diagnóstico Térmico -->
+    <url>
+        <loc>https://domingoisain.cl/fuga-de-agua/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/hero-fuga-agua.jpg</image:loc>
+            <image:title>Detección de Fugas de Agua Ocultas con Geófono</image:title>
         </image:image>
     </url>
     <url>
-        <loc>https://domingoisain.cl/gasfiter-certificado/</loc>
+        <loc>https://domingoisain.cl/deteccion-con-camara-termica-termografia/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Gasfíter Certificado SEC Clase 3 Domingo Isaín</image:title>
+            <image:loc>https://domingoisain.cl/assets/images/hero-camara-termica.jpg</image:loc>
+            <image:title>Detección con Cámara Térmica y Termografía Infrarroja</image:title>
         </image:image>
     </url>
     <url>
-        <loc>https://domingoisain.cl/instalador-sec/</loc>
+        <loc>https://domingoisain.cl/deteccion-con-gas-trazador/</loc>
         <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
-            <image:title>Instalador SEC Oficial Regularización Sello Rojo</image:title>
+            <image:loc>https://domingoisain.cl/assets/images/hero-gas-trazador.jpg</image:loc>
+            <image:title>Detección Molecular con Gas Trazador N2/H2</image:title>
         </image:image>
     </url>
     <url>
@@ -71,6 +126,18 @@
             <image:title>Detección de Fugas con Geófono y Ultrasonido Digital</image:title>
         </image:image>
     </url>
+
+    <!-- Tecnología Prodoral R6-1 -->
+    <url>
+        <loc>https://domingoisain.cl/prodoral-para-fugas-de-gas/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Polímero Prodoral R6-1 para Sellado de Fugas de Gas Sin Romper</image:title>
+        </image:image>
+    </url>
     <url>
         <loc>https://domingoisain.cl/prodoral/</loc>
         <lastmod>2026-08-29</lastmod>
@@ -79,6 +146,38 @@
         <image:image>
             <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
             <image:title>Sellado de Fugas de Gas con Prodoral R6-1 Alemán</image:title>
+        </image:image>
+    </url>
+
+    <!-- Instalador SEC y Regularizaciones -->
+    <url>
+        <loc>https://domingoisain.cl/instalador-de-gas-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Instalador de Gas SEC Oficial Regularización Sello Rojo</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/instalador-sec/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Instalador SEC Clase 3 Oficial Regularización y Sellos Verdes</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://domingoisain.cl/gasfiter-certificado/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://domingoisain.cl/assets/images/og-image.jpg</image:loc>
+            <image:title>Gasfíter Certificado SEC Clase 3 Domingo Isaín</image:title>
         </image:image>
     </url>
     <url>
