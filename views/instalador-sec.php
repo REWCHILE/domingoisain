@@ -87,8 +87,8 @@
                     <button type="button" class="hero-slider-btn hero-slider-next" id="cert-slider-next" aria-label="Certificado siguiente">❯</button>
 
                     <!-- Paginación Dots -->
-                    <div class="hero-slider-dots" id="cert-slider-dots">
-                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1"></button>
+                    <div class="hero-slider-dots" id="cert-slider-dots" role="tablist" aria-label="Selector de certificados">
+                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1" aria-current="true"></button>
                         <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Certificado 2"></button>
                         <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Certificado 3"></button>
                         <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Certificado 4"></button>

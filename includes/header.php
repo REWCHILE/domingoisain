@@ -10,9 +10,13 @@ $pageData = $PAGES_CONFIG[$pageKey] ?? $PAGES_CONFIG['/'];
 $pageTitle = $pageData['title'] ?? SITE_NAME;
 $pageDesc = $pageData['description'] ?? 'Gasfíter Instalador Autorizado SEC Clase 3 en Santiago.';
 $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
+$pageOgImage = !empty($pageData['og_image']) ? $pageData['og_image'] : BASE_URL . '/assets/images/og-image.jpg';
+$pageOgImageSecure = str_replace('http://', 'https://', $pageOgImage);
+$pageOgImageAlt = !empty($pageData['og_image_alt']) ? $pageData['og_image_alt'] : ($pageTitle . ' - Gasfíter Instalador Autorizado SEC');
+$pageOgType = !empty($pageData['og_type']) ? $pageData['og_type'] : 'website';
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -25,23 +29,34 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="<?= htmlspecialchars($pageCanonical) ?>">
     
-    <!-- Open Graph / Redes Sociales / WhatsApp -->
+    <!-- Open Graph / Meta / Facebook Debugger / WhatsApp / LinkedIn -->
     <meta property="og:locale" content="es_CL">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="<?= htmlspecialchars($pageOgType) ?>">
     <meta property="og:title" content="<?= htmlspecialchars($pageTitle) ?>">
     <meta property="og:description" content="<?= htmlspecialchars($pageDesc) ?>">
     <meta property="og:url" content="<?= htmlspecialchars($pageCanonical) ?>">
-    <meta property="og:site_name" content="Domingo Isaín | Gasfíter SEC">
-    <meta property="og:image" content="<?= BASE_URL ?>/assets/images/hero-home-main.webp">
+    <meta property="og:site_name" content="Domingo Isaín | Gasfíter Instalador Autorizado SEC">
+    <meta property="og:image" content="<?= htmlspecialchars($pageOgImage) ?>">
+    <meta property="og:image:secure_url" content="<?= htmlspecialchars($pageOgImageSecure) ?>">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Domingo Isaín Gasfiter Certificado SEC">
+    <meta property="og:image:alt" content="<?= htmlspecialchars($pageOgImageAlt) ?>">
     
-    <!-- Twitter Cards -->
+    <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($pageDesc) ?>">
-    <meta name="twitter:image" content="<?= BASE_URL ?>/assets/images/hero-home-main.webp">
+    <meta name="twitter:image" content="<?= htmlspecialchars($pageOgImage) ?>">
+    <meta name="twitter:image:alt" content="<?= htmlspecialchars($pageOgImageAlt) ?>">
+
+    <!-- Metadatos de Geolocalización y Motores de IA (GEO / Generative Engine Optimization) -->
+    <meta name="geo.region" content="CL-RM">
+    <meta name="geo.placename" content="Santiago, Región Metropolitana, Chile">
+    <meta name="geo.position" content="-33.448890;-70.669265">
+    <meta name="ICBM" content="-33.448890, -70.669265">
+    <meta name="classification" content="Gasfitería Autorizada SEC, Detección y Sellado de Fugas de Gas">
+    <link rel="alternate" type="text/plain" href="<?= BASE_URL ?>/llms.txt" title="Información técnica estructurada para motores de IA (LLMs)">
 
     <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/webp" href="<?= BASE_URL ?>/assets/images/logotipo-sec.webp">
@@ -59,7 +74,11 @@ $pageCanonical = $pageData['canonical'] ?? BASE_URL . $pageKey;
     <?= str_replace('<?= BASE_URL ?>', BASE_URL, file_get_contents(__DIR__ . '/../assets/css/main.min.css')) ?>
     </style>
     
-    <!-- Datos Estructurados JSON-LD (Schema.org) -->
+    <!-- Datos Estructurados JSON-LD (Schema.org / GEO Knowledge Graph) -->
+    <script type="application/ld+json">
+    <?= getWebSiteJsonLd() ?>
+    </script>
+
     <script type="application/ld+json">
     <?= getLocalBusinessJsonLd() ?>
     </script>

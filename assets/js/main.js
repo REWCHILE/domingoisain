@@ -89,16 +89,20 @@
           faqItems.forEach(other => {
             if (other !== item) {
               other.classList.remove('active');
+              const otherBtn = other.querySelector('.faq-question-btn');
               const otherPane = other.querySelector('.faq-answer-pane');
+              if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
               if (otherPane) otherPane.style.maxHeight = null;
             }
           });
 
           if (!isActive) {
             item.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
             pane.style.maxHeight = pane.scrollHeight + 'px';
           } else {
             item.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
             pane.style.maxHeight = null;
           }
         });
@@ -119,7 +123,7 @@
     });
   }
 
-  // 3. COTIZADOR INTERACTIVO
+  // 3. COTIZADOR INTERACTIVO (Accessible & Agent-Ready)
   function initCalculator() {
     const calcPropertyOptions = document.querySelectorAll('[data-calc-property]');
     const calcProblemOptions = document.querySelectorAll('[data-calc-problem]');
@@ -130,8 +134,8 @@
     const whatsappQuoteBtn = document.getElementById('btn-whatsapp-quote-export');
 
     let selectedProperty = 'Departamento';
-    let selectedProblem = 'Fuga de Gas / Sello Rojo';
-    let selectedMetros = '15 a 25 metros';
+    let selectedProblem = 'Fuga de Gas / Sellado sin Romper';
+    let selectedMetros = 'Tramo estándar (hasta 15 metros)';
 
     function updateQuoteSummary() {
       if (summaryProperty) summaryProperty.textContent = selectedProperty;
@@ -151,8 +155,12 @@
 
     calcPropertyOptions.forEach(btn => {
       btn.addEventListener('click', function() {
-        calcPropertyOptions.forEach(b => b.classList.remove('active'));
+        calcPropertyOptions.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-checked', 'false');
+        });
         this.classList.add('active');
+        this.setAttribute('aria-checked', 'true');
         selectedProperty = this.getAttribute('data-calc-property');
         updateQuoteSummary();
       });
@@ -160,8 +168,12 @@
 
     calcProblemOptions.forEach(btn => {
       btn.addEventListener('click', function() {
-        calcProblemOptions.forEach(b => b.classList.remove('active'));
+        calcProblemOptions.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-checked', 'false');
+        });
         this.classList.add('active');
+        this.setAttribute('aria-checked', 'true');
         selectedProblem = this.getAttribute('data-calc-problem');
         updateQuoteSummary();
       });
@@ -229,12 +241,14 @@
       if (modalDesc) modalDesc.textContent = description;
 
       modalBackdrop.classList.add('modal-open');
+      modalBackdrop.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
     }
 
     function closeCertModal() {
       if (!modalBackdrop) return;
       modalBackdrop.classList.remove('modal-open');
+      modalBackdrop.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
     }
 
@@ -287,8 +301,10 @@
         dots.forEach((dot, idx) => {
           if (idx === currentSlide) {
             dot.classList.add('active');
+            dot.setAttribute('aria-current', 'true');
           } else {
             dot.classList.remove('active');
+            dot.removeAttribute('aria-current');
           }
         });
       }
@@ -376,9 +392,141 @@
     initCarousel('cert-slider');
   }
 
+  // 6. WEBMCP & AGENTIC BROWSING INTEGRATION (Lighthouse Agentic Browsing Standard)
+  function initWebMCP() {
+    const tools = {
+      calculateGasfiterQuote: {
+        name: 'calculateGasfiterQuote',
+        description: 'Calcula un presupuesto estimado para servicios de gasfitería, detección de fugas sin romper o sello rojo SEC en Santiago.',
+        parameters: {
+          type: 'object',
+          properties: {
+            propertyType: {
+              type: 'string',
+              enum: ['Departamento', 'Casa 1 Piso', 'Casa 2 Pisos', 'Comercial / Empresa'],
+              description: 'Tipo de inmueble o propiedad'
+            },
+            serviceType: {
+              type: 'string',
+              enum: ['Fuga de Gas / Sellado sin Romper', 'Levantamiento Sello Rojo SEC', 'Detección de Fuga de Agua', 'Prueba Hermeticidad DS66'],
+              description: 'Tipo de problema o servicio requerido'
+            },
+            pipeLengthMeters: {
+              type: 'string',
+              description: 'Tramo aproximado de cañería en metros'
+            }
+          },
+          required: ['propertyType', 'serviceType']
+        },
+        execute: async function(args) {
+          const property = args.propertyType || 'Departamento';
+          const service = args.serviceType || 'Fuga de Gas / Sellado sin Romper';
+          const meters = args.pipeLengthMeters || 'Tramo estándar (hasta 15 metros)';
+
+          const propBtn = document.querySelector(`[data-calc-property="${property}"]`);
+          if (propBtn) propBtn.click();
+
+          const servBtn = document.querySelector(`[data-calc-problem="${service}"]`);
+          if (servBtn) servBtn.click();
+
+          const metrosSelect = document.getElementById('calc-input-metros');
+          if (metrosSelect) {
+            metrosSelect.value = meters;
+            metrosSelect.dispatchEvent(new Event('change'));
+          }
+
+          return {
+            status: 'success',
+            estimate: {
+              property: property,
+              service: service,
+              meters: meters,
+              technician: 'Domingo Isaín Plaza Caamaño (RUT 12.738.961-6)',
+              license: 'Instalador de Gas Clase 3 SEC Oficial',
+              warranty: '3 Años por escrito',
+              technology: 'Sellado no invasivo Prodoral R6-1 alemán / Geófono digital',
+              whatsappDirectLink: `https://api.whatsapp.com/send?phone=56949877316&text=${encodeURIComponent(`Hola Domingo, solicito presupuesto para ${service} en ${property} (${meters}).`)}`
+            }
+          };
+        }
+      },
+
+      contactEmergencyService: {
+        name: 'contactEmergencyService',
+        description: 'Genera solicitud de atención técnica urgente 24/7 con Domingo Isaín por fuga de gas o corte de suministro.',
+        parameters: {
+          type: 'object',
+          properties: {
+            issueDescription: {
+              type: 'string',
+              description: 'Detalle de la emergencia (olor a gas, corte de medidor, sello rojo)'
+            },
+            commune: {
+              type: 'string',
+              description: 'Comuna de Santiago (ej. Las Condes, Providencia, Santiago Centro)'
+            }
+          },
+          required: ['issueDescription']
+        },
+        execute: async function(args) {
+          const issue = args.issueDescription || 'Urgencia de gas';
+          const commune = args.commune || 'Santiago';
+          return {
+            status: 'emergency_ready',
+            phonePrimary: '+56 9 4987 7316',
+            phoneSecondary: '+56 9 3223 7072',
+            availability: '24 Horas / 7 Días a la semana en toda la Región Metropolitana',
+            actionUrl: `https://api.whatsapp.com/send?phone=56949877316&text=${encodeURIComponent(`EMERGENCIA 24/7 en ${commune}: ${issue}`)}`
+          };
+        }
+      },
+
+      getSECVerificationInfo: {
+        name: 'getSECVerificationInfo',
+        description: 'Obtiene las credenciales técnicas y legales de Domingo Isaín ante la Superintendencia de Electricidad y Combustibles (SEC).',
+        parameters: { type: 'object', properties: {} },
+        execute: async function() {
+          return {
+            fullName: 'Domingo Isaín Plaza Caamaño',
+            rut: '12.738.961-6',
+            secLicense: 'Instalador de Gas Clase 3',
+            secPortalVerificationUrl: 'https://www.sec.cl',
+            experienceYears: '30+',
+            certifications: [
+              'Superintendencia de Electricidad y Combustibles (SEC Clase 3)',
+              'Prodoral R6-1 DVGW / DIN EN 13090 Certificado Alemán'
+            ]
+          };
+        }
+      }
+    };
+
+    // Exponer globalmente
+    window.domingoIsainTools = tools;
+    window.webmcp = window.webmcp || {};
+    window.webmcp.tools = tools;
+
+    // Registrar en navigator.modelContext (Chrome 150+ / WebMCP Origin Trial)
+    if (typeof navigator !== 'undefined' && navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+      try {
+        Object.values(tools).forEach(tool => {
+          navigator.modelContext.registerTool({
+            name: tool.name,
+            description: tool.description,
+            inputSchema: tool.parameters,
+            execute: tool.execute
+          });
+        });
+      } catch (err) {
+        console.debug('WebMCP registration notice:', err);
+      }
+    }
+  }
+
   // Inicialización inmediata de todos los módulos
   initFaqs();
   initCalculator();
   initModalsAndScroll();
   initCarousels();
+  initWebMCP();
 })();

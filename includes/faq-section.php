@@ -23,16 +23,16 @@ global $FAQS;
         </div>
 
         <!-- Lista de Acordeones -->
-        <div class="faq-accordion-list">
+        <div class="faq-accordion-list" role="region" aria-label="Acordeón de preguntas frecuentes">
             <?php foreach ($FAQS as $index => $faq): ?>
                 <div class="faq-item" data-category="<?= htmlspecialchars($faq['category']) ?>">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" id="faq-btn-<?= $index ?>" aria-expanded="false" aria-controls="faq-answer-<?= $index ?>">
                         <span><?= ($index + 1) ?>. <?= htmlspecialchars($faq['question']) ?></span>
-                        <span class="faq-icon-chevron">
+                        <span class="faq-icon-chevron" aria-hidden="true">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
                         </span>
                     </button>
-                    <div class="faq-answer-pane">
+                    <div class="faq-answer-pane" id="faq-answer-<?= $index ?>" role="region" aria-labelledby="faq-btn-<?= $index ?>">
                         <div class="faq-answer-content">
                             <p><?= nl2br(htmlspecialchars($faq['answer'])) ?></p>
                             <div style="margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">

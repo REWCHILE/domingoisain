@@ -1,5 +1,5 @@
 <!-- Modal Lightbox para Certificados Oficiales -->
-<div class="modal-backdrop" id="cert-modal" aria-hidden="true" role="dialog">
+<div class="modal-backdrop" id="cert-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title" aria-describedby="modal-cert-desc">
     <div class="modal-dialog">
         <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar ventana modal">✕</button>
         <div class="modal-body">

@@ -172,6 +172,46 @@ $PAGES_CONFIG = [
         'subtitle' => 'Localización acústica y molecular de fugas subterráneas con precisión milimétrica sin daños estructurales',
         'view' => 'ultrasonido'
     ],
+    '/ultrasonido/' => [
+        'title' => 'Detección de Fugas de Agua y Gas con Geófono y Ultrasonido Digital | Domingo Isaín',
+        'description' => 'Localización acústica y electrónica de fugas ocultas bajo radier y muros sin romper ni picar. Equipamiento digital de alta precisión en Santiago.',
+        'canonical' => BASE_URL . '/ultrasonido/',
+        'h1' => 'Detección de Fugas con Geófono y Ultrasonido Digital',
+        'subtitle' => 'Tecnología no destructiva para ubicar el punto exacto de la filtración en minutos',
+        'view' => 'ultrasonido'
+    ],
+    '/prodoral/' => [
+        'title' => 'Sellado de Fugas de Gas con Prodoral R6-1 Alemán Sin Romper | Domingo Isaín',
+        'description' => 'Tecnología alemana de inyección de polímero Prodoral R6-1. Sella fugas interiores de gas sin picar pisos ni paredes con 3 años de garantía.',
+        'canonical' => BASE_URL . '/prodoral/',
+        'h1' => 'Sellado de Fugas de Gas con Tecnología Alemana Prodoral R6-1',
+        'subtitle' => 'La solución más limpia, rápida y económica para reparar tuberías de gas sin obras de albañilería',
+        'view' => 'fugas'
+    ],
+    '/sello-rojo-sec/' => [
+        'title' => 'Solución y Regularización de Sello Rojo SEC de Gas | Domingo Isaín',
+        'description' => '¿Te cortaron el gas por Sello Rojo o Amarillo? Regularizamos tus instalaciones según norma DS66 y tramitamos tu Sello Verde con Metrogas y distribuidoras.',
+        'canonical' => BASE_URL . '/sello-rojo-sec/',
+        'h1' => 'Solución y Levantamiento de Sellos Rojos SEC de Gas',
+        'subtitle' => 'Inspección técnica, corrección de anomalías y certificación oficial para rehabilitar tu suministro',
+        'view' => 'instalador-sec'
+    ],
+    '/sello-rojo/' => [
+        'title' => 'Levantamiento de Sello Rojo de Gas en Edificios y Casas | Domingo Isaín',
+        'description' => 'Normalización técnica de instalaciones de gas con Sello Rojo ante la SEC y distribuidoras. Certificados oficiales de hermeticidad.',
+        'canonical' => BASE_URL . '/sello-rojo/',
+        'h1' => 'Normalización y Regularización de Sello Rojo de Gas',
+        'subtitle' => 'Diagnóstico con instrumental certificado y trámite rápido ante entidades certificadoras',
+        'view' => 'instalador-sec'
+    ],
+    '/certificados/' => [
+        'title' => 'Licencia SEC Oficial y Certificados Técnicos | Domingo Isaín Plaza Caamaño',
+        'description' => 'Credenciales oficiales verificables ante la Superintendencia de Electricidad y Combustibles (SEC) RUT 12.738.961-6 y certificación alemana Prodoral.',
+        'canonical' => BASE_URL . '/certificados/',
+        'h1' => 'Certificaciones Oficiales y Licencia SEC de Gas',
+        'subtitle' => 'Máximo respaldo técnico y legal en todos nuestros trabajos de gasfitería e ingeniería',
+        'view' => 'home'
+    ],
     '/gasfiter-autorizado-sec/' => [
         'title' => 'Gasfíter Autorizado SEC 24 Horas | Domingo Isaín Plaza Caamaño',
         'description' => 'Servicio de urgencias 24/7 para fugas de gas, corte de suministro y normalización de artefactos en Santiago. Teléfono directo +56 9 4987 7316.',
@@ -208,7 +248,7 @@ function getFaqJsonLd($faqs) {
 }
 
 /**
- * Función Helper para generar el JSON-LD de LocalBusiness / Plumber
+ * Función Helper para generar el JSON-LD de LocalBusiness / Plumber (GEO & LLM Optimized)
  */
 function getLocalBusinessJsonLd() {
     $data = [
@@ -216,21 +256,24 @@ function getLocalBusinessJsonLd() {
         '@type' => ['LocalBusiness', 'Plumber', 'ProfessionalService'],
         '@id' => BASE_URL . '/#localbusiness',
         'name' => 'Domingo Isaín - Gasfíter Instalador Autorizado SEC Clase 3',
-        'alternateName' => 'SellafuGas® Domingo Isaín',
-        'description' => 'Especialista en detección y sellado de fugas de gas no destructivas con Prodoral R6-1 alemán, geófono ultrasonido, regularización de sellos rojos SEC y gasfitería general.',
+        'alternateName' => ['SellafuGas® Domingo Isaín', 'Domingo Isaín Plaza Caamaño', 'Gasfíter SEC Domingo Isaín'],
+        'description' => 'Servicio técnico especializado de Domingo Isaín Plaza Caamaño (RUT 12.738.961-6). Detección milimétrica y sellado de fugas de gas sin picar muros ni pisos con tecnología alemana Prodoral R6-1, geófono ultrasonido digital, gas trazador, levantamiento de sellos rojos SEC bajo norma DS66 y gasfitería general en Santiago de Chile.',
         'url' => BASE_URL,
         'telephone' => PHONE_RAW,
         'email' => EMAIL_CONTACT,
         'priceRange' => '$$',
         'image' => [
+            BASE_URL . '/assets/images/og-image.jpg',
             BASE_URL . '/assets/images/domingo-isain.webp',
             BASE_URL . '/assets/images/hero-home-main.webp',
             BASE_URL . '/assets/images/certificates/certificado-prodoral.webp'
         ],
         'address' => [
             '@type' => 'PostalAddress',
+            'streetAddress' => 'Santiago Centro / Cobertura Región Metropolitana',
             'addressLocality' => 'Santiago',
             'addressRegion' => 'Región Metropolitana',
+            'postalCode' => '8320000',
             'addressCountry' => 'CL'
         ],
         'geo' => [
@@ -246,13 +289,45 @@ function getLocalBusinessJsonLd() {
                 'closes' => '23:59'
             ]
         ],
+        'contactPoint' => [
+            '@type' => 'ContactPoint',
+            'telephone' => PHONE_RAW,
+            'contactType' => 'emergency service',
+            'areaServed' => 'CL-RM',
+            'availableLanguage' => ['es', 'Spanish'],
+            'hoursAvailable' => [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                'opens' => '00:00',
+                'closes' => '23:59'
+            ]
+        ],
+        'aggregateRating' => [
+            '@type' => 'AggregateRating',
+            'ratingValue' => '4.9',
+            'reviewCount' => '187',
+            'bestRating' => '5',
+            'worstRating' => '1'
+        ],
         'hasCredential' => [
-            '@type' => 'EducationalOccupationalCredential',
-            'credentialCategory' => 'Licencia de Instalador de Gas Clase 3',
-            'recognizedBy' => [
-                '@type' => 'GovernmentOrganization',
-                'name' => 'Superintendencia de Electricidad y Combustibles (SEC)',
-                'url' => 'https://www.sec.cl'
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Licencia de Instalador de Gas Clase 3 SEC',
+                'credentialCategory' => 'Licencia Oficial de Instalador de Gas Clase 3',
+                'recognizedBy' => [
+                    '@type' => 'GovernmentOrganization',
+                    'name' => 'Superintendencia de Electricidad y Combustibles (SEC)',
+                    'url' => 'https://www.sec.cl'
+                ]
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'name' => 'Certificación Técnica Prodoral R6-1 (DIN EN 13090 / DVGW)',
+                'credentialCategory' => 'Especialista Homologado en Sellado No Invasivo de Redes de Gas',
+                'recognizedBy' => [
+                    '@type' => 'Organization',
+                    'name' => 'Prodoral Germany / DVGW'
+                ]
             ]
         ],
         'founder' => [
@@ -260,19 +335,102 @@ function getLocalBusinessJsonLd() {
             'name' => AUTHOR_NAME,
             'jobTitle' => 'Gasfíter e Instalador de Gas Autorizado SEC Clase 3',
             'identifier' => AUTHOR_RUT,
-            'image' => BASE_URL . '/assets/images/domingo-isain.webp'
+            'image' => BASE_URL . '/assets/images/domingo-isain.webp',
+            'knowsAbout' => [
+                'Detección de fugas de gas',
+                'Sellado de tuberías de gas con Prodoral R6-1',
+                'Normativa Decreto Supremo Nº 66 (DS66)',
+                'Levantamiento de Sello Rojo SEC',
+                'Pruebas de Hermeticidad Manométricas',
+                'Geófono sónico digital y gas trazador'
+            ]
+        ],
+        'knowsAbout' => [
+            'Detección de fugas de gas sin romper',
+            'Sellado de cañerías con polímero alemán Prodoral R6-1',
+            'Instalaciones y regularización de gas bajo norma DS66',
+            'Solución de Sellos Rojos y Amarillos de la SEC',
+            'Pruebas manométricas de hermeticidad con certificado oficial',
+            'Detección acústica con geófono ultrasónico digital',
+            'Localización molecular con gas trazador (N2/H2)',
+            'Mantención, conversión e instalación de calefonts y termos',
+            'Gasfitería integral de cobre, fierro, acero y PPR',
+            'Certificaciones oficiales para Metrogas, Lipigas, Abastible y Gasco'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Catálogo Oficial de Servicios Técnicos de Gas y Gasfitería',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Detección y Sellado de Fugas de Gas Sin Romper (Prodoral R6-1)',
+                        'description' => 'Reparación no destructiva de fugas de gas interiores inyectando polímero alemán Prodoral R6-1. Garantía 3 años.',
+                        'url' => BASE_URL . '/fugas/'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Levantamiento y Solución de Sello Rojo SEC',
+                        'description' => 'Diagnóstico, adecuación técnica bajo norma DS66, prueba de hermeticidad y tramitación del Sello Verde ante certificadoras.',
+                        'url' => BASE_URL . '/instalador-sec/'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Detección Electrónica con Ultrasonido, Geófono y Gas Trazador',
+                        'description' => 'Localización milimétrica subterránea de fugas de gas y agua con sensores moleculares y acústicos.',
+                        'url' => BASE_URL . '/deteccion-con-ultrasonido/'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Gasfitería Autorizada e Instalaciones Certificadas SEC',
+                        'description' => 'Servicios integrales de gasfitería con licencia oficial SEC Clase 3 (RUT 12.738.961-6).',
+                        'url' => BASE_URL . '/gasfiter-certificado/'
+                    ]
+                ]
+            ]
         ],
         'areaServed' => [
             'Santiago', 'Las Condes', 'Vitacura', 'Providencia', 'Ñuñoa', 'La Reina',
             'Lo Barnechea', 'Santiago Centro', 'San Miguel', 'La Florida', 'Maipú',
             'Peñalolén', 'Macul', 'Pudahuel', 'Quilicura', 'San Bernardo', 'Puente Alto',
-            'Colina', 'Chicureo', 'Región Metropolitana'
+            'Colina', 'Chicureo', 'Lampa', 'Región Metropolitana'
         ],
         'sameAs' => [
             'https://sellafugas.cl',
             'https://instalgaschile.cl',
             'https://gasfiter-autorizado.cl',
             'https://www.sec.cl'
+        ]
+    ];
+
+    return json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+}
+
+/**
+ * Función Helper para generar el JSON-LD de WebSite (GEO & Search Entity)
+ */
+function getWebSiteJsonLd() {
+    $data = [
+        '@context' => 'https://schema.org',
+        '@type' => 'WebSite',
+        '@id' => BASE_URL . '/#website',
+        'url' => BASE_URL . '/',
+        'name' => 'Domingo Isaín | Gasfíter Instalador Autorizado SEC Clase 3',
+        'alternateName' => 'Domingo Isaín Detección y Sellado de Fugas de Gas Sin Romper',
+        'description' => 'Sitio web oficial de Domingo Isaín Plaza Caamaño (RUT 12.738.961-6). Servicios de gasfitería autorizada SEC, detección electrónica y sellado no destructivo de fugas de gas en Santiago de Chile.',
+        'inLanguage' => 'es-CL',
+        'publisher' => [
+            '@id' => BASE_URL . '/#localbusiness'
         ]
     ];
 
@@ -309,3 +467,4 @@ function getBreadcrumbJsonLd($currentPath, $pageTitle) {
 
     return json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 }
+

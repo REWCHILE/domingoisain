@@ -11,30 +11,30 @@
             </p>
         </div>
 
-        <div class="calc-container">
-            <!-- Formulario Interactivo -->
-            <div class="calc-form-pane">
+        <div class="calc-container" role="region" aria-label="Calculadora interactiva de presupuestos de gasfitería">
+            <!-- Formulario Interactivo WebMCP -->
+            <form class="calc-form-pane" id="calc-form-webmcp" data-webmcp-tool="calculateGasfiterQuote" onsubmit="return false;" aria-label="Formulario de estimación de presupuesto">
                 <!-- Paso 1: Inmueble -->
                 <div class="calc-step-group">
-                    <h3 class="calc-step-title">
+                    <h3 class="calc-step-title" id="calc-step1-title">
                         <span class="calc-step-num">1</span>
                         Tipo de Inmueble o Propiedad
                     </h3>
-                    <div class="calc-options-grid">
-                        <button type="button" class="calc-option-btn active" data-calc-property="Departamento">
-                            <div class="calc-option-icon">🏢</div>
+                    <div class="calc-options-grid" role="radiogroup" aria-labelledby="calc-step1-title">
+                        <button type="button" class="calc-option-btn active" role="radio" aria-checked="true" aria-label="Propiedad: Departamento" data-calc-property="Departamento">
+                            <div class="calc-option-icon" aria-hidden="true">🏢</div>
                             <div class="calc-option-text">Departamento</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-property="Casa 1 Piso">
-                            <div class="calc-option-icon">🏡</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Propiedad: Casa de 1 Piso" data-calc-property="Casa 1 Piso">
+                            <div class="calc-option-icon" aria-hidden="true">🏡</div>
                             <div class="calc-option-text">Casa 1 Piso</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-property="Casa 2 Pisos">
-                            <div class="calc-option-icon">🏘️</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Propiedad: Casa de 2 Pisos" data-calc-property="Casa 2 Pisos">
+                            <div class="calc-option-icon" aria-hidden="true">🏘️</div>
                             <div class="calc-option-text">Casa 2 Pisos</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-property="Comercial / Empresa">
-                            <div class="calc-option-icon">🏭</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Propiedad: Inmueble Comercial o Empresa" data-calc-property="Comercial / Empresa">
+                            <div class="calc-option-icon" aria-hidden="true">🏭</div>
                             <div class="calc-option-text">Comercio</div>
                         </button>
                     </div>
@@ -42,25 +42,25 @@
 
                 <!-- Paso 2: Tipo de Servicio -->
                 <div class="calc-step-group">
-                    <h3 class="calc-step-title">
+                    <h3 class="calc-step-title" id="calc-step2-title">
                         <span class="calc-step-num">2</span>
                         ¿Qué necesitas solucionar?
                     </h3>
-                    <div class="calc-options-grid">
-                        <button type="button" class="calc-option-btn active" data-calc-problem="Fuga de Gas / Sellado sin Romper">
-                            <div class="calc-option-icon">🔥</div>
+                    <div class="calc-options-grid" role="radiogroup" aria-labelledby="calc-step2-title">
+                        <button type="button" class="calc-option-btn active" role="radio" aria-checked="true" aria-label="Servicio: Fuga de Gas y Sellado sin Romper" data-calc-problem="Fuga de Gas / Sellado sin Romper">
+                            <div class="calc-option-icon" aria-hidden="true">🔥</div>
                             <div class="calc-option-text">Fuga de Gas</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-problem="Levantamiento Sello Rojo SEC">
-                            <div class="calc-option-icon">🚨</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Servicio: Levantamiento y Solución de Sello Rojo SEC" data-calc-problem="Levantamiento Sello Rojo SEC">
+                            <div class="calc-option-icon" aria-hidden="true">🚨</div>
                             <div class="calc-option-text">Sello Rojo SEC</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-problem="Detección de Fuga de Agua">
-                            <div class="calc-option-icon">💧</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Servicio: Detección Acústica de Fuga de Agua" data-calc-problem="Detección de Fuga de Agua">
+                            <div class="calc-option-icon" aria-hidden="true">💧</div>
                             <div class="calc-option-text">Fuga de Agua</div>
                         </button>
-                        <button type="button" class="calc-option-btn" data-calc-problem="Prueba Hermeticidad DS66">
-                            <div class="calc-option-icon">📜</div>
+                        <button type="button" class="calc-option-btn" role="radio" aria-checked="false" aria-label="Servicio: Prueba de Hermeticidad y Certificado DS66" data-calc-problem="Prueba Hermeticidad DS66">
+                            <div class="calc-option-icon" aria-hidden="true">📜</div>
                             <div class="calc-option-text">Certificado DS66</div>
                         </button>
                     </div>
@@ -68,18 +68,18 @@
 
                 <!-- Paso 3: Longitud o Datos Adicionales -->
                 <div class="calc-step-group" style="margin-bottom: 0;">
-                    <label for="calc-input-metros" class="calc-step-title" style="display: block; cursor: pointer;">
+                    <label for="calc-input-metros" class="calc-step-title" style="display: block; cursor: pointer;" id="calc-step3-title">
                         <span class="calc-step-num">3</span>
                         Tramo Estimado de Cañería (Aprox.)
                     </label>
-                    <select id="calc-input-metros" class="calc-select" aria-label="Selecciona los metros estimados de cañería">
+                    <select id="calc-input-metros" class="calc-select" aria-labelledby="calc-step3-title" aria-label="Selecciona los metros estimados de cañería">
                         <option value="Tramo estándar (hasta 15 metros)">Tramo estándar (hasta 15 metros) - Típico depto / cocina-calefont</option>
                         <option value="Tramo mediano (15 a 30 metros)">Tramo mediano (15 a 30 metros) - Casas medianas o 2 artefactos</option>
                         <option value="Tramo extendido (más de 30 metros)">Tramo extendido (más de 30 metros) - Casas grandes / comercio</option>
                         <option value="No estoy seguro (requiero asesoría en terreno)">No estoy seguro (requiero que Domingo evalúe en terreno)</option>
                     </select>
                 </div>
-            </div>
+            </form>
 
             <!-- Resumen y Exportación WhatsApp -->
             <div class="calc-summary-card">
