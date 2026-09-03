@@ -99,12 +99,18 @@
 
                 <!-- Insignia Inferior -->
                 <div class="hero-floating-badge">
-                    <div>
-                        <div class="badge-info-title">Acreditación Técnica y Académica</div>
-                        <div class="badge-info-sub">RUT: 12.738.961-6 · ChileValora · SEC · Euroinnova</div>
+                    <div class="badge-text-group">
+                        <div class="badge-info-title">Domingo Isaín Plaza Caamaño</div>
+                        <div class="badge-info-sub">RUT: 12.738.961-6 · Licencia Oficial SEC Clase 3 (Vigente)</div>
                     </div>
-                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar en portal oficial SEC">
-                        <span>Verificar SEC</span>
+                    <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)" aria-label="Verificar registro oficial de Domingo Isaín en portal SEC">
+                        <div class="qr-box">
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="Código QR Verificación SEC Domingo Isaín" width="76" height="76" class="qr-img">
+                        </div>
+                        <div class="qr-btn-text">
+                            <span class="qr-btn-label">Verificar SEC</span>
+                            <span class="qr-btn-sub">Escanear o Clic ↗</span>
+                        </div>
                     </a>
                 </div>
             </div>

@@ -29,7 +29,8 @@ define('EMAIL_CONTACT', 'contacto@domingoisain.cl');
 define('EMERGENCY_24_7', true);
 define('EXPERIENCE_YEARS', '30+');
 define('GUARANTEE_YEARS', '3 Años');
-define('SEC_PORTAL_URL', 'https://www.sec.cl');
+define('SEC_PORTAL_URL', 'https://wlhttp.sec.cl/rnii/public/licencia/qr?o=285eb263edf5cb049f3f4cc7fa0d2182');
+define('SEC_QR_URL', 'https://wlhttp.sec.cl/rnii/public/licencia/qr?o=285eb263edf5cb049f3f4cc7fa0d2182');
 
 // Enlace de WhatsApp con mensaje predeterminado
 define('WHATSAPP_LINK', 'https://api.whatsapp.com/send?phone=56949877316&text=' . urlencode('Hola Domingo, necesito atención técnica urgente de gasfitería / detección de fugas.'));
@@ -517,7 +518,7 @@ function getLocalBusinessJsonLd() {
                 'recognizedBy' => [
                     '@type' => 'GovernmentOrganization',
                     'name' => 'Superintendencia de Electricidad y Combustibles (SEC)',
-                    'url' => 'https://www.sec.cl'
+                    'url' => SEC_PORTAL_URL
                 ]
             ],
             [
@@ -689,7 +690,7 @@ function getLocalBusinessJsonLd() {
             'https://sellafugas.cl',
             'https://instalgaschile.cl',
             'https://gasfiter-autorizado.cl',
-            'https://www.sec.cl'
+            SEC_PORTAL_URL
         ]
     ];
 

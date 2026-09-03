@@ -189,35 +189,47 @@
     updateQuoteSummary();
   }
 
-  // 4. MODAL LIGHTBOX & SCROLL TO TOP
+  // 4. MODAL LIGHTBOX, SCROLL TO TOP & STICKY HEADER
   function initModalsAndScroll() {
     const goToTopBtn = document.getElementById('btn-go-to-top');
+    const headerMain = document.querySelector('.header-main');
     let scrollTicking = false;
 
-    function checkBottomScroll() {
-      if (!goToTopBtn) return;
+    function handlePageScroll() {
       const scrollY = window.scrollY || window.pageYOffset;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const isAtBottom = (scrollY + windowHeight) >= (documentHeight - 220);
 
-      if (isAtBottom) {
-        goToTopBtn.classList.add('is-bottom-visible');
-      } else {
-        goToTopBtn.classList.remove('is-bottom-visible');
+      if (goToTopBtn) {
+        if (isAtBottom) {
+          goToTopBtn.classList.add('is-bottom-visible');
+        } else {
+          goToTopBtn.classList.remove('is-bottom-visible');
+        }
       }
+
+      if (headerMain) {
+        if (scrollY > 15) {
+          headerMain.classList.add('is-scrolled');
+        } else {
+          headerMain.classList.remove('is-scrolled');
+        }
+      }
+
       scrollTicking = false;
     }
 
     function onScrollThrottled() {
       if (!scrollTicking) {
-        window.requestAnimationFrame(checkBottomScroll);
+        window.requestAnimationFrame(handlePageScroll);
         scrollTicking = true;
       }
     }
 
     window.addEventListener('scroll', onScrollThrottled, { passive: true });
     window.addEventListener('resize', onScrollThrottled, { passive: true });
+    handlePageScroll();
 
     if (goToTopBtn) {
       goToTopBtn.addEventListener('click', function(e) {
@@ -490,7 +502,7 @@
             fullName: 'Domingo Isaín Plaza Caamaño',
             rut: '12.738.961-6',
             secLicense: 'Instalador de Gas Clase 3',
-            secPortalVerificationUrl: 'https://www.sec.cl',
+            secPortalVerificationUrl: 'https://wlhttp.sec.cl/rnii/public/licencia/qr?o=285eb263edf5cb049f3f4cc7fa0d2182',
             experienceYears: '30+',
             certifications: [
               'Superintendencia de Electricidad y Combustibles (Licencia Oficial SEC Clase 3)',

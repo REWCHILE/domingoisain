@@ -61,8 +61,8 @@
                 Escribir a WhatsApp
             </a>
             <div style="margin-top: 14px;">
-                <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: var(--tech-cyan); text-decoration: underline;">
-                    Verificar registro oficial en portal SEC (sec.cl)
+                <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" style="font-size: 0.78rem; color: var(--tech-cyan); text-decoration: underline;">
+                    Verificar registro oficial en portal SEC (eRNII)
                 </a>
             </div>
         </div>

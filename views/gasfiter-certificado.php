@@ -32,7 +32,7 @@
                 <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, vi tus certificaciones y necesito solicitar una inspección técnica / regularización.') ?>" class="btn-primary" target="_blank">
                     <span>Contactar con Instalador Certificado</span>
                 </a>
-                <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-secondary">
                     <span>Validar RUT en Portal SEC</span>
                 </a>
             </div>
@@ -83,12 +83,18 @@
                 </div>
 
                 <div class="hero-floating-badge">
-                    <div>
+                    <div class="badge-text-group">
                         <div class="badge-info-title">Domingo Isaín Plaza Caamaño</div>
                         <div class="badge-info-sub">RUT: 12.738.961-6 · Instalador Autorizado SEC Clase 3</div>
                     </div>
-                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar en portal oficial SEC">
-                        <span>Verificar SEC</span>
+                    <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)" aria-label="Verificar registro oficial de Domingo Isaín en portal SEC">
+                        <div class="qr-box">
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="Código QR Verificación SEC Domingo Isaín" width="76" height="76" class="qr-img">
+                        </div>
+                        <div class="qr-btn-text">
+                            <span class="qr-btn-label">Verificar SEC</span>
+                            <span class="qr-btn-sub">Escanear o Clic ↗</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -219,6 +225,19 @@
                     <div class="cert-faq-highlight">
                         <div class="cert-faq-question">❓ Pregunta de cliente: "¿Qué pasa si un gásfiter sin SEC me repara la fuga?"</div>
                         <div class="cert-faq-answer">La empresa certificadora rechazará la obra, no te darán el Sello Verde, la compañía mantendrá el medidor cortado y, ante cualquier accidente, la aseguradora no pagará los daños por negligencia.</div>
+                    </div>
+
+                    <!-- Botón de Verificación Oficial con QR -->
+                    <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: flex-start;">
+                        <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)">
+                            <div class="qr-box">
+                                <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR Verificación SEC Domingo Isaín" width="54" height="54" class="qr-img">
+                            </div>
+                            <div class="qr-btn-text">
+                                <span class="qr-btn-label">Verificar Licencia en Portal SEC (eRNII)</span>
+                                <span class="qr-btn-sub">Validar RUT 12.738.961-6 · Estado Activo ↗</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </article>

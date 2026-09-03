@@ -7,9 +7,14 @@
             <h3 class="modal-title" id="modal-cert-title">Certificado Oficial</h3>
             <p class="modal-description" id="modal-cert-desc">Documento técnico emitido conforme a las directrices de la Superintendencia de Electricidad y Combustibles (SEC) y normativa DS66.</p>
             <div class="modal-actions">
-                <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" style="font-size: 0.95rem; padding: 10px 20px;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    Verificar en Portal SEC Oficial
+                <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" style="font-size: 0.95rem; padding: 8px 16px;">
+                    <div class="qr-box" style="width: 42px; height: 42px;">
+                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" width="42" height="42" class="qr-img">
+                    </div>
+                    <div class="qr-btn-text">
+                        <span class="qr-btn-label">Verificar en Portal SEC Oficial</span>
+                        <span class="qr-btn-sub">Validar Licencia eRNII ↗</span>
+                    </div>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=56949877316&text=<?= urlencode('Hola Domingo, vi tus certificados en la web y necesito consultar por un servicio.') ?>" target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">
                     Consultar a Domingo

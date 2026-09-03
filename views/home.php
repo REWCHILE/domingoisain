@@ -99,13 +99,18 @@
 
                 <!-- Insignia Inferior Flotante -->
                 <div class="hero-floating-badge">
-                    <div>
+                    <div class="badge-text-group">
                         <div class="badge-info-title">Domingo Isaín Plaza C.</div>
                         <div class="badge-info-sub">Instalador SEC Clase 3 · Licencia Oficial (RUT 12.738.961-6)</div>
                     </div>
-                    <a href="https://www.sec.cl" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar RUT 12.738.961-6 en la SEC" aria-label="Verificar registro de Domingo Isaín en portal SEC">
-                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" width="18" height="18" style="width: 18px; height: 18px; border-radius: 3px;">
-                        <span>Verificar SEC</span>
+                    <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)" aria-label="Verificar registro oficial de Domingo Isaín en portal SEC">
+                        <div class="qr-box">
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="Código QR Verificación SEC Domingo Isaín" width="76" height="76" class="qr-img">
+                        </div>
+                        <div class="qr-btn-text">
+                            <span class="qr-btn-label">Verificar SEC</span>
+                            <span class="qr-btn-sub">Escanear o Clic ↗</span>
+                        </div>
                     </a>
                 </div>
             </div>
