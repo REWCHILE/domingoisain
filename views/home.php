@@ -97,21 +97,32 @@
                     </div>
                 </div>
 
-                <!-- Insignia Inferior Flotante -->
-                <div class="hero-floating-badge">
-                    <div class="badge-text-group">
-                        <div class="badge-info-title">Domingo Isaín Plaza C.</div>
-                        <div class="badge-info-sub">Instalador SEC Clase 3 · Licencia Oficial (RUT 12.738.961-6)</div>
-                    </div>
-                    <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)" aria-label="Verificar registro oficial de Domingo Isaín en portal SEC">
-                        <div class="qr-box">
-                            <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="Código QR Verificación SEC Domingo Isaín" width="76" height="76" class="qr-img">
-                        </div>
-                        <div class="qr-btn-text">
-                            <span class="qr-btn-label">Verificar SEC</span>
-                            <span class="qr-btn-sub">Escanear o Clic ↗</span>
+                <!-- Insignia Inferior Flotante / Acreditación Oficial SEC -->
+                <div class="hero-floating-badge sec-credential-card">
+                    <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="sec-qr-anchor" title="Escanear con tu cámara o hacer clic para verificar en la SEC" aria-label="Código QR oficial de verificación SEC">
+                        <div class="sec-qr-container">
+                            <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" width="135" height="135" class="sec-qr-image">
+                            <span class="sec-qr-hint">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                                Escanear QR
+                            </span>
                         </div>
                     </a>
+                    <div class="sec-badge-content">
+                        <div class="sec-badge-header-row">
+                            <span class="sec-status-pill">
+                                <span class="sec-pulse-dot"></span>
+                                Licencia Activa SEC
+                            </span>
+                            <span class="sec-clase-tag">Clase 3</span>
+                        </div>
+                        <div class="badge-info-title">Domingo Isaín Plaza C.</div>
+                        <div class="badge-info-sub">Instalador Oficial de Gas · RUT 12.738.961-6</div>
+                        <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-sec-action" title="Abrir portal oficial de validación SEC">
+                            <span>Verificar en Portal SEC</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
