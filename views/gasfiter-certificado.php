@@ -73,12 +73,12 @@
                     <button type="button" class="hero-slider-btn hero-slider-next" id="cert-slider-next" aria-label="Certificado siguiente">❯</button>
 
                     <div class="hero-slider-dots" id="cert-slider-dots" role="group" aria-label="Controles de certificados">
-                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1" aria-current="true"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Certificado 2"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Certificado 3"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Certificado 4"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="4" aria-label="Certificado 5"></button>
-                        <button type="button" class="hero-slider-dot" data-slide="5" aria-label="Certificado 6"></button>
+                        <button type="button" class="hero-slider-dot active" data-slide="0" aria-label="Certificado 1" aria-current="true"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="1" aria-label="Certificado 2"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="2" aria-label="Certificado 3"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="3" aria-label="Certificado 4"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="4" aria-label="Certificado 5"><span class="dot-inner"></span></button>
+                        <button type="button" class="hero-slider-dot" data-slide="5" aria-label="Certificado 6"><span class="dot-inner"></span></button>
                     </div>
                 </div>
 
