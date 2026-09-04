@@ -196,7 +196,7 @@
     let scrollTicking = false;
 
     function handlePageScroll() {
-      const scrollY = window.scrollY || window.pageYOffset;
+      const scrollY = window.scrollY || 0;
       if (headerMain) {
         if (scrollY > 15) {
           headerMain.classList.add('is-scrolled');
@@ -216,7 +216,6 @@
 
     window.addEventListener('scroll', onScrollThrottled, { passive: true });
     window.addEventListener('resize', onScrollThrottled, { passive: true });
-    handlePageScroll();
 
     if (goToTopBtn) {
       // Detección de visibilidad inferior sin reflow forzado usando IntersectionObserver

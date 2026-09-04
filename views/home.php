@@ -59,7 +59,10 @@
                         <!-- Slide 1 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🚗 Cobertura en Todo Chile Continental</span>
-                            <img src="<?= BASE_URL ?>/assets/images/hero-home-main.webp" alt="Domingo Isaín con Furgón de Emergencias SEC" class="hero-slide-img" width="800" height="600" fetchpriority="high">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="<?= BASE_URL ?>/assets/images/hero-home-main-mobile.webp" type="image/webp" width="480" height="360">
+                                <img src="<?= BASE_URL ?>/assets/images/hero-home-main.webp" alt="Domingo Isaín con Furgón de Emergencias SEC" class="hero-slide-img" width="800" height="600" fetchpriority="high">
+                            </picture>
                         </div>
                         <!-- Slide 2 -->
                         <div class="hero-slide">
@@ -101,7 +104,10 @@
                 <div class="hero-floating-badge sec-credential-card">
                     <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="sec-qr-anchor" title="Escanear con tu cámara o hacer clic para verificar en la SEC" aria-label="Código QR oficial de verificación SEC">
                         <div class="sec-qr-container">
-                            <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" width="135" height="135" class="sec-qr-image">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="<?= BASE_URL ?>/assets/images/qr-sec-oficial-mobile.webp" type="image/webp" width="110" height="110">
+                                <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" width="135" height="135" class="sec-qr-image">
+                            </picture>
                             <span class="sec-qr-hint">
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
                                 Escanear QR

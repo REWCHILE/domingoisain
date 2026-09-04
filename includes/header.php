@@ -67,8 +67,9 @@ $pageOgType = !empty($pageData['og_type']) ? $pageData['og_type'] : 'website';
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
     
-    <!-- Preload de Imagen LCP Hero -->
-    <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" fetchpriority="high">
+    <!-- Preload de Imagen LCP Hero Adaptable para Móvil y Desktop -->
+    <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
 
     <!-- Estilos CSS Inlined Críticos (Cero Solicitudes Bloqueantes de Red, Ahorro 700ms) -->
     <style>
