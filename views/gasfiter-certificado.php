@@ -242,7 +242,7 @@
                     <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: flex-start;">
                         <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" title="Verificar licencia oficial de Domingo Isaín en portal SEC (eRNII)">
                             <div class="qr-box">
-                                <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR Verificación SEC Domingo Isaín" width="54" height="54" class="qr-img">
+                                <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR Verificación SEC Domingo Isaín" width="54" height="54" class="qr-img" loading="lazy" decoding="async">
                             </div>
                             <div class="qr-btn-text">
                                 <span class="qr-btn-label">Verificar Licencia en Portal SEC (eRNII)</span>

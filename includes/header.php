@@ -63,6 +63,7 @@ $pageOgType = !empty($pageData['og_type']) ? $pageData['og_type'] : 'website';
     <link rel="apple-touch-icon" href="<?= BASE_URL ?>/assets/images/domingo-isain.webp">
     
     <!-- Preload de Fuentes Locales Críticas (Cero bloqueo, Cero Layout Shift CLS) -->
+    <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/plus-jakarta-sans-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
     

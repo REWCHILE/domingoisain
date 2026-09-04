@@ -9,7 +9,7 @@
             <div class="modal-actions">
                 <a href="<?= SEC_PORTAL_URL ?>" target="_blank" rel="noopener noreferrer" class="btn-verify-qr" style="font-size: 0.95rem; padding: 8px 16px;">
                     <div class="qr-box" style="width: 42px; height: 42px;">
-                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" width="42" height="42" class="qr-img">
+                        <img src="<?= BASE_URL ?>/assets/images/qr-sec.webp" alt="QR SEC" width="42" height="42" class="qr-img" loading="lazy" decoding="async">
                     </div>
                     <div class="qr-btn-text">
                         <span class="qr-btn-label">Verificar en Portal SEC Oficial</span>

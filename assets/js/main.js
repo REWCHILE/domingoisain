@@ -197,18 +197,6 @@
 
     function handlePageScroll() {
       const scrollY = window.scrollY || window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const isAtBottom = (scrollY + windowHeight) >= (documentHeight - 220);
-
-      if (goToTopBtn) {
-        if (isAtBottom) {
-          goToTopBtn.classList.add('is-bottom-visible');
-        } else {
-          goToTopBtn.classList.remove('is-bottom-visible');
-        }
-      }
-
       if (headerMain) {
         if (scrollY > 15) {
           headerMain.classList.add('is-scrolled');
@@ -216,7 +204,6 @@
           headerMain.classList.remove('is-scrolled');
         }
       }
-
       scrollTicking = false;
     }
 
@@ -232,6 +219,22 @@
     handlePageScroll();
 
     if (goToTopBtn) {
+      // Detección de visibilidad inferior sin reflow forzado usando IntersectionObserver
+      const footer = document.querySelector('.footer-main');
+      if (footer && 'IntersectionObserver' in window) {
+        const bottomObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            goToTopBtn.classList.toggle('is-bottom-visible', entry.isIntersecting);
+          });
+        }, { rootMargin: '0px 0px 220px 0px' });
+        bottomObserver.observe(footer);
+      } else {
+        window.addEventListener('scroll', function() {
+          const scrollY = window.scrollY || window.pageYOffset;
+          goToTopBtn.classList.toggle('is-bottom-visible', scrollY > 800);
+        }, { passive: true });
+      }
+
       goToTopBtn.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -303,10 +306,24 @@
       const totalSlides = slides.length;
       let autoSlideTimer = null;
 
+      function ensureSlideLoaded(idx) {
+        const slide = slides[idx];
+        if (!slide) return;
+        const img = slide.querySelector('img[data-src]');
+        if (img) {
+          img.src = img.getAttribute('data-src');
+          img.removeAttribute('data-src');
+        }
+      }
+
       function goToSlide(index) {
         if (index < 0) index = totalSlides - 1;
         if (index >= totalSlides) index = 0;
         currentSlide = index;
+
+        // Cargar imagen de diapositiva actual y precargar la siguiente
+        ensureSlideLoaded(currentSlide);
+        ensureSlideLoaded((currentSlide + 1) % totalSlides);
 
         sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
 
@@ -543,10 +560,16 @@
     }
   }
 
-  // Inicialización inmediata de todos los módulos
+  // Inicialización inmediata de elementos esenciales de UI e interactividad
   initFaqs();
   initCalculator();
   initModalsAndScroll();
   initCarousels();
-  initWebMCP();
+
+  // Diferir WebMCP y APIs de agente para mantener TBT = 0ms en el hilo principal
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(initWebMCP, { timeout: 1000 });
+  } else {
+    setTimeout(initWebMCP, 150);
+  }
 })();

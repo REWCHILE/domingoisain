@@ -64,22 +64,22 @@
                         <!-- Slide 2 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">📡 Detección Acústica con Geófono</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-geofono.webp" alt="Domingo Isaín detectando fugas subterráneas con geófono digital" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3C/svg%3E" data-src="<?= BASE_URL ?>/assets/images/domingo-accion-geofono.webp" alt="Domingo Isaín detectando fugas subterráneas con geófono digital" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 3 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🔥 Mantención Certificada de Calefonts</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-accion-calefont.webp" alt="Domingo Isaín reparando calefont y midiendo presión de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3C/svg%3E" data-src="<?= BASE_URL ?>/assets/images/domingo-accion-calefont.webp" alt="Domingo Isaín reparando calefont y midiendo presión de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 4 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">📋 Pruebas de Hermeticidad DS66</span>
-                            <img src="<?= BASE_URL ?>/assets/images/domingo-trabajo.webp" alt="Domingo Isaín en terreno realizando pruebas de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3C/svg%3E" data-src="<?= BASE_URL ?>/assets/images/domingo-trabajo.webp" alt="Domingo Isaín en terreno realizando pruebas de gas" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <!-- Slide 5 -->
                         <div class="hero-slide">
                             <span class="hero-slide-tag">🧪 Sellado sin Romper Prodoral R6-1</span>
-                            <img src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3C/svg%3E" data-src="<?= BASE_URL ?>/assets/images/hero-prodoral.webp" alt="Inyección de polímero alemán Prodoral R6-1" class="hero-slide-img" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                     </div>
 
