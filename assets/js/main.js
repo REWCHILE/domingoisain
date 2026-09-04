@@ -413,7 +413,7 @@
         startAutoSlide();
       }, { passive: true });
 
-      setTimeout(startAutoSlide, 2500);
+      setTimeout(startAutoSlide, 8000);
     }
 
     initCarousel('hero-slider');

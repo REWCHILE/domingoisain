@@ -87,7 +87,7 @@
                         <div class="sec-qr-container">
                             <picture>
                                 <source media="(max-width: 640px)" srcset="<?= BASE_URL ?>/assets/images/qr-sec-oficial-mobile.webp" type="image/webp" width="110" height="110">
-                                <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" width="135" height="135" class="sec-qr-image">
+                                <img src="<?= BASE_URL ?>/assets/images/qr-sec-oficial.webp" alt="Código QR Validación SEC Domingo Isaín" width="135" height="135" class="sec-qr-image" loading="lazy" decoding="async">
                             </picture>
                             <span class="sec-qr-hint">
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>

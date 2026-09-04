@@ -2282,6 +2282,9 @@ select option, .calc-select option {
    RESPONSIVE DESIGN (MEDIA QUERIES) - 100% FULL RESPONSIVE
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
+  .custom-cursor-aura {
+    display: none !important;
+  }
   .hero-container {
     grid-template-columns: 1fr;
     text-align: left;

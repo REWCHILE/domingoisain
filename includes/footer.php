@@ -86,8 +86,8 @@
 <?php include __DIR__ . '/modal-certificates.php'; ?>
 
 <!-- Scripts JavaScript Principales con Defer -->
-<script defer src="<?= BASE_URL ?>/assets/js/cursor.js?v=4.4"></script>
-<script defer src="<?= BASE_URL ?>/assets/js/main.js?v=4.4"></script>
+<script defer src="<?= BASE_URL ?>/assets/js/cursor.js?v=4.5"></script>
+<script defer src="<?= BASE_URL ?>/assets/js/main.js?v=4.5"></script>
 
 </body>
 </html>

@@ -6,8 +6,10 @@
 (function() {
   'use strict';
 
-  // Desactivar completamente en dispositivos táctiles / móviles
-  if (window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window || navigator.maxTouchPoints > 0) {
+  // Desactivar completamente en móviles, tablets y emulaciones (pantallas <= 1024px o táctiles)
+  if (window.innerWidth <= 1024 || window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0)) {
+    const existingAura = document.querySelector('.custom-cursor-aura');
+    if (existingAura) existingAura.remove();
     return;
   }
 
@@ -25,22 +27,31 @@
   let auraY = -100;
   let isHovered = false;
   let isEmergency = false;
+  let isMoving = false;
+
+  function renderAura() {
+    const dx = mouseX - auraX;
+    const dy = mouseY - auraY;
+    auraX += dx * 0.45;
+    auraY += dy * 0.45;
+
+    aura.style.transform = `translate3d(${auraX}px, ${auraY}px, 0) translate(-50%, -50%) ${isHovered ? 'rotate(45deg)' : ''}`;
+
+    if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+      requestAnimationFrame(renderAura);
+    } else {
+      isMoving = false;
+    }
+  }
 
   window.addEventListener('mousemove', function(e) {
     mouseX = e.clientX;
     mouseY = e.clientY;
+    if (!isMoving) {
+      isMoving = true;
+      requestAnimationFrame(renderAura);
+    }
   }, { passive: true });
-
-  // Animación suave y ultra reactiva (factor 0.45 para respuesta instantánea)
-  function renderAura() {
-    auraX += (mouseX - auraX) * 0.45;
-    auraY += (mouseY - auraY) * 0.45;
-
-    aura.style.transform = `translate3d(${auraX}px, ${auraY}px, 0) translate(-50%, -50%) ${isHovered ? 'rotate(45deg)' : ''}`;
-
-    requestAnimationFrame(renderAura);
-  }
-  requestAnimationFrame(renderAura);
 
   // Estados de Click
   window.addEventListener('mousedown', function() {
