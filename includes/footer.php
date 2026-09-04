@@ -86,8 +86,25 @@
 <?php include __DIR__ . '/modal-certificates.php'; ?>
 
 <!-- Scripts JavaScript Principales con Defer -->
-<script defer src="<?= BASE_URL ?>/assets/js/cursor.js?v=4.5"></script>
-<script defer src="<?= BASE_URL ?>/assets/js/main.js?v=4.5"></script>
+<script defer src="<?= BASE_URL ?>/assets/js/cursor.js?v=4.6"></script>
+<script defer src="<?= BASE_URL ?>/assets/js/main.js?v=4.6"></script>
+
+<!-- Datos Estructurados JSON-LD (Schema.org / GEO Knowledge Graph) -->
+<script type="application/ld+json">
+<?= getWebSiteJsonLd() ?>
+</script>
+
+<script type="application/ld+json">
+<?= getLocalBusinessJsonLd() ?>
+</script>
+
+<script type="application/ld+json">
+<?= getFaqJsonLd($FAQS) ?>
+</script>
+
+<script type="application/ld+json">
+<?= getBreadcrumbJsonLd($pageKey, $pageTitle) ?>
+</script>
 
 </body>
 </html>

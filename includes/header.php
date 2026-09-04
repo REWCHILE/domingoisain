@@ -67,36 +67,15 @@ $pageOgType = !empty($pageData['og_type']) ? $pageData['og_type'] : 'website';
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/plus-jakarta-sans-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="<?= BASE_URL ?>/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
     
-    <!-- Preload de Imagen LCP Hero Adaptable para Móvil y Desktop -->
-    <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
+    <!-- Preload de Imagen LCP Hero para Desktop (En móvil el elemento LCP prioritario es el texto <p class="hero-lead">) -->
     <link rel="preload" as="image" href="<?= BASE_URL ?>/assets/images/hero-home-main.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
 
     <!-- Estilos CSS Inlined Críticos (Cero Solicitudes Bloqueantes de Red, Ahorro 700ms) -->
     <style>
-    <?= str_replace('<?= BASE_URL ?>', BASE_URL, file_get_contents(__DIR__ . '/../assets/css/main.min.css')) ?>
+    <?= file_get_contents(__DIR__ . '/../assets/css/main.min.css') ?>
     </style>
-    
-    <!-- Datos Estructurados JSON-LD (Schema.org / GEO Knowledge Graph) -->
-    <script type="application/ld+json">
-    <?= getWebSiteJsonLd() ?>
-    </script>
-
-    <script type="application/ld+json">
-    <?= getLocalBusinessJsonLd() ?>
-    </script>
-
-    <script type="application/ld+json">
-    <?= getFaqJsonLd($FAQS) ?>
-    </script>
-
-    <script type="application/ld+json">
-    <?= getBreadcrumbJsonLd($pageKey, $pageTitle) ?>
-    </script>
 </head>
 <body>
-
-    <!-- Puntero Personalizado -->
-    <?php include __DIR__ . '/custom-cursor.php'; ?>
 
     <!-- Barra Superior de Emergencias 24/7 -->
     <div class="top-emergency-bar">
